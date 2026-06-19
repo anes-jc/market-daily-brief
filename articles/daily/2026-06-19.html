@@ -30,7 +30,7 @@
         <header class="article-hero">
           <time datetime="2026-06-19">2026年6月19日</time>
           <h1>Market Daily Brief 2026年6月19日版</h1>
-          <p>2026年6月19日の株式・為替・金利・イベントを整理した朝の市場メモです。数値は初期MVP用のダミーで、外部APIは使用していません。</p>
+          <p>2026年6月19日の株式・為替・金利・イベントを整理した朝の市場メモです。市場データは公開チャートデータから自動取得した終値ベースの参考値です。</p>
         </header>
 
         <section class="brief-section">
@@ -40,39 +40,51 @@
             
           <div class="metric">
             <b>日経平均</b>
-            <span>38,240.00</span>
-            <small>-120.50 / -0.31%</small>
-            <small>前営業日の終値ベースのダミー値</small>
+            <span>71,045.84</span>
+            <small>-7.65 / -0.01%</small>
+            <small>2026-06-19終値 / Yahoo Finance</small>
           </div>
           <div class="metric">
-            <b>TOPIX</b>
-            <span>2,715.80</span>
-            <small>+6.20 / +0.23%</small>
-            <small>前営業日の終値ベースのダミー値</small>
+            <b>TOPIX連動ETF(1306)</b>
+            <span>429.10</span>
+            <small>-3.20 / -0.74%</small>
+            <small>2026-06-19終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値</small>
           </div>
           <div class="metric">
             <b>S&amp;P 500</b>
-            <span>5,475.10</span>
-            <small>+8.40 / +0.15%</small>
-            <small>前営業日の終値ベースのダミー値</small>
+            <span>7,500.58</span>
+            <small>+80.48 / +1.08%</small>
+            <small>2026-06-18終値 / Yahoo Finance</small>
           </div>
           <div class="metric">
             <b>NASDAQ</b>
-            <span>17,720.30</span>
-            <small>-32.10 / -0.18%</small>
-            <small>前営業日の終値ベースのダミー値</small>
+            <span>26,517.93</span>
+            <small>+496.27 / +1.91%</small>
+            <small>2026-06-18終値 / Yahoo Finance</small>
           </div>
           <div class="metric">
             <b>ドル円</b>
-            <span>157.20</span>
-            <small>+0.35 / +0.22%</small>
-            <small>ニューヨーク時間終盤のダミー値</small>
+            <span>161.27</span>
+            <small>+0.67 / +0.41%</small>
+            <small>2026-06-19終値 / Yahoo Finance</small>
           </div>
           <div class="metric">
             <b>米10年金利</b>
-            <span>4.27%</span>
-            <small>+0.02pt</small>
-            <small>米国債市場のダミー値</small>
+            <span>4.45%</span>
+            <small>-0.04pt</small>
+            <small>2026-06-18終値 / Yahoo Finance / 米10年国債利回りの参考値。</small>
+          </div>
+          <div class="metric">
+            <b>WTI原油</b>
+            <span>75.32</span>
+            <small>-1.28 / -1.67%</small>
+            <small>2026-06-19終値 / Yahoo Finance</small>
+          </div>
+          <div class="metric">
+            <b>金</b>
+            <span>4,181.90</span>
+            <small>-42.20 / -1.00%</small>
+            <small>2026-06-19終値 / Yahoo Finance</small>
           </div>
           </div>
         </section>
@@ -80,31 +92,31 @@
         <section class="brief-section">
           <p class="section-label">Japan</p>
           <h2>前日の日本株</h2>
-          <ul><li>日経平均は小幅安、TOPIXは小幅高のダミー値で記録しました。</li><li>大型株と内需株の強弱がまちまちという想定です。</li><li>精密機器、電気機器が相対的にしっかり。</li><li>海運、鉄鋼は利益確定の動きが重い想定です。</li><li>プライム市場売買代金は3.8兆円のダミー値です。</li><li>海外金利の動き、為替水準、決算発表への反応が主な確認材料です。</li></ul>
+          <ul><li>日経平均は71,045.84（-7.65 / -0.01%）です。</li><li>TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF(1306)を参考値として表示します。</li><li>業種別データと売買代金は未接続です。次フェーズで利用条件が明確なデータ元を確認します。</li><li>プライム市場売買代金は未接続です。</li><li>指数、為替、米金利の水準を朝の確認材料として整理します。</li></ul>
         </section>
 
         <section class="brief-section">
           <p class="section-label">United States</p>
           <h2>米国市場</h2>
-          <ul><li>S&amp;P 500は小幅高、NASDAQは小幅安のダミー値です。</li><li>主要3指数は方向感がそろわない展開として整理しています。</li><li>半導体関連は銘柄ごとの決算材料で強弱が分かれた想定です。</li><li>米10年金利は小幅上昇のダミー値です。</li><li>金融政策を巡る発言、企業決算、雇用指標への反応を確認します。</li></ul>
+          <ul><li>S&amp;P 500は7,500.58（+80.48 / +1.08%）です。</li><li>NASDAQは26,517.93（+496.27 / +1.91%）です。</li><li>半導体関連の個別銘柄データは未接続です。</li><li>米10年金利は4.45%（-0.04pt）です。</li><li>ニュース本文の自動取得は未接続です。見出し・URLのみを扱う設計で次フェーズに進めます。</li></ul>
         </section>
 
         <section class="brief-section">
           <p class="section-label">FX / Rates / Commodities</p>
           <h2>為替・金利・商品</h2>
-          <ul><li>ドル円は157円台前半のダミー値です。</li><li>米10年金利は4.27%のダミー値です。</li><li>WTI原油は78.40ドル、金は2,335ドルのダミー値です。</li></ul>
+          <ul><li>ドル円は161.27（+0.67 / +0.41%）です。</li><li>米10年金利は4.45%（-0.04pt）です。</li><li>WTI原油は75.32、金は4,181.90です。</li></ul>
         </section>
 
         <section class="brief-section">
           <p class="section-label">Events</p>
           <h2>本日のイベント</h2>
-          <ul><li>日本 08:30 全国消費者物価指数: MVP用のダミー予定です。</li><li>米国 21:30 週間新規失業保険申請件数: MVP用のダミー予定です。</li><li>米国 23:00 景気先行指数: MVP用のダミー予定です。</li></ul>
+          <ul><li>日本 午前 国内統計・日銀関連発表の確認: イベントカレンダー連携前の確認枠です。</li><li>米国 夜 米国経済指標・FRB関連発言の確認: イベントカレンダー連携前の確認枠です。</li></ul>
         </section>
 
         <section class="brief-section">
           <p class="section-label">Related News</p>
           <h2>関連ニュース</h2>
-          <ul><li>日本株: 主要企業の決算発表と為替感応度が確認点です。</li><li>米国株: 大型テック株の決算と金利の反応が確認点です。</li><li>為替・金利: 金融政策を巡る発言と米金利の変化を確認します。</li><li>マクロ: 物価指標と雇用関連指標の発表予定を整理します。</li></ul>
+          <ul><li>日本株: ニュース取得は未接続です。出典・URLのみを扱う形で追加予定です。</li><li>米国株: ニュース取得は未接続です。本文転載は行いません。</li><li>為替・金利: 市場データと公式発表の確認枠を優先します。</li><li>マクロ: FREDなど公式性の高いデータ源は次候補として整理済みです。</li></ul>
         </section>
 
         <section class="brief-section">
