@@ -64,6 +64,16 @@ export function getDemoMode() {
   return mode;
 }
 
+export function getDataMode() {
+  const fromArg = getArgValue("data-mode");
+  const fromEnv = process.env.BRIEF_DATA_MODE || "";
+  const mode = (fromArg || fromEnv || "live").trim();
+  if (!["live", "dummy"].includes(mode)) {
+    throw new Error(`BRIEF_DATA_MODE must be live or dummy. Received: ${mode}`);
+  }
+  return mode;
+}
+
 export function todayInTokyo(now = new Date()) {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Tokyo",

@@ -1,0 +1,78 @@
+{
+  "marketDataProvider": {
+    "name": "Yahoo Finance chart endpoint",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}",
+    "note": "APIキー不要の公開チャートJSONを取得する。非公式寄りのため、取得失敗時は公開停止し、値の再配信は最小限に留める。"
+  },
+  "range": "10d",
+  "interval": "1d",
+  "instruments": [
+    {
+      "key": "nikkei",
+      "label": "日経平均",
+      "symbol": "^N225",
+      "market": "Japan",
+      "format": "index",
+      "required": true
+    },
+    {
+      "key": "topix",
+      "label": "TOPIX連動ETF(1306)",
+      "symbol": "1306.T",
+      "market": "Japan",
+      "format": "index",
+      "required": true,
+      "proxyFor": "TOPIX",
+      "note": "TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。"
+    },
+    {
+      "key": "sp500",
+      "label": "S&P 500",
+      "symbol": "^GSPC",
+      "market": "United States",
+      "format": "index",
+      "required": true
+    },
+    {
+      "key": "nasdaq",
+      "label": "NASDAQ",
+      "symbol": "^IXIC",
+      "market": "United States",
+      "format": "index",
+      "required": true
+    },
+    {
+      "key": "usdjpy",
+      "label": "ドル円",
+      "symbol": "USDJPY=X",
+      "market": "FX",
+      "format": "fx",
+      "required": true
+    },
+    {
+      "key": "us10y",
+      "label": "米10年金利",
+      "symbol": "^TNX",
+      "market": "Rates",
+      "format": "yield",
+      "required": true,
+      "note": "米10年国債利回りの参考値。"
+    },
+    {
+      "key": "wti",
+      "label": "WTI原油",
+      "symbol": "CL=F",
+      "market": "Commodities",
+      "format": "commodity",
+      "required": false
+    },
+    {
+      "key": "gold",
+      "label": "金",
+      "symbol": "GC=F",
+      "market": "Commodities",
+      "format": "commodity",
+      "required": false
+    }
+  ]
+}

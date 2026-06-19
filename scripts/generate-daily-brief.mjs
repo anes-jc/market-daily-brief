@@ -7,6 +7,7 @@ import {
   SITE_NAME,
   articlePaths,
   escapeHtml,
+  getDataMode,
   getDemoMode,
   getRunDate,
   isMain,
@@ -16,6 +17,7 @@ import {
   writeJsonFile,
   writeTextFile
 } from "./site-utils.mjs";
+import { fetchMarketSnapshot } from "./fetch-market-data.mjs";
 
 function buildDummySnapshot(date, demoMode) {
   const noData = demoMode === "no-data";
@@ -153,6 +155,10 @@ function renderArticle(snapshot) {
   const description = `${snapshot.dateLabel}の株式・為替・金利・イベントを整理した朝の市場メモです。`;
   const articleUrl = siteUrl(`articles/daily/${snapshot.date}.html`);
   const ogUrl = siteUrl(`assets/og/${snapshot.date}.png`);
+  const sourceText =
+    snapshot.sourceMode === "dummy-mvp"
+      ? "数値は初期MVP用のダミーで、外部APIは使用していません。"
+      : "市場データは公開チャートデータから自動取得した終値ベースの参考値です。";
 
   return `<!doctype html>
 <html lang="ja">
@@ -186,7 +192,7 @@ function renderArticle(snapshot) {
         <header class="article-hero">
           <time datetime="${escapeHtml(snapshot.date)}">${escapeHtml(snapshot.dateLabel)}</time>
           <h1>${escapeHtml(title)}</h1>
-          <p>${escapeHtml(description)}数値は初期MVP用のダミーで、外部APIは使用していません。</p>
+          <p>${escapeHtml(description)}${escapeHtml(sourceText)}</p>
         </header>
 
         <section class="brief-section">
@@ -250,8 +256,10 @@ function renderArticle(snapshot) {
 export async function generateDailyBrief() {
   const date = getRunDate();
   const demoMode = getDemoMode();
+  const dataMode = getDataMode();
   const paths = articlePaths(date);
-  const snapshot = buildDummySnapshot(date, demoMode);
+  const useDummy = dataMode === "dummy" || demoMode !== "safe";
+  const snapshot = useDummy ? buildDummySnapshot(date, demoMode) : await fetchMarketSnapshot(date);
   const html = renderArticle(snapshot);
 
   await writeJsonFile(paths.snapshot, snapshot);
@@ -260,6 +268,7 @@ export async function generateDailyBrief() {
     date,
     status: "DRAFT_READY",
     demoMode,
+    dataMode: useDummy ? "dummy" : "live",
     generatedAt: snapshot.generatedAt,
     candidatePath: relativeFromRoot(paths.draftHtml),
     snapshotPath: relativeFromRoot(paths.snapshot),
@@ -268,7 +277,7 @@ export async function generateDailyBrief() {
   });
 
   console.log(`Generated candidate brief: ${relativeFromRoot(paths.draftHtml)}`);
-  console.log(`Generated dummy snapshot: ${relativeFromRoot(paths.snapshot)}`);
+  console.log(`Generated ${useDummy ? "dummy" : "live"} snapshot: ${relativeFromRoot(paths.snapshot)}`);
 }
 
 if (isMain(import.meta.url)) {

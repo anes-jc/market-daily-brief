@@ -19,6 +19,14 @@ on:
           - safe
           - unsafe
           - no-data
+      data_mode:
+        description: "live fetches public market data. dummy uses local MVP fixtures."
+        required: true
+        default: live
+        type: choice
+        options:
+          - live
+          - dummy
 
 permissions:
   contents: write
@@ -63,6 +71,7 @@ jobs:
         env:
           BRIEF_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.brief_date || '' }}
           BRIEF_DEMO_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.demo_mode || 'safe' }}
+          BRIEF_DATA_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.data_mode || 'live' }}
         run: node scripts/generate-daily-brief.mjs
 
       - name: Validate article and decide publication
@@ -82,7 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github README.md index.html .nojekyll assets articles data drafts prompts rules scripts sitemap.xml
+          git add .github README.md data-sources.md index.html .nojekyll assets articles config data drafts prompts rules scripts sitemap.xml
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
