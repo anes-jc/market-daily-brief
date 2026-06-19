@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
   "dateLabel": "2026年6月19日",
-  "generatedAt": "2026-06-19T07:51:26.634Z",
+  "generatedAt": "2026-06-19T08:13:09.245Z",
   "sourceMode": "live-public-market-data",
   "demoMode": "safe",
   "dataQuality": {
@@ -109,8 +109,8 @@
     {
       "key": "usdjpy",
       "label": "ドル円",
-      "value": "161.27",
-      "change": "+0.67",
+      "value": "161.28",
+      "change": "+0.68",
       "pct": "+0.42%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
@@ -120,10 +120,10 @@
       "previousDate": "2026-06-17",
       "dataAgeDays": 0,
       "raw": {
-        "latestClose": 161.27200317382812,
+        "latestClose": 161.2760009765625,
         "previousClose": 160.60000610351562,
-        "change": 0.6719970703125,
-        "pct": 0.4184290440682552,
+        "change": 0.675994873046875,
+        "pct": 0.4209183358381436,
         "currency": "JPY",
         "exchangeName": "CCY",
         "instrumentType": "CURRENCY"
@@ -153,9 +153,9 @@
     {
       "key": "wti",
       "label": "WTI原油",
-      "value": "76.31",
-      "change": "-0.29",
-      "pct": "-0.38%",
+      "value": "76.43",
+      "change": "-0.17",
+      "pct": "-0.22%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
@@ -164,10 +164,10 @@
       "previousDate": "2026-06-18",
       "dataAgeDays": 0,
       "raw": {
-        "latestClose": 76.30999755859375,
+        "latestClose": 76.43000030517578,
         "previousClose": 76.5999984741211,
-        "change": -0.29000091552734375,
-        "pct": -0.37859128107596374,
+        "change": -0.1699981689453125,
+        "pct": -0.22192972889254753,
         "currency": "USD",
         "exchangeName": "NYM",
         "instrumentType": "FUTURE"
@@ -176,9 +176,9 @@
     {
       "key": "gold",
       "label": "金",
-      "value": "4,173.30",
-      "change": "-50.80",
-      "pct": "-1.20%",
+      "value": "4,173.70",
+      "change": "-50.40",
+      "pct": "-1.19%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
@@ -187,10 +187,10 @@
       "previousDate": "2026-06-18",
       "dataAgeDays": 0,
       "raw": {
-        "latestClose": 4173.2998046875,
+        "latestClose": 4173.7001953125,
         "previousClose": 4224.10009765625,
-        "change": -50.80029296875,
-        "pct": -1.202629951807644,
+        "change": -50.39990234375,
+        "pct": -1.1931512317076596,
         "currency": "USD",
         "exchangeName": "CMX",
         "instrumentType": "FUTURE"
@@ -223,9 +223,9 @@
   },
   "fxRatesAndCommodities": {
     "items": [
-      "ドル円は161.27（+0.67 / +0.42%）です。",
+      "ドル円は161.28（+0.68 / +0.42%）です。",
       "米10年金利は4.49%（+0.06pt）です。",
-      "WTI原油は76.31、金は4,173.30です。"
+      "WTI原油は76.43、金は4,173.70です。"
     ]
   },
   "events": [
@@ -245,7 +245,7 @@
   ],
   "eventDigest": {
     "date": "2026-06-19",
-    "generatedAt": "2026-06-19T07:51:26.026Z",
+    "generatedAt": "2026-06-19T08:13:08.909Z",
     "sourceMode": "official-event-calendar",
     "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
     "fallbackUsed": false,
@@ -313,7 +313,7 @@
   ],
   "newsDigest": {
     "date": "2026-06-19",
-    "generatedAt": "2026-06-19T07:51:26.634Z",
+    "generatedAt": "2026-06-19T08:13:09.245Z",
     "sourceMode": "rss-headlines",
     "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
     "items": [

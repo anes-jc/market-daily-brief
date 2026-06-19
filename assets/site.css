@@ -215,6 +215,10 @@ nav a:focus-visible {
   color: var(--muted);
 }
 
+.policy-section h3 {
+  margin-top: 28px;
+}
+
 .empty-state {
   margin: 0;
   padding: 18px;
@@ -296,6 +300,14 @@ nav a:focus-visible {
   padding: 16px;
   border-left: 4px solid var(--accent);
   background: var(--soft);
+}
+
+.disclosure-box p {
+  margin: 0;
+}
+
+.disclosure-box p + p {
+  margin-top: 10px;
 }
 
 footer {

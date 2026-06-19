@@ -10,6 +10,8 @@ export const PUBLIC_DISCLOSURE =
   "当サイトは、株式・為替・金利・経済イベントに関する公開情報を整理することを目的としています。個別銘柄の推奨、売買の勧誘、投資判断の助言、株価予想を目的とするものではありません。最終的な投資判断は、利用者ご自身の責任で行ってください。";
 export const AFFILIATE_DISCLOSURE =
   "当サイトは一部アフィリエイトリンクを含む場合があります。掲載の有無や報酬条件は、記事本文の市場整理には影響しません。";
+export const EXTERNAL_LINK_DISCLOSURE =
+  "外部リンクは出典確認のための参照です。リンク先サイトとは関係がなく、リンク先の内容、変更、利用条件について当サイトは管理しません。記事本文、画像、記事本文の要約、埋め込み表示は行いません。";
 
 export const LATEST_RUN_PATH = rootPath("data/latest-run.json");
 

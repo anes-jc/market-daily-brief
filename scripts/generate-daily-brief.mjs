@@ -1,5 +1,6 @@
 import {
   AFFILIATE_DISCLOSURE,
+  EXTERNAL_LINK_DISCLOSURE,
   LATEST_RUN_PATH,
   PUBLIC_DISCLOSURE,
   SITE_BASE_URL,
@@ -139,11 +140,18 @@ function bulletList(items) {
   return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
 }
 
+function externalLink(url, label) {
+  return `<a href="${escapeHtml(url)}" rel="noopener noreferrer nofollow" target="_blank">${escapeHtml(label)}</a>`;
+}
+
 function eventList(events) {
   if (!events.length) return "<p>本日のイベントデータは取得できていません。</p>";
   return `<ul>${events
     .map((event) => {
-      const source = event.source && event.source !== event.sourceKey ? ` <small>${escapeHtml(event.source)}</small>` : "";
+      const sourceLabel = event.source && event.source !== event.sourceKey ? event.source : "";
+      const source = sourceLabel
+        ? ` <small>${event.sourceUrl ? externalLink(event.sourceUrl, sourceLabel) : escapeHtml(sourceLabel)}</small>`
+        : "";
       return `<li>${escapeHtml(event.region)} ${escapeHtml(event.time)} ${escapeHtml(event.title)}: ${escapeHtml(event.note)}${source}</li>`;
     })
     .join("")}</ul>`;
@@ -155,9 +163,7 @@ function relatedNewsList(news) {
 
 function relatedNewsItem(item) {
   const meta = [item.source, formatPublishedAt(item.publishedAt)].filter(Boolean).join(" / ");
-  const title = item.url
-    ? `<a href="${escapeHtml(item.url)}" rel="noopener noreferrer" target="_blank">${escapeHtml(item.text)}</a>`
-    : escapeHtml(item.text);
+  const title = item.url ? externalLink(item.url, item.text) : escapeHtml(item.text);
   const suffix = meta ? ` <small>${escapeHtml(meta)}</small>` : "";
   return `<li>${escapeHtml(item.category)}: ${title}${suffix}</li>`;
 }
@@ -264,6 +270,7 @@ function renderArticle(snapshot) {
           <div class="disclosure-box">
             <p>${escapeHtml(PUBLIC_DISCLOSURE)}</p>
             <p>${escapeHtml(AFFILIATE_DISCLOSURE)}</p>
+            <p>${escapeHtml(EXTERNAL_LINK_DISCLOSURE)}</p>
           </div>
         </section>
       </article>

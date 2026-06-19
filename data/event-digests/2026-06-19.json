@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "generatedAt": "2026-06-19T07:51:26.026Z",
+  "generatedAt": "2026-06-19T08:13:08.909Z",
   "sourceMode": "official-event-calendar",
   "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
   "fallbackUsed": false,
