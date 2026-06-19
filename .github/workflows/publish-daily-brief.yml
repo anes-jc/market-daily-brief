@@ -80,6 +80,12 @@ jobs:
       - name: Generate OGP image
         run: python scripts/generate-daily-ogp.py
 
+      - name: Generate archive page
+        run: node scripts/generate-archive-page.mjs
+
+      - name: Generate home redirect
+        run: node scripts/generate-home-page.mjs
+
       - name: Generate sitemap
         run: node scripts/generate-sitemap.mjs
 
@@ -91,7 +97,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github README.md data-sources.md index.html .nojekyll assets articles config data drafts prompts rules scripts sitemap.xml
+          git add .github README.md data-sources.md index.html archive.html .nojekyll assets articles config data drafts prompts rules scripts sitemap.xml
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
@@ -103,7 +109,7 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site/assets _site/articles _site/data
-          cp index.html sitemap.xml .nojekyll _site/
+          cp index.html archive.html sitemap.xml .nojekyll _site/
           cp -R assets/site.css assets/og _site/assets/
           cp -R articles/daily _site/articles/
           cp data/daily-articles.js data/latest-run.json _site/data/

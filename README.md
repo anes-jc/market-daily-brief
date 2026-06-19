@@ -14,6 +14,8 @@ Market Daily Brief は、朝に読む、株式・為替・金利・イベント�
 node scripts/generate-daily-brief.mjs
 node scripts/validate-article.mjs --latest
 python scripts/generate-daily-ogp.py
+node scripts/generate-archive-page.mjs
+node scripts/generate-home-page.mjs
 node scripts/generate-sitemap.mjs
 node scripts/generate-social-post.mjs
 ```
@@ -49,6 +51,8 @@ node scripts/validate-article.mjs --latest
 - `assets/og/YYYY-MM-DD.png`: OGP画像
 - `data/social-posts/YYYY-MM-DD.txt`: X投稿文案
 - `data/daily-articles.js`: 記事一覧データ
+- `index.html`: 最新記事へ移動するトップページ
+- `archive.html`: 過去記事一覧ページ
 - `sitemap.xml`: GitHub Pages 用 sitemap
 
 ## Data Sources

@@ -14,7 +14,11 @@ export async function generateSitemap() {
   const urls = [
     {
       loc: siteUrl(),
-      lastmod: ""
+      lastmod: articles[0]?.date || ""
+    },
+    {
+      loc: siteUrl("archive.html"),
+      lastmod: articles[0]?.date || ""
     },
     ...articles.map((article) => ({
       loc: article.absoluteUrl,

@@ -212,9 +212,9 @@ function renderArticle(snapshot) {
         <a href="../../index.html" class="home-link">${escapeHtml(SITE_NAME)}</a>
       </div>
       <nav aria-label="Primary">
-        <a href="../../index.html#latest">Latest</a>
-        <a href="../../index.html#archive">Archive</a>
-        <a href="../../index.html#policy">Policy</a>
+        <a href="../../index.html">Latest</a>
+        <a href="../../archive.html">Archive</a>
+        <a href="#policy">Policy</a>
       </nav>
     </header>
 
@@ -264,7 +264,7 @@ function renderArticle(snapshot) {
           ${relatedNewsList(snapshot.relatedNews)}
         </section>
 
-        <section class="brief-section">
+        <section id="policy" class="brief-section">
           <p class="section-label">Policy / Disclosure</p>
           <h2>投資助言ではありません</h2>
           <div class="disclosure-box">
@@ -279,6 +279,7 @@ function renderArticle(snapshot) {
     <footer>
       <p>${escapeHtml(SITE_NAME)}</p>
       <a href="${escapeHtml(SITE_BASE_URL)}">Top</a>
+      <a href="../../archive.html">Archive</a>
     </footer>
   </body>
 </html>

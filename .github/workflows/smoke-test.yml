@@ -35,7 +35,9 @@ jobs:
           node --check scripts/fetch-events.mjs
           node --check scripts/fetch-market-data.mjs
           node --check scripts/fetch-news.mjs
+          node --check scripts/generate-archive-page.mjs
           node --check scripts/generate-daily-brief.mjs
+          node --check scripts/generate-home-page.mjs
           node --check scripts/generate-sitemap.mjs
           node --check scripts/generate-social-post.mjs
           node --check scripts/load-events.mjs
@@ -51,6 +53,8 @@ jobs:
         run: |
           node scripts/generate-daily-brief.mjs
           node scripts/validate-article.mjs --latest
+          node scripts/generate-archive-page.mjs
+          node scripts/generate-home-page.mjs
           node -e "const r=require('./data/latest-run.json'); if (r.status !== 'PASS' || !r.published) throw new Error(JSON.stringify(r));"
 
       - name: Unsafe dummy publication is stopped

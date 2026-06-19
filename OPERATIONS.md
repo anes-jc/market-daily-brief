@@ -72,6 +72,8 @@
 - `data/social-posts/YYYY-MM-DD.txt`: SNS投稿文案
 - `assets/og/YYYY-MM-DD.png`: OGP画像
 - `data/latest-run.json`: 最新実行状態
+- `index.html`: 最新記事へ移動するトップページ
+- `archive.html`: 過去記事一覧ページ
 
 ## 復旧手順
 
@@ -107,6 +109,8 @@ Actions の `Publish Daily Brief` から `workflow_dispatch` を使う。
 node scripts/generate-daily-brief.mjs
 node scripts/validate-article.mjs --latest
 python scripts/generate-daily-ogp.py
+node scripts/generate-archive-page.mjs
+node scripts/generate-home-page.mjs
 node scripts/generate-sitemap.mjs
 node scripts/generate-social-post.mjs
 ```
