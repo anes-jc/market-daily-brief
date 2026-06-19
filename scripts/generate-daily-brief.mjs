@@ -127,17 +127,30 @@ function buildDummySnapshot(date, demoMode) {
 function metricCard(metric) {
   const value = metric.value || "データなし";
   const change = [metric.change, metric.pct].filter(Boolean).join(" / ") || "変化率なし";
+  const source = metric.source || metric.note || "";
   return `
           <div class="metric">
             <b>${escapeHtml(metric.label)}</b>
             <span>${escapeHtml(value)}</span>
             <small class="metric-change">${escapeHtml(change)}</small>
-            <small class="metric-note">${escapeHtml(metric.note)}</small>
+            <small class="metric-note">${escapeHtml(source)}</small>
           </div>`;
 }
 
 function bulletList(items) {
-  return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+  return `<ul class="brief-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+}
+
+function metricSourceDetails(metrics) {
+  const rows = metrics
+    .filter((metric) => metric.note || metric.source)
+    .map((metric) => `<li><b>${escapeHtml(metric.label)}</b><span>${escapeHtml(metric.note || metric.source)}</span></li>`)
+    .join("");
+  if (!rows) return "";
+  return `<details class="source-details">
+            <summary>データ出典・注記</summary>
+            <ul>${rows}</ul>
+          </details>`;
 }
 
 function externalLink(url, label) {
@@ -146,7 +159,7 @@ function externalLink(url, label) {
 
 function eventList(events) {
   if (!events.length) return "<p>本日のイベントデータは取得できていません。</p>";
-  return `<ul>${events
+  return `<ul class="brief-list">${events
     .map((event) => {
       const sourceLabel = event.source && event.source !== event.sourceKey ? event.source : "";
       const source = sourceLabel
@@ -158,7 +171,7 @@ function eventList(events) {
 }
 
 function relatedNewsList(news) {
-  return `<ul>${news.map(relatedNewsItem).join("")}</ul>`;
+  return `<ul class="brief-list news-list">${news.map(relatedNewsItem).join("")}</ul>`;
 }
 
 function relatedNewsItem(item) {
@@ -185,7 +198,7 @@ function jsonScript(data) {
   return JSON.stringify(data).replaceAll("<", "\\u003c");
 }
 
-function renderArticle(snapshot) {
+export function renderArticle(snapshot) {
   const title = `${SITE_NAME} ${snapshot.dateLabel}版`;
   const description = `${snapshot.dateLabel}の株式・為替・金利・イベントを整理した朝の市場メモです。`;
   const articleUrl = siteUrl(`articles/daily/${snapshot.date}.html`);
@@ -273,6 +286,7 @@ function renderArticle(snapshot) {
           <div class="metric-grid">
             ${snapshot.metrics.map(metricCard).join("")}
           </div>
+          ${metricSourceDetails(snapshot.metrics)}
         </section>
 
         <section class="brief-section">
