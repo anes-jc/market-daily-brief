@@ -7,6 +7,7 @@ import {
   rootPath,
   writeJsonFile
 } from "./site-utils.mjs";
+import { loadMarketEvents } from "./load-events.mjs";
 
 const SOURCE_CONFIG_PATH = rootPath("config", "market-data-sources.json");
 const YAHOO_CHART_BASE = "https://query1.finance.yahoo.com/v8/finance/chart";
@@ -138,7 +139,7 @@ function metricByKey(metrics, key) {
   return metrics.find((metric) => metric.key === key) || {};
 }
 
-function buildTextSnapshot({ date, metrics, missingFields, config, errors }) {
+async function buildTextSnapshot({ date, metrics, missingFields, config, errors }) {
   const nikkei = metricByKey(metrics, "nikkei");
   const topix = metricByKey(metrics, "topix");
   const sp500 = metricByKey(metrics, "sp500");
@@ -192,10 +193,7 @@ function buildTextSnapshot({ date, metrics, missingFields, config, errors }) {
         `WTI原油は${wti.value || "データなし"}、金は${gold.value || "データなし"}です。`
       ]
     },
-    events: [
-      { region: "日本", time: "午前", title: "国内統計・日銀関連発表の確認", note: "イベントカレンダー連携前の確認枠です。" },
-      { region: "米国", time: "夜", title: "米国経済指標・FRB関連発言の確認", note: "イベントカレンダー連携前の確認枠です。" }
-    ],
+    events: await loadMarketEvents(date),
     relatedNews: [
       { category: "日本株", text: "ニュース取得は未接続です。出典・URLのみを扱う形で追加予定です。" },
       { category: "米国株", text: "ニュース取得は未接続です。本文転載は行いません。" },

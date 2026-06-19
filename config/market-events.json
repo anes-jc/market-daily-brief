@@ -1,0 +1,55 @@
+{
+  "timezone": "Asia/Tokyo",
+  "sourceMode": "manual-config",
+  "note": "初期版は手動管理のイベント確認枠。公式カレンダー連携前のため、記事では予定を断定しすぎず確認項目として表示する。",
+  "datedEvents": [
+    {
+      "date": "2026-06-19",
+      "region": "日本",
+      "time": "午前",
+      "title": "国内統計・日銀関連発表の確認",
+      "category": "macro",
+      "importance": "medium",
+      "note": "手動イベントカレンダーの確認枠です。公表予定は公式発表で確認してください。"
+    },
+    {
+      "date": "2026-06-19",
+      "region": "米国",
+      "time": "夜",
+      "title": "米国経済指標・FRB関連発言の確認",
+      "category": "macro",
+      "importance": "medium",
+      "note": "手動イベントカレンダーの確認枠です。公表予定は公式発表で確認してください。"
+    }
+  ],
+  "recurringEvents": [
+    {
+      "days": ["weekday"],
+      "region": "日本",
+      "time": "午前",
+      "title": "国内統計・政策関連発表の確認",
+      "category": "macro",
+      "importance": "medium",
+      "note": "固定確認枠です。個別イベントは日付指定の datedEvents に追加します。"
+    },
+    {
+      "days": ["weekday"],
+      "region": "米国",
+      "time": "夜",
+      "title": "米国経済指標・金融政策関連発言の確認",
+      "category": "macro",
+      "importance": "medium",
+      "note": "固定確認枠です。個別イベントは日付指定の datedEvents に追加します。"
+    }
+  ],
+  "fallbackEvents": [
+    {
+      "region": "全体",
+      "time": "終日",
+      "title": "主要経済イベントの確認",
+      "category": "macro",
+      "importance": "low",
+      "note": "この日の個別イベントは未登録です。公式カレンダーを確認してください。"
+    }
+  ]
+}

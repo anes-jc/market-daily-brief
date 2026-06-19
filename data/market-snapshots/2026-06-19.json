@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
   "dateLabel": "2026年6月19日",
-  "generatedAt": "2026-06-19T03:46:45.621Z",
+  "generatedAt": "2026-06-19T04:22:41.723Z",
   "sourceMode": "live-yahoo-finance",
   "demoMode": "safe",
   "dataQuality": {
@@ -15,9 +15,9 @@
     {
       "key": "nikkei",
       "label": "日経平均",
-      "value": "71,045.84",
-      "change": "-7.65",
-      "pct": "-0.01%",
+      "value": "70,972.45",
+      "change": "-81.04",
+      "pct": "-0.11%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EN225",
@@ -25,10 +25,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 71045.84375,
+        "latestClose": 70972.453125,
         "previousClose": 71053.4921875,
-        "change": -7.6484375,
-        "pct": -0.010764337212049856,
+        "change": -81.0390625,
+        "pct": -0.11405359540407882,
         "currency": "JPY",
         "exchangeName": "OSA",
         "instrumentType": "INDEX"
@@ -37,9 +37,9 @@
     {
       "key": "topix",
       "label": "TOPIX連動ETF(1306)",
-      "value": "429.10",
-      "change": "-3.20",
-      "pct": "-0.74%",
+      "value": "428.10",
+      "change": "-4.20",
+      "pct": "-0.97%",
       "note": "2026-06-19終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/1306.T",
@@ -47,10 +47,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 429.1000061035156,
+        "latestClose": 428.1000061035156,
         "previousClose": 432.29998779296875,
-        "change": -3.199981689453125,
-        "pct": -0.7402224797160107,
+        "change": -4.199981689453125,
+        "pct": -0.9715433282557768,
         "currency": "JPY",
         "exchangeName": "JPX",
         "instrumentType": "ETF"
@@ -91,10 +91,10 @@
       "latestDate": "2026-06-18",
       "previousDate": "2026-06-17",
       "raw": {
-        "latestClose": 26517.931640625,
+        "latestClose": 26517.9296875,
         "previousClose": 26021.66015625,
-        "change": 496.271484375,
-        "pct": 1.9071476661945541,
+        "change": 496.26953125,
+        "pct": 1.907140160428249,
         "currency": "USD",
         "exchangeName": "NIM",
         "instrumentType": "INDEX"
@@ -103,9 +103,9 @@
     {
       "key": "usdjpy",
       "label": "ドル円",
-      "value": "161.27",
-      "change": "+0.67",
-      "pct": "+0.41%",
+      "value": "161.38",
+      "change": "+0.78",
+      "pct": "+0.49%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/USDJPY%3DX",
@@ -113,10 +113,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-17",
       "raw": {
-        "latestClose": 161.26600646972656,
+        "latestClose": 161.38499450683594,
         "previousClose": 160.60000610351562,
-        "change": 0.6660003662109375,
-        "pct": 0.41469510641342266,
+        "change": 0.7849884033203125,
+        "pct": 0.48878479046529044,
         "currency": "JPY",
         "exchangeName": "CCY",
         "instrumentType": "CURRENCY"
@@ -147,9 +147,9 @@
     {
       "key": "wti",
       "label": "WTI原油",
-      "value": "75.32",
-      "change": "-1.28",
-      "pct": "-1.67%",
+      "value": "75.23",
+      "change": "-1.37",
+      "pct": "-1.79%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
@@ -157,10 +157,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 75.31999969482422,
+        "latestClose": 75.2300033569336,
         "previousClose": 76.5999984741211,
-        "change": -1.279998779296875,
-        "pct": -1.6710167164419931,
+        "change": -1.3699951171875,
+        "pct": -1.7885054105455964,
         "currency": "USD",
         "exchangeName": "NYM",
         "instrumentType": "FUTURE"
@@ -169,9 +169,9 @@
     {
       "key": "gold",
       "label": "金",
-      "value": "4,181.90",
-      "change": "-42.20",
-      "pct": "-1.00%",
+      "value": "4,163.20",
+      "change": "-60.90",
+      "pct": "-1.44%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
@@ -179,10 +179,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 4181.89990234375,
+        "latestClose": 4163.2001953125,
         "previousClose": 4224.10009765625,
-        "change": -42.2001953125,
-        "pct": -0.9990339797088346,
+        "change": -60.89990234375,
+        "pct": -1.4417248866223702,
         "currency": "USD",
         "exchangeName": "CMX",
         "instrumentType": "FUTURE"
@@ -191,7 +191,7 @@
   ],
   "japan": {
     "indices": [
-      "日経平均は71,045.84（-7.65 / -0.01%）です。",
+      "日経平均は70,972.45（-81.04 / -0.11%）です。",
       "TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF(1306)を参考値として表示します。"
     ],
     "sectors": [
@@ -215,9 +215,9 @@
   },
   "fxRatesAndCommodities": {
     "items": [
-      "ドル円は161.27（+0.67 / +0.41%）です。",
+      "ドル円は161.38（+0.78 / +0.49%）です。",
       "米10年金利は4.45%（-0.04pt）です。",
-      "WTI原油は75.32、金は4,181.90です。"
+      "WTI原油は75.23、金は4,163.20です。"
     ]
   },
   "events": [
@@ -225,13 +225,21 @@
       "region": "日本",
       "time": "午前",
       "title": "国内統計・日銀関連発表の確認",
-      "note": "イベントカレンダー連携前の確認枠です。"
+      "category": "macro",
+      "importance": "medium",
+      "note": "手動イベントカレンダーの確認枠です。公表予定は公式発表で確認してください。",
+      "date": "2026-06-19",
+      "source": "manual-config"
     },
     {
       "region": "米国",
       "time": "夜",
       "title": "米国経済指標・FRB関連発言の確認",
-      "note": "イベントカレンダー連携前の確認枠です。"
+      "category": "macro",
+      "importance": "medium",
+      "note": "手動イベントカレンダーの確認枠です。公表予定は公式発表で確認してください。",
+      "date": "2026-06-19",
+      "source": "manual-config"
     }
   ],
   "relatedNews": [
