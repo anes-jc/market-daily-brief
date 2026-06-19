@@ -1,0 +1,116 @@
+name: Publish Daily Brief
+
+on:
+  workflow_dispatch:
+    inputs:
+      brief_date:
+        description: "YYYY-MM-DD. Empty uses today's date in JST."
+        required: false
+        type: string
+      demo_mode:
+        description: "Dummy data mode for MVP validation."
+        required: true
+        default: safe
+        type: choice
+        options:
+          - safe
+          - unsafe
+          - no-data
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-daily-brief-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install OGP dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install --upgrade pip
+          python -m pip install pillow
+
+      - name: Generate candidate article
+        env:
+          BRIEF_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.brief_date || '' }}
+          BRIEF_DEMO_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.demo_mode || 'safe' }}
+        run: node scripts/generate-daily-brief.mjs
+
+      - name: Validate article and decide publication
+        run: node scripts/validate-article.mjs --latest
+
+      - name: Generate OGP image
+        run: python scripts/generate-daily-ogp.py
+
+      - name: Generate sitemap
+        run: node scripts/generate-sitemap.mjs
+
+      - name: Generate social post text
+        run: node scripts/generate-social-post.mjs
+
+      - name: Create issue when publication is stopped
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WORKFLOW_CONCLUSION: ${{ job.status }}
+        run: node scripts/create-failure-issue.mjs
+
+      - name: Commit generated files
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github README.md index.html .nojekyll assets articles data drafts prompts rules scripts sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update Market Daily Brief"
+            git push
+          fi
+
+      - name: Build Pages artifact
+        run: |
+          rm -rf _site
+          mkdir -p _site/assets _site/articles _site/data
+          cp index.html sitemap.xml .nojekyll _site/
+          cp -R assets/site.css assets/og _site/assets/
+          cp -R articles/daily _site/articles/
+          cp data/daily-articles.js _site/data/
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

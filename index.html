@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Market Daily Brief</title>
+    <meta name="description" content="朝に読む、株式・為替・金利・イベントの市場メモ。">
+    <meta property="og:title" content="Market Daily Brief">
+    <meta property="og:description" content="朝に読む、株式・為替・金利・イベントの市場メモ。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anes-jc.github.io/market-daily-brief/">
+    <meta property="og:image" content="https://anes-jc.github.io/market-daily-brief/assets/og/latest.png">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="data/daily-articles.js" defer></script>
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        const articles = window.MARKET_DAILY_ARTICLES || [];
+        const latest = document.querySelector("[data-latest-article]");
+        const list = document.querySelector("[data-article-list]");
+
+        if (!articles.length) {
+          latest.innerHTML = '<p class="empty-state">まだ公開記事はありません。GitHub Actions の手動実行後に、ここへ最新記事が表示されます。</p>';
+          list.innerHTML = '<li class="empty-state">公開記事の生成待ちです。</li>';
+          return;
+        }
+
+        const first = articles[0];
+        latest.innerHTML = `
+          <a class="latest-link" href="${first.url}">
+            <img src="${first.ogImage}" alt="" loading="lazy">
+            <span>
+              <strong>${first.title}</strong>
+              <small>${first.dateLabel} 公開</small>
+              <em>${first.summary}</em>
+            </span>
+          </a>
+        `;
+
+        list.innerHTML = articles.map((article) => `
+          <li>
+            <a href="${article.url}">
+              <span>${article.title}</span>
+              <small>${article.dateLabel}</small>
+            </a>
+          </li>
+        `).join("");
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="site-kicker">Morning Market Memo</p>
+        <h1>Market Daily Brief</h1>
+        <p class="site-copy">朝に読む、株式・為替・金利・イベントの市場メモ。</p>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#latest">Latest</a>
+        <a href="#archive">Archive</a>
+        <a href="#policy">Policy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro-band" aria-label="編集方針">
+        <div>
+          <p>推奨しない。予想しない。煽らない。公開情報を毎朝整理する。</p>
+        </div>
+      </section>
+
+      <section id="latest" class="section-grid">
+        <div>
+          <p class="section-label">Latest Brief</p>
+          <h2>最新の市場メモ</h2>
+        </div>
+        <div class="latest-panel" data-latest-article></div>
+      </section>
+
+      <section id="archive" class="section-grid">
+        <div>
+          <p class="section-label">Archive</p>
+          <h2>記事一覧</h2>
+        </div>
+        <ol class="article-list" data-article-list></ol>
+      </section>
+
+      <section id="policy" class="policy-section">
+        <p class="section-label">Policy / Disclosure</p>
+        <h2>投資助言ではありません</h2>
+        <p>
+          当サイトは、株式・為替・金利・経済イベントに関する公開情報を整理することを目的としています。
+          個別銘柄の推奨、売買の勧誘、投資判断の助言、株価予想を目的とするものではありません。
+          最終的な投資判断は、利用者ご自身の責任で行ってください。
+        </p>
+        <p>
+          当サイトは一部アフィリエイトリンクを含む場合があります。掲載の有無や報酬条件は、記事本文の市場整理には影響しません。
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Market Daily Brief</p>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </footer>
+  </body>
+</html>

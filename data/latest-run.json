@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-19",
+  "status": "PASS",
+  "reasonCode": "OK",
+  "generatedAt": "2026-06-19T00:33:32.885Z",
+  "checkedAt": "2026-06-19T00:36:45.102Z",
+  "published": true,
+  "candidatePath": "",
+  "snapshotPath": "data/market-snapshots/2026-06-19.json",
+  "articlePath": "articles/daily/2026-06-19.html",
+  "draftPath": "",
+  "proofreadReportPath": "data/proofread-reports/2026-06-19.json",
+  "articleCount": 1,
+  "findings": []
+}
