@@ -43,6 +43,7 @@ node scripts/validate-article.mjs --latest
 - `articles/daily/YYYY-MM-DD.html`: PASS の記事
 - `drafts/YYYY-MM-DD.html`: WARN / FAIL / NO_DATA の記事候補
 - `data/market-snapshots/YYYY-MM-DD.json`: ダミー市場スナップショット
+- `data/news-digests/YYYY-MM-DD.json`: RSS見出しリンク集
 - `data/proofread-reports/YYYY-MM-DD.json`: ダミー校正レポート
 - `assets/og/YYYY-MM-DD.png`: OGP画像
 - `data/social-posts/YYYY-MM-DD.txt`: X投稿文案
@@ -51,11 +52,13 @@ node scripts/validate-article.mjs --latest
 
 ## Data Sources
 
-実データ取得の設定は `config/market-data-sources.json` にあります。イベントカレンダーの設定は `config/market-events.json` にあります。詳細な方針は `data-sources.md` を参照してください。
+実データ取得の設定は `config/market-data-sources.json` にあります。イベントカレンダーの設定は `config/market-events.json`、ニュースRSSの設定は `config/news-sources.json` にあります。詳細な方針は `data-sources.md` を参照してください。
 
 現時点では、日経平均、S&P 500、NASDAQ、ドル円、米10年金利、WTI原油、金を公開チャートデータから取得します。TOPIX本指数は安定取得元が未確定のため、当面は TOPIX連動ETF `1306.T` を参考値として明示します。
 
 イベントカレンダーは初期版として固定JSONから読み込みます。日付指定イベントがあればそれを優先し、未登録日は平日/週末の確認枠を表示します。
+
+関連ニュースはRSS/Atomから見出し、URL、出典、公開時刻だけを取得します。本文取得、本文転載、AI要約は行いません。
 
 ## Policy
 

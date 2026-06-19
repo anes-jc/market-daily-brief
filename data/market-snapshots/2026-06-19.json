@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
   "dateLabel": "2026年6月19日",
-  "generatedAt": "2026-06-19T04:22:41.723Z",
+  "generatedAt": "2026-06-19T05:41:56.887Z",
   "sourceMode": "live-yahoo-finance",
   "demoMode": "safe",
   "dataQuality": {
@@ -15,9 +15,9 @@
     {
       "key": "nikkei",
       "label": "日経平均",
-      "value": "70,972.45",
-      "change": "-81.04",
-      "pct": "-0.11%",
+      "value": "70,710.40",
+      "change": "-343.09",
+      "pct": "-0.48%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EN225",
@@ -25,10 +25,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 70972.453125,
+        "latestClose": 70710.3984375,
         "previousClose": 71053.4921875,
-        "change": -81.0390625,
-        "pct": -0.11405359540407882,
+        "change": -343.09375,
+        "pct": -0.4828668365724019,
         "currency": "JPY",
         "exchangeName": "OSA",
         "instrumentType": "INDEX"
@@ -37,9 +37,9 @@
     {
       "key": "topix",
       "label": "TOPIX連動ETF(1306)",
-      "value": "428.10",
-      "change": "-4.20",
-      "pct": "-0.97%",
+      "value": "428.20",
+      "change": "-4.10",
+      "pct": "-0.95%",
       "note": "2026-06-19終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/1306.T",
@@ -47,10 +47,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 428.1000061035156,
+        "latestClose": 428.20001220703125,
         "previousClose": 432.29998779296875,
-        "change": -4.199981689453125,
-        "pct": -0.9715433282557768,
+        "change": -4.0999755859375,
+        "pct": -0.9484098315313867,
         "currency": "JPY",
         "exchangeName": "JPX",
         "instrumentType": "ETF"
@@ -103,8 +103,8 @@
     {
       "key": "usdjpy",
       "label": "ドル円",
-      "value": "161.38",
-      "change": "+0.78",
+      "value": "161.39",
+      "change": "+0.79",
       "pct": "+0.49%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
@@ -113,10 +113,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-17",
       "raw": {
-        "latestClose": 161.38499450683594,
+        "latestClose": 161.3939971923828,
         "previousClose": 160.60000610351562,
-        "change": 0.7849884033203125,
-        "pct": 0.48878479046529044,
+        "change": 0.7939910888671875,
+        "pct": 0.494390447504352,
         "currency": "JPY",
         "exchangeName": "CCY",
         "instrumentType": "CURRENCY"
@@ -125,20 +125,20 @@
     {
       "key": "us10y",
       "label": "米10年金利",
-      "value": "4.45%",
-      "change": "-0.04pt",
+      "value": "4.49%",
+      "change": "+0.02pt",
       "pct": "",
-      "note": "2026-06-18終値 / Yahoo Finance / 米10年国債利回りの参考値。",
+      "note": "2026-06-12終値 / Yahoo Finance / 米10年国債利回りの参考値。",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5ETNX",
       "symbol": "^TNX",
-      "latestDate": "2026-06-18",
-      "previousDate": "2026-06-12",
+      "latestDate": "2026-06-12",
+      "previousDate": "2026-06-11",
       "raw": {
-        "latestClose": 4.450999736785889,
-        "previousClose": 4.486999988555908,
-        "change": -0.03600025177001953,
-        "pct": -0.8023234201434847,
+        "latestClose": 4.486999988555908,
+        "previousClose": 4.4629998207092285,
+        "change": 0.024000167846679688,
+        "pct": 0.5377586558555082,
         "currency": "USD",
         "exchangeName": "CGI",
         "instrumentType": "INDEX"
@@ -147,9 +147,9 @@
     {
       "key": "wti",
       "label": "WTI原油",
-      "value": "75.23",
-      "change": "-1.37",
-      "pct": "-1.79%",
+      "value": "76.02",
+      "change": "-0.58",
+      "pct": "-0.76%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
@@ -157,10 +157,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 75.2300033569336,
+        "latestClose": 76.0199966430664,
         "previousClose": 76.5999984741211,
-        "change": -1.3699951171875,
-        "pct": -1.7885054105455964,
+        "change": -0.5800018310546875,
+        "pct": -0.7571825621519275,
         "currency": "USD",
         "exchangeName": "NYM",
         "instrumentType": "FUTURE"
@@ -169,9 +169,9 @@
     {
       "key": "gold",
       "label": "金",
-      "value": "4,163.20",
-      "change": "-60.90",
-      "pct": "-1.44%",
+      "value": "4,156.60",
+      "change": "-67.50",
+      "pct": "-1.60%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
@@ -179,10 +179,10 @@
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "raw": {
-        "latestClose": 4163.2001953125,
+        "latestClose": 4156.60009765625,
         "previousClose": 4224.10009765625,
-        "change": -60.89990234375,
-        "pct": -1.4417248866223702,
+        "change": -67.5,
+        "pct": -1.5979734958802825,
         "currency": "USD",
         "exchangeName": "CMX",
         "instrumentType": "FUTURE"
@@ -191,7 +191,7 @@
   ],
   "japan": {
     "indices": [
-      "日経平均は70,972.45（-81.04 / -0.11%）です。",
+      "日経平均は70,710.40（-343.09 / -0.48%）です。",
       "TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF(1306)を参考値として表示します。"
     ],
     "sectors": [
@@ -208,16 +208,16 @@
       "NASDAQは26,517.93（+496.27 / +1.91%）です。"
     ],
     "semiconductors": "半導体関連の個別銘柄データは未接続です。",
-    "rates": "米10年金利は4.45%（-0.04pt）です。",
+    "rates": "米10年金利は4.49%（+0.02pt）です。",
     "news": [
       "ニュース本文の自動取得は未接続です。見出し・URLのみを扱う設計で次フェーズに進めます。"
     ]
   },
   "fxRatesAndCommodities": {
     "items": [
-      "ドル円は161.38（+0.78 / +0.49%）です。",
-      "米10年金利は4.45%（-0.04pt）です。",
-      "WTI原油は75.23、金は4,163.20です。"
+      "ドル円は161.39（+0.79 / +0.49%）です。",
+      "米10年金利は4.49%（+0.02pt）です。",
+      "WTI原油は76.02、金は4,156.60です。"
     ]
   },
   "events": [
@@ -244,22 +244,118 @@
   ],
   "relatedNews": [
     {
-      "category": "日本株",
-      "text": "ニュース取得は未接続です。出典・URLのみを扱う形で追加予定です。"
+      "category": "日本・経済",
+      "text": "きょうのおはBiz 6月19日(金) ホルムズ海峡 安全航行は可能か",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html",
+      "source": "NHK",
+      "publishedAt": "2026-06-19T05:35:00.000Z"
     },
     {
-      "category": "米国株",
-      "text": "ニュース取得は未接続です。本文転載は行いません。"
+      "category": "日本・経済",
+      "text": "政府 塗料用シンナーを直接販売する仕組み導入 今月23日から",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html",
+      "source": "NHK",
+      "publishedAt": "2026-06-19T05:06:50.000Z"
     },
     {
-      "category": "為替・金利",
-      "text": "市場データと公式発表の確認枠を優先します。"
+      "category": "日本・経済",
+      "text": "“中国・台湾産の一部鋼材が不当に安く輸入され損害” 仮決定",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html",
+      "source": "NHK",
+      "publishedAt": "2026-06-19T04:31:14.000Z"
     },
     {
-      "category": "マクロ",
-      "text": "FREDなど公式性の高いデータ源は次候補として整理済みです。"
+      "category": "日本・経済",
+      "text": "郵便ネットワーク維持のため日本郵便に年650億円交付へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html",
+      "source": "NHK",
+      "publishedAt": "2026-06-19T04:21:56.000Z"
+    },
+    {
+      "category": "米金融政策",
+      "text": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "source": "Federal Reserve",
+      "publishedAt": "2026-06-17T18:00:00.000Z"
+    },
+    {
+      "category": "米金融政策",
+      "text": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+      "source": "Federal Reserve",
+      "publishedAt": "2026-06-17T18:00:00.000Z"
     }
   ],
+  "newsDigest": {
+    "date": "2026-06-19",
+    "generatedAt": "2026-06-19T05:41:56.887Z",
+    "sourceMode": "rss-headlines",
+    "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+    "items": [
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "きょうのおはBiz 6月19日(金) ホルムズ海峡 安全航行は可能か",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html",
+        "publishedAt": "2026-06-19T05:35:00.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "政府 塗料用シンナーを直接販売する仕組み導入 今月23日から",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html",
+        "publishedAt": "2026-06-19T05:06:50.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "“中国・台湾産の一部鋼材が不当に安く輸入され損害” 仮決定",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html",
+        "publishedAt": "2026-06-19T04:31:14.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "郵便ネットワーク維持のため日本郵便に年650億円交付へ",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html",
+        "publishedAt": "2026-06-19T04:21:56.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html"
+      },
+      {
+        "category": "米金融政策",
+        "source": "Federal Reserve",
+        "sourceKey": "federal-reserve-monetary",
+        "title": "Federal Reserve issues FOMC statement",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+        "publishedAt": "2026-06-17T18:00:00.000Z",
+        "language": "en",
+        "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+      },
+      {
+        "category": "米金融政策",
+        "source": "Federal Reserve",
+        "sourceKey": "federal-reserve-monetary",
+        "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+        "publishedAt": "2026-06-17T18:00:00.000Z",
+        "language": "en",
+        "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
+      }
+    ],
+    "errors": [],
+    "skipped": []
+  },
   "sources": [
     {
       "key": "nikkei",
@@ -307,7 +403,7 @@
       "source": "Yahoo Finance",
       "symbol": "^TNX",
       "url": "https://finance.yahoo.com/quote/%5ETNX",
-      "latestDate": "2026-06-18"
+      "latestDate": "2026-06-12"
     },
     {
       "key": "wti",

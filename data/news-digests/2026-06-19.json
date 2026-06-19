@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-19",
+  "generatedAt": "2026-06-19T05:41:56.887Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "きょうのおはBiz 6月19日(金) ホルムズ海峡 安全航行は可能か",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html",
+      "publishedAt": "2026-06-19T05:35:00.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "政府 塗料用シンナーを直接販売する仕組み導入 今月23日から",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html",
+      "publishedAt": "2026-06-19T05:06:50.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "“中国・台湾産の一部鋼材が不当に安く輸入され損害” 仮決定",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html",
+      "publishedAt": "2026-06-19T04:31:14.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "郵便ネットワーク維持のため日本郵便に年650億円交付へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html",
+      "publishedAt": "2026-06-19T04:21:56.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "publishedAt": "2026-06-17T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+      "publishedAt": "2026-06-17T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}

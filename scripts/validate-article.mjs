@@ -15,7 +15,7 @@ import {
 } from "./site-utils.mjs";
 
 function findSnippet(text, phrase) {
-  const index = text.indexOf(phrase);
+  const index = text.toLocaleLowerCase("en-US").indexOf(String(phrase).toLocaleLowerCase("en-US"));
   if (index < 0) return "";
   const start = Math.max(0, index - 32);
   const end = Math.min(text.length, index + phrase.length + 32);
@@ -44,8 +44,9 @@ function validateRequiredData(snapshot) {
 export async function validateArticle({ html, snapshot }) {
   const bannedPhrases = await readJsonFile(rootPath("rules", "banned-phrases.json"), []);
   const text = stripHtml(html);
+  const normalizedText = text.toLocaleLowerCase("en-US");
   const bannedHits = bannedPhrases
-    .filter((phrase) => text.includes(phrase))
+    .filter((phrase) => normalizedText.includes(String(phrase).toLocaleLowerCase("en-US")))
     .map((phrase) => ({
       phrase,
       severity: "FAIL",

@@ -147,7 +147,29 @@ function eventList(events) {
 }
 
 function relatedNewsList(news) {
-  return `<ul>${news.map((item) => `<li>${escapeHtml(item.category)}: ${escapeHtml(item.text)}</li>`).join("")}</ul>`;
+  return `<ul>${news.map(relatedNewsItem).join("")}</ul>`;
+}
+
+function relatedNewsItem(item) {
+  const meta = [item.source, formatPublishedAt(item.publishedAt)].filter(Boolean).join(" / ");
+  const title = item.url
+    ? `<a href="${escapeHtml(item.url)}" rel="noopener noreferrer" target="_blank">${escapeHtml(item.text)}</a>`
+    : escapeHtml(item.text);
+  const suffix = meta ? ` <small>${escapeHtml(meta)}</small>` : "";
+  return `<li>${escapeHtml(item.category)}: ${title}${suffix}</li>`;
+}
+
+function formatPublishedAt(value) {
+  if (!value) return "";
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return "";
+  return new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    month: "numeric",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(parsed);
 }
 
 function renderArticle(snapshot) {
@@ -263,6 +285,9 @@ export async function generateDailyBrief() {
   const html = renderArticle(snapshot);
 
   await writeJsonFile(paths.snapshot, snapshot);
+  if (snapshot.newsDigest) {
+    await writeJsonFile(paths.newsDigest, snapshot.newsDigest);
+  }
   await writeTextFile(paths.draftHtml, html);
   await writeJsonFile(LATEST_RUN_PATH, {
     date,
@@ -272,6 +297,7 @@ export async function generateDailyBrief() {
     generatedAt: snapshot.generatedAt,
     candidatePath: relativeFromRoot(paths.draftHtml),
     snapshotPath: relativeFromRoot(paths.snapshot),
+    newsDigestPath: snapshot.newsDigest ? relativeFromRoot(paths.newsDigest) : "",
     articlePath: relativeFromRoot(paths.publicHtml),
     proofreadReportPath: relativeFromRoot(paths.proofread)
   });

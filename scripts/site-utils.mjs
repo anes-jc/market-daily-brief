@@ -152,6 +152,7 @@ export function articlePaths(date) {
     publicHtml: rootPath("articles", "daily", `${date}.html`),
     draftHtml: rootPath("drafts", `${date}.html`),
     snapshot: rootPath("data", "market-snapshots", `${date}.json`),
+    newsDigest: rootPath("data", "news-digests", `${date}.json`),
     proofread: rootPath("data", "proofread-reports", `${date}.json`),
     ogImage: rootPath("assets", "og", `${date}.png`),
     socialPost: rootPath("data", "social-posts", `${date}.txt`)

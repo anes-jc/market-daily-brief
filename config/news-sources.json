@@ -1,0 +1,32 @@
+{
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "maxItemsTotal": 8,
+  "maxAgeHours": 168,
+  "sources": [
+    {
+      "key": "nhk-economy",
+      "source": "NHK",
+      "category": "日本・経済",
+      "url": "https://www3.nhk.or.jp/rss/news/cat5.xml",
+      "maxItems": 4,
+      "language": "ja"
+    },
+    {
+      "key": "federal-reserve-monetary",
+      "source": "Federal Reserve",
+      "category": "米金融政策",
+      "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+      "maxItems": 3,
+      "language": "en"
+    },
+    {
+      "key": "federal-reserve-speeches",
+      "source": "Federal Reserve",
+      "category": "米金融政策",
+      "url": "https://www.federalreserve.gov/feeds/speeches.xml",
+      "maxItems": 2,
+      "language": "en"
+    }
+  ]
+}

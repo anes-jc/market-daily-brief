@@ -8,6 +8,7 @@ import {
   writeJsonFile
 } from "./site-utils.mjs";
 import { loadMarketEvents } from "./load-events.mjs";
+import { fetchNewsDigest } from "./fetch-news.mjs";
 
 const SOURCE_CONFIG_PATH = rootPath("config", "market-data-sources.json");
 const YAHOO_CHART_BASE = "https://query1.finance.yahoo.com/v8/finance/chart";
@@ -148,11 +149,27 @@ async function buildTextSnapshot({ date, metrics, missingFields, config, errors 
   const us10y = metricByKey(metrics, "us10y");
   const wti = metricByKey(metrics, "wti");
   const gold = metricByKey(metrics, "gold");
+  const newsDigest = await fetchNewsDigest(date);
 
   const hasRequiredData = missingFields.length === 0;
   const sourceNote = hasRequiredData
     ? "公開チャートデータから終値を取得しました。ニュース本文や予想データは取得していません。"
     : "必須データの一部が取得できなかったため、公開停止対象です。";
+
+  const relatedNews = newsDigest.items.length
+    ? newsDigest.items.map((item) => ({
+        category: item.category,
+        text: item.title,
+        url: item.url,
+        source: item.source,
+        publishedAt: item.publishedAt
+      }))
+    : [
+        { category: "日本株", text: "ニュース見出しは取得できませんでした。本文転載は行いません。" },
+        { category: "米国株", text: "ニュース見出しは取得できませんでした。出典・URLのみを扱う設計です。" },
+        { category: "為替・金利", text: "市場データと公式発表の確認枠を優先します。" },
+        { category: "マクロ", text: "RSS取得に失敗した場合も、主要市場データの整理を優先します。" }
+      ];
 
   return {
     date,
@@ -194,12 +211,8 @@ async function buildTextSnapshot({ date, metrics, missingFields, config, errors 
       ]
     },
     events: await loadMarketEvents(date),
-    relatedNews: [
-      { category: "日本株", text: "ニュース取得は未接続です。出典・URLのみを扱う形で追加予定です。" },
-      { category: "米国株", text: "ニュース取得は未接続です。本文転載は行いません。" },
-      { category: "為替・金利", text: "市場データと公式発表の確認枠を優先します。" },
-      { category: "マクロ", text: "FREDなど公式性の高いデータ源は次候補として整理済みです。" }
-    ],
+    relatedNews,
+    newsDigest,
     sources: metrics.map((metric) => ({
       key: metric.key,
       label: metric.label,
