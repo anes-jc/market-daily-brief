@@ -1,6 +1,9 @@
 name: Publish Daily Brief
 
 on:
+  schedule:
+    # 06:15 JST Monday-Friday = 21:15 UTC Sunday-Thursday.
+    - cron: "15 21 * * 0-4"
   workflow_dispatch:
     inputs:
       brief_date:
