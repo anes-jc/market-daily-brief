@@ -1,34 +1,37 @@
 {
   "date": "2026-06-19",
   "dateLabel": "2026年6月19日",
-  "generatedAt": "2026-06-19T05:41:56.887Z",
+  "generatedAt": "2026-06-19T06:28:32.809Z",
   "sourceMode": "live-yahoo-finance",
   "demoMode": "safe",
   "dataQuality": {
     "hasRequiredData": true,
     "missingFields": [],
+    "staleFields": [],
+    "maxDataAgeDays": 5,
     "note": "公開チャートデータから終値を取得しました。ニュース本文や予想データは取得していません。",
-    "provider": "Yahoo Finance chart endpoint",
+    "provider": "Public market data endpoints",
     "errors": []
   },
   "metrics": [
     {
       "key": "nikkei",
       "label": "日経平均",
-      "value": "70,710.40",
-      "change": "-343.09",
-      "pct": "-0.48%",
+      "value": "71,028.10",
+      "change": "-25.39",
+      "pct": "-0.04%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EN225",
       "symbol": "^N225",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 70710.3984375,
+        "latestClose": 71028.1015625,
         "previousClose": 71053.4921875,
-        "change": -343.09375,
-        "pct": -0.4828668365724019,
+        "change": -25.390625,
+        "pct": -0.03573452087759146,
         "currency": "JPY",
         "exchangeName": "OSA",
         "instrumentType": "INDEX"
@@ -37,20 +40,21 @@
     {
       "key": "topix",
       "label": "TOPIX連動ETF(1306)",
-      "value": "428.20",
-      "change": "-4.10",
-      "pct": "-0.95%",
+      "value": "429.30",
+      "change": "-3.00",
+      "pct": "-0.69%",
       "note": "2026-06-19終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/1306.T",
       "symbol": "1306.T",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 428.20001220703125,
+        "latestClose": 429.29998779296875,
         "previousClose": 432.29998779296875,
-        "change": -4.0999755859375,
-        "pct": -0.9484098315313867,
+        "change": -3,
+        "pct": -0.6939625456192979,
         "currency": "JPY",
         "exchangeName": "JPX",
         "instrumentType": "ETF"
@@ -68,6 +72,7 @@
       "symbol": "^GSPC",
       "latestDate": "2026-06-18",
       "previousDate": "2026-06-17",
+      "dataAgeDays": 1,
       "raw": {
         "latestClose": 7500.580078125,
         "previousClose": 7420.10009765625,
@@ -90,6 +95,7 @@
       "symbol": "^IXIC",
       "latestDate": "2026-06-18",
       "previousDate": "2026-06-17",
+      "dataAgeDays": 1,
       "raw": {
         "latestClose": 26517.9296875,
         "previousClose": 26021.66015625,
@@ -103,20 +109,21 @@
     {
       "key": "usdjpy",
       "label": "ドル円",
-      "value": "161.39",
-      "change": "+0.79",
-      "pct": "+0.49%",
+      "value": "161.34",
+      "change": "+0.74",
+      "pct": "+0.46%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/USDJPY%3DX",
       "symbol": "USDJPY=X",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-17",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 161.3939971923828,
+        "latestClose": 161.33799743652344,
         "previousClose": 160.60000610351562,
-        "change": 0.7939910888671875,
-        "pct": 0.494390447504352,
+        "change": 0.7379913330078125,
+        "pct": 0.45952136049866404,
         "currency": "JPY",
         "exchangeName": "CCY",
         "instrumentType": "CURRENCY"
@@ -126,41 +133,41 @@
       "key": "us10y",
       "label": "米10年金利",
       "value": "4.49%",
-      "change": "+0.02pt",
+      "change": "+0.06pt",
       "pct": "",
-      "note": "2026-06-12終値 / Yahoo Finance / 米10年国債利回りの参考値。",
-      "source": "Yahoo Finance",
-      "sourceUrl": "https://finance.yahoo.com/quote/%5ETNX",
-      "symbol": "^TNX",
-      "latestDate": "2026-06-12",
-      "previousDate": "2026-06-11",
+      "note": "2026-06-17終値 / FRED / FREDのMarket Yield on U.S. Treasury Securities at 10-Year Constant Maturityの参考値。",
+      "source": "FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+      "symbol": "DGS10",
+      "latestDate": "2026-06-17",
+      "previousDate": "2026-06-16",
+      "dataAgeDays": 2,
       "raw": {
-        "latestClose": 4.486999988555908,
-        "previousClose": 4.4629998207092285,
-        "change": 0.024000167846679688,
-        "pct": 0.5377586558555082,
-        "currency": "USD",
-        "exchangeName": "CGI",
-        "instrumentType": "INDEX"
+        "latestClose": 4.49,
+        "previousClose": 4.43,
+        "change": 0.0600000000000005,
+        "pct": null,
+        "seriesId": "DGS10"
       }
     },
     {
       "key": "wti",
       "label": "WTI原油",
-      "value": "76.02",
-      "change": "-0.58",
-      "pct": "-0.76%",
+      "value": "76.46",
+      "change": "-0.14",
+      "pct": "-0.18%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
       "symbol": "CL=F",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 76.0199966430664,
+        "latestClose": 76.45999908447266,
         "previousClose": 76.5999984741211,
-        "change": -0.5800018310546875,
-        "pct": -0.7571825621519275,
+        "change": -0.1399993896484375,
+        "pct": -0.18276683085801307,
         "currency": "USD",
         "exchangeName": "NYM",
         "instrumentType": "FUTURE"
@@ -169,20 +176,21 @@
     {
       "key": "gold",
       "label": "金",
-      "value": "4,156.60",
-      "change": "-67.50",
-      "pct": "-1.60%",
+      "value": "4,159.10",
+      "change": "-65.00",
+      "pct": "-1.54%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
       "symbol": "GC=F",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 4156.60009765625,
+        "latestClose": 4159.10009765625,
         "previousClose": 4224.10009765625,
-        "change": -67.5,
-        "pct": -1.5979734958802825,
+        "change": -65,
+        "pct": -1.5387892923291608,
         "currency": "USD",
         "exchangeName": "CMX",
         "instrumentType": "FUTURE"
@@ -191,7 +199,7 @@
   ],
   "japan": {
     "indices": [
-      "日経平均は70,710.40（-343.09 / -0.48%）です。",
+      "日経平均は71,028.10（-25.39 / -0.04%）です。",
       "TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF(1306)を参考値として表示します。"
     ],
     "sectors": [
@@ -208,16 +216,16 @@
       "NASDAQは26,517.93（+496.27 / +1.91%）です。"
     ],
     "semiconductors": "半導体関連の個別銘柄データは未接続です。",
-    "rates": "米10年金利は4.49%（+0.02pt）です。",
+    "rates": "米10年金利は4.49%（+0.06pt）です。",
     "news": [
       "ニュース本文の自動取得は未接続です。見出し・URLのみを扱う設計で次フェーズに進めます。"
     ]
   },
   "fxRatesAndCommodities": {
     "items": [
-      "ドル円は161.39（+0.79 / +0.49%）です。",
-      "米10年金利は4.49%（+0.02pt）です。",
-      "WTI原油は76.02、金は4,156.60です。"
+      "ドル円は161.34（+0.74 / +0.46%）です。",
+      "米10年金利は4.49%（+0.06pt）です。",
+      "WTI原油は76.46、金は4,159.10です。"
     ]
   },
   "events": [
@@ -288,7 +296,7 @@
   ],
   "newsDigest": {
     "date": "2026-06-19",
-    "generatedAt": "2026-06-19T05:41:56.887Z",
+    "generatedAt": "2026-06-19T06:28:32.809Z",
     "sourceMode": "rss-headlines",
     "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
     "items": [
@@ -400,10 +408,10 @@
     {
       "key": "us10y",
       "label": "米10年金利",
-      "source": "Yahoo Finance",
-      "symbol": "^TNX",
-      "url": "https://finance.yahoo.com/quote/%5ETNX",
-      "latestDate": "2026-06-12"
+      "source": "FRED",
+      "symbol": "DGS10",
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "latestDate": "2026-06-17"
     },
     {
       "key": "wti",

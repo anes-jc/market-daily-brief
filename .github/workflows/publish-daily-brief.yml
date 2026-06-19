@@ -106,7 +106,13 @@ jobs:
           cp index.html sitemap.xml .nojekyll _site/
           cp -R assets/site.css assets/og _site/assets/
           cp -R articles/daily _site/articles/
-          cp data/daily-articles.js _site/data/
+          cp data/daily-articles.js data/latest-run.json _site/data/
+          for dir in market-snapshots news-digests proofread-reports social-posts; do
+            if [ -d "data/$dir" ]; then
+              mkdir -p "_site/data/$dir"
+              cp -R "data/$dir/." "_site/data/$dir/"
+            fi
+          done
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

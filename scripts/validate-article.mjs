@@ -27,6 +27,7 @@ function validateRequiredData(snapshot) {
 
   if (!snapshot.dataQuality?.hasRequiredData) {
     for (const field of snapshot.dataQuality?.missingFields || []) missing.add(field);
+    for (const field of snapshot.dataQuality?.staleFields || []) missing.add(field);
   }
 
   for (const key of ["nikkei", "topix", "sp500", "nasdaq", "usdjpy", "us10y"]) {

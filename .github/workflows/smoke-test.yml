@@ -1,0 +1,73 @@
+name: Smoke Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Syntax checks
+        run: |
+          node --check scripts/create-failure-issue.mjs
+          node --check scripts/fetch-market-data.mjs
+          node --check scripts/fetch-news.mjs
+          node --check scripts/generate-daily-brief.mjs
+          node --check scripts/generate-sitemap.mjs
+          node --check scripts/generate-social-post.mjs
+          node --check scripts/load-events.mjs
+          node --check scripts/site-utils.mjs
+          node --check scripts/validate-article.mjs
+          python -m py_compile scripts/generate-daily-ogp.py
+
+      - name: Safe dummy publication passes
+        env:
+          BRIEF_DATE: "2026-06-19"
+          BRIEF_DATA_MODE: dummy
+          BRIEF_DEMO_MODE: safe
+        run: |
+          node scripts/generate-daily-brief.mjs
+          node scripts/validate-article.mjs --latest
+          node -e "const r=require('./data/latest-run.json'); if (r.status !== 'PASS' || !r.published) throw new Error(JSON.stringify(r));"
+
+      - name: Unsafe dummy publication is stopped
+        env:
+          BRIEF_DATE: "2026-06-19"
+          BRIEF_DATA_MODE: dummy
+          BRIEF_DEMO_MODE: unsafe
+        run: |
+          node scripts/generate-daily-brief.mjs
+          node scripts/validate-article.mjs --latest
+          node -e "const r=require('./data/latest-run.json'); if (r.status !== 'FAIL' || r.reasonCode !== 'BANNED_PHRASE' || r.published) throw new Error(JSON.stringify(r));"
+
+      - name: Missing-data dummy publication is stopped
+        env:
+          BRIEF_DATE: "2026-06-19"
+          BRIEF_DATA_MODE: dummy
+          BRIEF_DEMO_MODE: no-data
+        run: |
+          node scripts/generate-daily-brief.mjs
+          node scripts/validate-article.mjs --latest
+          node -e "const r=require('./data/latest-run.json'); if (r.status !== 'NO_DATA' || r.reasonCode !== 'NO_DATA' || r.published) throw new Error(JSON.stringify(r));"

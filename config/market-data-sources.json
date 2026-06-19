@@ -1,11 +1,13 @@
 {
   "marketDataProvider": {
-    "name": "Yahoo Finance chart endpoint",
+    "name": "Public market data endpoints",
     "url": "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}",
-    "note": "APIキー不要の公開チャートJSONを取得する。非公式寄りのため、取得失敗時は公開停止し、値の再配信は最小限に留める。"
+    "note": "指数・為替・商品はYahoo Finance chart JSON、米10年金利はFRED公開CSVを取得する。取得失敗時は公開停止し、値の再配信は最小限に留める。"
   },
   "range": "10d",
   "interval": "1d",
+  "requestTimeoutMs": 15000,
+  "maxDataAgeDays": 5,
   "instruments": [
     {
       "key": "nikkei",
@@ -52,11 +54,14 @@
     {
       "key": "us10y",
       "label": "米10年金利",
-      "symbol": "^TNX",
+      "provider": "fred",
+      "symbol": "DGS10",
+      "seriesId": "DGS10",
       "market": "Rates",
       "format": "yield",
       "required": true,
-      "note": "米10年国債利回りの参考値。"
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+      "note": "FREDのMarket Yield on U.S. Treasury Securities at 10-Year Constant Maturityの参考値。"
     },
     {
       "key": "wti",

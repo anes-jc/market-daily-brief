@@ -1,5 +1,6 @@
 import {
   articlePaths,
+  fetchWithTimeout,
   getRunDate,
   isMain,
   japaneseDateLabel,
@@ -12,6 +13,7 @@ import { fetchNewsDigest } from "./fetch-news.mjs";
 
 const SOURCE_CONFIG_PATH = rootPath("config", "market-data-sources.json");
 const YAHOO_CHART_BASE = "https://query1.finance.yahoo.com/v8/finance/chart";
+const FRED_GRAPH_CSV_BASE = "https://fred.stlouisfed.org/graph/fredgraph.csv";
 
 function isFiniteNumber(value) {
   return typeof value === "number" && Number.isFinite(value);
@@ -57,16 +59,28 @@ function isoDateFromUnix(seconds) {
   return new Date(seconds * 1000).toISOString().slice(0, 10);
 }
 
-async function fetchYahooChart(instrument, config) {
+function dateAgeDays(runDate, dataDate) {
+  if (!runDate || !dataDate) return null;
+  const runTime = new Date(`${runDate}T00:00:00+09:00`).getTime();
+  const dataTime = new Date(`${dataDate}T00:00:00+09:00`).getTime();
+  if (Number.isNaN(runTime) || Number.isNaN(dataTime)) return null;
+  return Math.floor((runTime - dataTime) / 86400000);
+}
+
+async function fetchYahooChart(instrument, config, runDate) {
   const url = new URL(`${YAHOO_CHART_BASE}/${encodeURIComponent(instrument.symbol)}`);
   url.searchParams.set("range", config.range || "10d");
   url.searchParams.set("interval", config.interval || "1d");
 
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": "market-daily-brief/1.0"
-    }
-  });
+  const response = await fetchWithTimeout(
+    url,
+    {
+      headers: {
+        "User-Agent": "market-daily-brief/1.0"
+      }
+    },
+    config.requestTimeoutMs || 12000
+  );
 
   if (!response.ok) {
     throw new Error(`Yahoo chart request failed for ${instrument.symbol}: HTTP ${response.status}`);
@@ -124,6 +138,7 @@ async function fetchYahooChart(instrument, config) {
     symbol: instrument.symbol,
     latestDate: latest.date,
     previousDate: previous.date,
+    dataAgeDays: dateAgeDays(runDate, latest.date),
     raw: {
       latestClose: latest.close,
       previousClose: previous.close,
@@ -136,11 +151,88 @@ async function fetchYahooChart(instrument, config) {
   };
 }
 
+function parseFredCsv(text) {
+  return String(text)
+    .trim()
+    .split(/\r?\n/)
+    .slice(1)
+    .map((line) => {
+      const [date, value] = line.split(",");
+      const close = Number(value);
+      return { date, close };
+    })
+    .filter((record) => /^\d{4}-\d{2}-\d{2}$/.test(record.date) && isFiniteNumber(record.close));
+}
+
+async function fetchFredSeries(instrument, config, runDate) {
+  const seriesId = instrument.seriesId || instrument.symbol;
+  const url = new URL(FRED_GRAPH_CSV_BASE);
+  url.searchParams.set("id", seriesId);
+
+  const response = await fetchWithTimeout(
+    url,
+    {
+      headers: {
+        "User-Agent": "market-daily-brief/1.0"
+      }
+    },
+    config.requestTimeoutMs || 15000
+  );
+
+  if (!response.ok) {
+    throw new Error(`FRED request failed for ${seriesId}: HTTP ${response.status}`);
+  }
+
+  const records = parseFredCsv(await response.text());
+  if (records.length < 2) {
+    throw new Error(`FRED returned fewer than two observations for ${seriesId}`);
+  }
+
+  const latest = records.at(-1);
+  const previous = records.slice(0, -1).reverse().find((record) => isFiniteNumber(record.close));
+  if (!previous) {
+    throw new Error(`FRED returned no previous observation for ${seriesId}`);
+  }
+
+  const changeValue = latest.close - previous.close;
+  const sourceName = "FRED";
+  const noteParts = [`${latest.date}終値`, sourceName, instrument.note || ""].filter(Boolean);
+
+  return {
+    key: instrument.key,
+    label: instrument.label,
+    value: formatValue(latest.close, instrument),
+    change: formatChange(changeValue, instrument),
+    pct: "",
+    note: noteParts.join(" / "),
+    source: sourceName,
+    sourceUrl: instrument.sourceUrl || `https://fred.stlouisfed.org/series/${encodeURIComponent(seriesId)}`,
+    symbol: seriesId,
+    latestDate: latest.date,
+    previousDate: previous.date,
+    dataAgeDays: dateAgeDays(runDate, latest.date),
+    raw: {
+      latestClose: latest.close,
+      previousClose: previous.close,
+      change: changeValue,
+      pct: null,
+      seriesId
+    }
+  };
+}
+
+async function fetchInstrument(instrument, config, date) {
+  if (instrument.provider === "fred") {
+    return fetchFredSeries(instrument, config, date);
+  }
+  return fetchYahooChart(instrument, config, date);
+}
+
 function metricByKey(metrics, key) {
   return metrics.find((metric) => metric.key === key) || {};
 }
 
-async function buildTextSnapshot({ date, metrics, missingFields, config, errors }) {
+async function buildTextSnapshot({ date, metrics, missingFields, staleFields, config, errors }) {
   const nikkei = metricByKey(metrics, "nikkei");
   const topix = metricByKey(metrics, "topix");
   const sp500 = metricByKey(metrics, "sp500");
@@ -151,10 +243,12 @@ async function buildTextSnapshot({ date, metrics, missingFields, config, errors 
   const gold = metricByKey(metrics, "gold");
   const newsDigest = await fetchNewsDigest(date);
 
-  const hasRequiredData = missingFields.length === 0;
+  const hasRequiredData = missingFields.length === 0 && staleFields.length === 0;
   const sourceNote = hasRequiredData
     ? "公開チャートデータから終値を取得しました。ニュース本文や予想データは取得していません。"
-    : "必須データの一部が取得できなかったため、公開停止対象です。";
+    : staleFields.length
+      ? "必須データの一部が古いため、公開停止対象です。"
+      : "必須データの一部が取得できなかったため、公開停止対象です。";
 
   const relatedNews = newsDigest.items.length
     ? newsDigest.items.map((item) => ({
@@ -180,8 +274,10 @@ async function buildTextSnapshot({ date, metrics, missingFields, config, errors 
     dataQuality: {
       hasRequiredData,
       missingFields,
+      staleFields,
+      maxDataAgeDays: config.maxDataAgeDays || 7,
       note: sourceNote,
-      provider: config.marketDataProvider?.name || "Yahoo Finance chart endpoint",
+      provider: config.marketDataProvider?.name || "Public market data endpoints",
       errors
     },
     metrics,
@@ -228,11 +324,19 @@ export async function fetchMarketSnapshot(date = getRunDate()) {
   const config = await readJsonFile(SOURCE_CONFIG_PATH);
   const metrics = [];
   const missingFields = [];
+  const staleFields = [];
   const errors = [];
 
   for (const instrument of config.instruments || []) {
     try {
-      const metric = await fetchYahooChart(instrument, config);
+      const metric = await fetchInstrument(instrument, config, date);
+      const maxAgeDays = instrument.maxAgeDays ?? config.maxDataAgeDays ?? 7;
+      if (instrument.required && metric.dataAgeDays !== null && metric.dataAgeDays > maxAgeDays) {
+        const field = `metrics.${instrument.key}.stale`;
+        staleFields.push(field);
+        missingFields.push(field);
+        metric.note = `${metric.note} / ${metric.dataAgeDays}日前のデータのため要確認`;
+      }
       metrics.push(metric);
     } catch (error) {
       errors.push({
@@ -251,14 +355,14 @@ export async function fetchMarketSnapshot(date = getRunDate()) {
         change: "",
         pct: "",
         note: `取得失敗 / ${instrument.symbol}`,
-        source: config.marketDataProvider?.name || "Yahoo Finance chart endpoint",
+        source: config.marketDataProvider?.name || "Public market data endpoints",
         sourceUrl: "",
         symbol: instrument.symbol
       });
     }
   }
 
-  return buildTextSnapshot({ date, metrics, missingFields, config, errors });
+  return buildTextSnapshot({ date, metrics, missingFields, staleFields, config, errors });
 }
 
 export async function writeMarketSnapshot() {

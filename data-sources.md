@@ -6,7 +6,7 @@
 
 ### Yahoo Finance chart endpoint
 
-- 用途: 日経平均、S&P 500、NASDAQ、ドル円、米10年金利、WTI原油、金、TOPIX連動ETF
+- 用途: 日経平均、S&P 500、NASDAQ、ドル円、WTI原油、金、TOPIX連動ETF
 - 形式: JSON
 - APIキー: 不要
 - 実装: `scripts/fetch-market-data.mjs`
@@ -15,18 +15,29 @@
 注意点:
 
 - 公式APIとして契約利用するものではないため、取得失敗時は公開停止します。
+- `requestTimeoutMs` を超える取得は失敗扱いにします。
+- 必須データが `maxDataAgeDays` を超えて古い場合は `NO_DATA` として公開停止します。
+- WTI原油と金は補助データのため、取得失敗しても公開停止にはしません。
 - 記事では終値・前日比・出典名に留め、過度な再配信や詳細データ転載は避けます。
 - TOPIX本指数の安定取得は未確定のため、当面は `1306.T` を「TOPIX連動ETF(1306)」として明示します。
 
-## 次候補
-
 ### FRED
 
-- 用途候補: 米10年金利、米国マクロ指標
-- APIキー: 原則必要
-- 公式ドキュメント: https://fred.stlouisfed.org/docs/api/fred/series_observations.html
+- 用途: 米10年金利
+- 形式: 公開CSV
+- APIキー: 不要
+- 実装: `scripts/fetch-market-data.mjs`
+- 設定: `config/market-data-sources.json`
+- 取得URL: `https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10`
+- 系列ページ: https://fred.stlouisfed.org/series/DGS10
 
-FREDは公式性が高い一方、APIキー管理が必要です。次フェーズで導入する場合は GitHub Secrets にキーを保存し、失敗時は `NO_DATA` にします。
+米10年金利はYahoo Financeの `^TNX` が古い値を返すことがあるため、FREDのDGS10公開CSVを使います。
+
+## 次候補
+
+### FRED API
+
+FRED APIを使って米国マクロ指標を増やす場合は、GitHub Secrets にキーを保存し、失敗時の公開停止条件を個別に決めます。
 
 ### Manual event calendar
 

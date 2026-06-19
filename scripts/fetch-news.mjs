@@ -1,4 +1,4 @@
-import { getRunDate, isMain, readJsonFile, rootPath, writeJsonFile } from "./site-utils.mjs";
+import { fetchWithTimeout, getRunDate, isMain, readJsonFile, rootPath, todayInTokyo, writeJsonFile } from "./site-utils.mjs";
 
 const NEWS_CONFIG_PATH = rootPath("config", "news-sources.json");
 const BANNED_PHRASES_PATH = rootPath("rules", "banned-phrases.json");
@@ -61,9 +61,14 @@ function parseFeedItems(xml) {
   }));
 }
 
-function withinMaxAge(item, maxAgeHours) {
+function referenceTimeForDate(date) {
+  return date === todayInTokyo() ? new Date() : new Date(`${date}T23:59:59+09:00`);
+}
+
+function withinMaxAge(item, maxAgeHours, referenceTime) {
   if (!item.publishedAt || !maxAgeHours) return true;
-  const ageMs = Date.now() - new Date(item.publishedAt).getTime();
+  const ageMs = referenceTime.getTime() - new Date(item.publishedAt).getTime();
+  if (ageMs < 0) return false;
   return ageMs <= maxAgeHours * 60 * 60 * 1000;
 }
 
@@ -76,12 +81,16 @@ function findBannedPhrase(title, bannedPhrases) {
   return bannedPhrases.find((phrase) => normalizedTitle.includes(normalizedText(phrase))) || "";
 }
 
-async function fetchFeed(source) {
-  const response = await fetch(source.url, {
-    headers: {
-      "User-Agent": "market-daily-brief/1.0"
-    }
-  });
+async function fetchFeed(source, requestTimeoutMs) {
+  const response = await fetchWithTimeout(
+    source.url,
+    {
+      headers: {
+        "User-Agent": "market-daily-brief/1.0"
+      }
+    },
+    requestTimeoutMs
+  );
 
   if (!response.ok) {
     throw new Error(`RSS request failed for ${source.key}: HTTP ${response.status}`);
@@ -122,14 +131,16 @@ export async function fetchNewsDigest(date = getRunDate()) {
   const errors = [];
   const skipped = [];
   const collected = [];
+  const referenceTime = referenceTimeForDate(date);
+  const requestTimeoutMs = config.requestTimeoutMs || 10000;
 
   for (const source of config.sources || []) {
     try {
-      const sourceItems = await fetchFeed(source);
+      const sourceItems = await fetchFeed(source, requestTimeoutMs);
       const selected = [];
 
       for (const item of sourceItems) {
-        if (!withinMaxAge(item, config.maxAgeHours)) continue;
+        if (!withinMaxAge(item, config.maxAgeHours, referenceTime)) continue;
         const bannedPhrase = findBannedPhrase(item.title, bannedPhrases);
         if (bannedPhrase) {
           skipped.push({

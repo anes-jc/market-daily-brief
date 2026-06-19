@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "generatedAt": "2026-06-19T05:41:56.887Z",
+  "generatedAt": "2026-06-19T06:28:32.809Z",
   "sourceMode": "rss-headlines",
   "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
   "items": [
