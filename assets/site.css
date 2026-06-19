@@ -402,6 +402,12 @@ nav a:focus-visible {
   min-width: 0;
 }
 
+.source-links {
+  display: block;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
 .disclosure-box {
   margin-top: 24px;
   padding: 18px;

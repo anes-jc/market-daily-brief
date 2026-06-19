@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
   "dateLabel": "2026年6月19日",
-  "generatedAt": "2026-06-19T08:13:09.245Z",
+  "generatedAt": "2026-06-19T11:55:07.010Z",
   "sourceMode": "live-public-market-data",
   "demoMode": "safe",
   "dataQuality": {
@@ -23,6 +23,7 @@
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EN225",
+      "referenceLinks": [],
       "symbol": "^N225",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
@@ -46,6 +47,16 @@
       "note": "2026-06-19終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/1306.T",
+      "referenceLinks": [
+        {
+          "label": "世界の株価 TOPIX",
+          "url": "https://nikkei225jp.com/_ssi/if/?c=112"
+        },
+        {
+          "label": "世界の株価",
+          "url": "https://nikkei225jp.com/"
+        }
+      ],
       "symbol": "1306.T",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
@@ -69,6 +80,7 @@
       "note": "2026-06-18終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC",
+      "referenceLinks": [],
       "symbol": "^GSPC",
       "latestDate": "2026-06-18",
       "previousDate": "2026-06-17",
@@ -92,6 +104,7 @@
       "note": "2026-06-18終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EIXIC",
+      "referenceLinks": [],
       "symbol": "^IXIC",
       "latestDate": "2026-06-18",
       "previousDate": "2026-06-17",
@@ -109,21 +122,22 @@
     {
       "key": "usdjpy",
       "label": "ドル円",
-      "value": "161.28",
-      "change": "+0.68",
-      "pct": "+0.42%",
+      "value": "161.24",
+      "change": "+0.64",
+      "pct": "+0.40%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/USDJPY%3DX",
+      "referenceLinks": [],
       "symbol": "USDJPY=X",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-17",
       "dataAgeDays": 0,
       "raw": {
-        "latestClose": 161.2760009765625,
+        "latestClose": 161.2449951171875,
         "previousClose": 160.60000610351562,
-        "change": 0.675994873046875,
-        "pct": 0.4209183358381436,
+        "change": 0.644989013671875,
+        "pct": 0.4016120729510706,
         "currency": "JPY",
         "exchangeName": "CCY",
         "instrumentType": "CURRENCY"
@@ -138,6 +152,7 @@
       "note": "2026-06-17終値 / FRED / FREDのMarket Yield on U.S. Treasury Securities at 10-Year Constant Maturityの参考値。",
       "source": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+      "referenceLinks": [],
       "symbol": "DGS10",
       "latestDate": "2026-06-17",
       "previousDate": "2026-06-16",
@@ -153,21 +168,22 @@
     {
       "key": "wti",
       "label": "WTI原油",
-      "value": "76.43",
-      "change": "-0.17",
-      "pct": "-0.22%",
+      "value": "75.81",
+      "change": "-0.79",
+      "pct": "-1.03%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
+      "referenceLinks": [],
       "symbol": "CL=F",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "dataAgeDays": 0,
       "raw": {
-        "latestClose": 76.43000030517578,
+        "latestClose": 75.80999755859375,
         "previousClose": 76.5999984741211,
-        "change": -0.1699981689453125,
-        "pct": -0.22192972889254753,
+        "change": -0.7900009155273438,
+        "pct": -1.031332808438947,
         "currency": "USD",
         "exchangeName": "NYM",
         "instrumentType": "FUTURE"
@@ -176,21 +192,22 @@
     {
       "key": "gold",
       "label": "金",
-      "value": "4,173.70",
-      "change": "-50.40",
-      "pct": "-1.19%",
+      "value": "4,167.80",
+      "change": "-56.30",
+      "pct": "-1.33%",
       "note": "2026-06-19終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
+      "referenceLinks": [],
       "symbol": "GC=F",
       "latestDate": "2026-06-19",
       "previousDate": "2026-06-18",
       "dataAgeDays": 0,
       "raw": {
-        "latestClose": 4173.7001953125,
+        "latestClose": 4167.7998046875,
         "previousClose": 4224.10009765625,
-        "change": -50.39990234375,
-        "pct": -1.1931512317076596,
+        "change": -56.30029296875,
+        "pct": -1.3328351996201113,
         "currency": "USD",
         "exchangeName": "CMX",
         "instrumentType": "FUTURE"
@@ -223,9 +240,9 @@
   },
   "fxRatesAndCommodities": {
     "items": [
-      "ドル円は161.28（+0.68 / +0.42%）です。",
+      "ドル円は161.24（+0.64 / +0.40%）です。",
       "米10年金利は4.49%（+0.06pt）です。",
-      "WTI原油は76.43、金は4,173.70です。"
+      "WTI原油は75.81、金は4,167.80です。"
     ]
   },
   "events": [
@@ -245,7 +262,7 @@
   ],
   "eventDigest": {
     "date": "2026-06-19",
-    "generatedAt": "2026-06-19T08:13:08.909Z",
+    "generatedAt": "2026-06-19T11:55:06.257Z",
     "sourceMode": "official-event-calendar",
     "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
     "fallbackUsed": false,
@@ -270,31 +287,31 @@
   "relatedNews": [
     {
       "category": "日本・経済",
-      "text": "株価 終値として5日連続最高値更新",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html",
+      "text": "NISA対象と偽って不適切販売 外資系ネット証券に行政処分",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154801000.html",
       "source": "NHK",
-      "publishedAt": "2026-06-19T07:16:57.000Z"
+      "publishedAt": "2026-06-19T11:24:08.000Z"
     },
     {
       "category": "日本・経済",
-      "text": "きょうのおはBiz 6月19日(金) ホルムズ海峡 安全航行は可能か",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html",
+      "text": "JBIC新総裁に天川和彦氏就任 “対米投資サポートする”",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154751000.html",
       "source": "NHK",
-      "publishedAt": "2026-06-19T05:35:00.000Z"
+      "publishedAt": "2026-06-19T10:56:01.000Z"
     },
     {
       "category": "日本・経済",
-      "text": "政府 塗料用シンナーを直接販売する仕組み導入 今月23日から",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html",
+      "text": "日清食品 カップ焼きそば28万食余を自主回収",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154761000.html",
       "source": "NHK",
-      "publishedAt": "2026-06-19T05:06:50.000Z"
+      "publishedAt": "2026-06-19T10:54:22.000Z"
     },
     {
       "category": "日本・経済",
-      "text": "“中国・台湾産の一部鋼材が不当に安く輸入され損害” 仮決定",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html",
+      "text": "ロッテ アイスの値上げ発表 カルテル疑いで立ち入り検査後",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154741000.html",
       "source": "NHK",
-      "publishedAt": "2026-06-19T04:31:14.000Z"
+      "publishedAt": "2026-06-19T10:45:58.000Z"
     },
     {
       "category": "米金融政策",
@@ -313,7 +330,7 @@
   ],
   "newsDigest": {
     "date": "2026-06-19",
-    "generatedAt": "2026-06-19T08:13:09.245Z",
+    "generatedAt": "2026-06-19T11:55:07.010Z",
     "sourceMode": "rss-headlines",
     "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
     "items": [
@@ -321,41 +338,41 @@
         "category": "日本・経済",
         "source": "NHK",
         "sourceKey": "nhk-economy",
-        "title": "株価 終値として5日連続最高値更新",
-        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html",
-        "publishedAt": "2026-06-19T07:16:57.000Z",
+        "title": "NISA対象と偽って不適切販売 外資系ネット証券に行政処分",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154801000.html",
+        "publishedAt": "2026-06-19T11:24:08.000Z",
         "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html"
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154801000.html"
       },
       {
         "category": "日本・経済",
         "source": "NHK",
         "sourceKey": "nhk-economy",
-        "title": "きょうのおはBiz 6月19日(金) ホルムズ海峡 安全航行は可能か",
-        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html",
-        "publishedAt": "2026-06-19T05:35:00.000Z",
+        "title": "JBIC新総裁に天川和彦氏就任 “対米投資サポートする”",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154751000.html",
+        "publishedAt": "2026-06-19T10:56:01.000Z",
         "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html"
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154751000.html"
       },
       {
         "category": "日本・経済",
         "source": "NHK",
         "sourceKey": "nhk-economy",
-        "title": "政府 塗料用シンナーを直接販売する仕組み導入 今月23日から",
-        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html",
-        "publishedAt": "2026-06-19T05:06:50.000Z",
+        "title": "日清食品 カップ焼きそば28万食余を自主回収",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154761000.html",
+        "publishedAt": "2026-06-19T10:54:22.000Z",
         "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html"
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154761000.html"
       },
       {
         "category": "日本・経済",
         "source": "NHK",
         "sourceKey": "nhk-economy",
-        "title": "“中国・台湾産の一部鋼材が不当に安く輸入され損害” 仮決定",
-        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html",
-        "publishedAt": "2026-06-19T04:31:14.000Z",
+        "title": "ロッテ アイスの値上げ発表 カルテル疑いで立ち入り検査後",
+        "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154741000.html",
+        "publishedAt": "2026-06-19T10:45:58.000Z",
         "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html"
+        "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154741000.html"
       },
       {
         "category": "米金融政策",
@@ -388,6 +405,7 @@
       "source": "Yahoo Finance",
       "symbol": "^N225",
       "url": "https://finance.yahoo.com/quote/%5EN225",
+      "referenceLinks": [],
       "latestDate": "2026-06-19"
     },
     {
@@ -396,6 +414,16 @@
       "source": "Yahoo Finance",
       "symbol": "1306.T",
       "url": "https://finance.yahoo.com/quote/1306.T",
+      "referenceLinks": [
+        {
+          "label": "世界の株価 TOPIX",
+          "url": "https://nikkei225jp.com/_ssi/if/?c=112"
+        },
+        {
+          "label": "世界の株価",
+          "url": "https://nikkei225jp.com/"
+        }
+      ],
       "latestDate": "2026-06-19"
     },
     {
@@ -404,6 +432,7 @@
       "source": "Yahoo Finance",
       "symbol": "^GSPC",
       "url": "https://finance.yahoo.com/quote/%5EGSPC",
+      "referenceLinks": [],
       "latestDate": "2026-06-18"
     },
     {
@@ -412,6 +441,7 @@
       "source": "Yahoo Finance",
       "symbol": "^IXIC",
       "url": "https://finance.yahoo.com/quote/%5EIXIC",
+      "referenceLinks": [],
       "latestDate": "2026-06-18"
     },
     {
@@ -420,6 +450,7 @@
       "source": "Yahoo Finance",
       "symbol": "USDJPY=X",
       "url": "https://finance.yahoo.com/quote/USDJPY%3DX",
+      "referenceLinks": [],
       "latestDate": "2026-06-19"
     },
     {
@@ -428,6 +459,7 @@
       "source": "FRED",
       "symbol": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10",
+      "referenceLinks": [],
       "latestDate": "2026-06-17"
     },
     {
@@ -436,6 +468,7 @@
       "source": "Yahoo Finance",
       "symbol": "CL=F",
       "url": "https://finance.yahoo.com/quote/CL%3DF",
+      "referenceLinks": [],
       "latestDate": "2026-06-19"
     },
     {
@@ -444,6 +477,7 @@
       "source": "Yahoo Finance",
       "symbol": "GC=F",
       "url": "https://finance.yahoo.com/quote/GC%3DF",
+      "referenceLinks": [],
       "latestDate": "2026-06-19"
     }
   ]

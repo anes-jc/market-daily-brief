@@ -37,7 +37,7 @@
 - 指数・為替・商品は Yahoo Finance chart endpoint を使う。
 - 米10年金利は FRED のDGS10公開CSVを使う。
 - APIキーは使わない。
-- TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF `1306.T` を参考値として表示する。
+- TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF `1306.T` を参考値として表示し、`世界の株価と日経先物` は補助確認リンクとして表示する。
 - 取得タイムアウトは `requestTimeoutMs` で管理する。
 - 必須データの鮮度上限は `maxDataAgeDays` で管理する。
 

@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "generatedAt": "2026-06-19T08:13:09.245Z",
+  "generatedAt": "2026-06-19T11:55:07.010Z",
   "sourceMode": "rss-headlines",
   "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
   "items": [
@@ -8,41 +8,41 @@
       "category": "日本・経済",
       "source": "NHK",
       "sourceKey": "nhk-economy",
-      "title": "株価 終値として5日連続最高値更新",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html",
-      "publishedAt": "2026-06-19T07:16:57.000Z",
+      "title": "NISA対象と偽って不適切販売 外資系ネット証券に行政処分",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154801000.html",
+      "publishedAt": "2026-06-19T11:24:08.000Z",
       "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html"
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154801000.html"
     },
     {
       "category": "日本・経済",
       "source": "NHK",
       "sourceKey": "nhk-economy",
-      "title": "きょうのおはBiz 6月19日(金) ホルムズ海峡 安全航行は可能か",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html",
-      "publishedAt": "2026-06-19T05:35:00.000Z",
+      "title": "JBIC新総裁に天川和彦氏就任 “対米投資サポートする”",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154751000.html",
+      "publishedAt": "2026-06-19T10:56:01.000Z",
       "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154161000.html"
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154751000.html"
     },
     {
       "category": "日本・経済",
       "source": "NHK",
       "sourceKey": "nhk-economy",
-      "title": "政府 塗料用シンナーを直接販売する仕組み導入 今月23日から",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html",
-      "publishedAt": "2026-06-19T05:06:50.000Z",
+      "title": "日清食品 カップ焼きそば28万食余を自主回収",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154761000.html",
+      "publishedAt": "2026-06-19T10:54:22.000Z",
       "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154391000.html"
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154761000.html"
     },
     {
       "category": "日本・経済",
       "source": "NHK",
       "sourceKey": "nhk-economy",
-      "title": "“中国・台湾産の一部鋼材が不当に安く輸入され損害” 仮決定",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html",
-      "publishedAt": "2026-06-19T04:31:14.000Z",
+      "title": "ロッテ アイスの値上げ発表 カルテル疑いで立ち入り検査後",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154741000.html",
+      "publishedAt": "2026-06-19T10:45:58.000Z",
       "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html"
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154741000.html"
     },
     {
       "category": "米金融政策",

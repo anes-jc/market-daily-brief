@@ -25,7 +25,17 @@
       "format": "index",
       "required": true,
       "proxyFor": "TOPIX",
-      "note": "TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。"
+      "note": "TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。",
+      "referenceLinks": [
+        {
+          "label": "世界の株価 TOPIX",
+          "url": "https://nikkei225jp.com/_ssi/if/?c=112"
+        },
+        {
+          "label": "世界の株価",
+          "url": "https://nikkei225jp.com/"
+        }
+      ]
     },
     {
       "key": "sp500",

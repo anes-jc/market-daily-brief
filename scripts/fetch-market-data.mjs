@@ -55,6 +55,16 @@ function applyScale(value, instrument) {
   return value * (instrument.scale ?? 1);
 }
 
+function referenceLinksFor(instrument) {
+  if (!Array.isArray(instrument.referenceLinks)) return [];
+  return instrument.referenceLinks
+    .filter((link) => link && link.label && link.url)
+    .map((link) => ({
+      label: String(link.label),
+      url: String(link.url)
+    }));
+}
+
 function isoDateFromUnix(seconds) {
   return new Date(seconds * 1000).toISOString().slice(0, 10);
 }
@@ -135,6 +145,7 @@ async function fetchYahooChart(instrument, config, runDate) {
     note: noteParts.join(" / "),
     source: sourceName,
     sourceUrl: `https://finance.yahoo.com/quote/${encodeURIComponent(instrument.symbol)}`,
+    referenceLinks: referenceLinksFor(instrument),
     symbol: instrument.symbol,
     latestDate: latest.date,
     previousDate: previous.date,
@@ -207,6 +218,7 @@ async function fetchFredSeries(instrument, config, runDate) {
     note: noteParts.join(" / "),
     source: sourceName,
     sourceUrl: instrument.sourceUrl || `https://fred.stlouisfed.org/series/${encodeURIComponent(seriesId)}`,
+    referenceLinks: referenceLinksFor(instrument),
     symbol: seriesId,
     latestDate: latest.date,
     previousDate: previous.date,
@@ -317,6 +329,7 @@ async function buildTextSnapshot({ date, metrics, missingFields, staleFields, co
       source: metric.source,
       symbol: metric.symbol,
       url: metric.sourceUrl,
+      referenceLinks: metric.referenceLinks || [],
       latestDate: metric.latestDate
     }))
   };
@@ -359,6 +372,7 @@ export async function fetchMarketSnapshot(date = getRunDate()) {
         note: `取得失敗 / ${instrument.symbol}`,
         source: config.marketDataProvider?.name || "Public market data endpoints",
         sourceUrl: "",
+        referenceLinks: referenceLinksFor(instrument),
         symbol: instrument.symbol
       });
     }

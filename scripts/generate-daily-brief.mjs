@@ -144,7 +144,18 @@ function bulletList(items) {
 function metricSourceDetails(metrics) {
   const rows = metrics
     .filter((metric) => metric.note || metric.source)
-    .map((metric) => `<li><b>${escapeHtml(metric.label)}</b><span>${escapeHtml(metric.note || metric.source)}</span></li>`)
+    .map((metric) => {
+      const sourceLabel = metric.source || "Source";
+      const sourceLink = metric.sourceUrl ? externalLink(metric.sourceUrl, sourceLabel) : escapeHtml(sourceLabel);
+      const referenceLinks = Array.isArray(metric.referenceLinks)
+        ? metric.referenceLinks
+            .filter((link) => link && link.label && link.url)
+            .map((link) => externalLink(link.url, link.label))
+        : [];
+      const links = [sourceLink, ...referenceLinks].filter(Boolean);
+      const linkBlock = links.length ? `<small class="source-links">${links.join(" / ")}</small>` : "";
+      return `<li><b>${escapeHtml(metric.label)}</b><span>${escapeHtml(metric.note || sourceLabel)}${linkBlock}</span></li>`;
+    })
     .join("");
   if (!rows) return "";
   return `<details class="source-details">
