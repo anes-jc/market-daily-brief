@@ -60,8 +60,18 @@ function buildArchivePage(articles) {
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(SITE_DESCRIPTION)}">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">
+    <meta property="og:locale" content="ja_JP">
     <meta property="og:url" content="${escapeHtml(siteUrl("archive.html"))}">
     <meta property="og:image" content="${escapeHtml(latest?.absoluteOgImage || siteUrl("assets/og/latest.png"))}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${escapeHtml(latest?.title || title)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(SITE_DESCRIPTION)}">
+    <meta name="twitter:image" content="${escapeHtml(latest?.absoluteOgImage || siteUrl("assets/og/latest.png"))}">
+    <meta name="twitter:image:alt" content="${escapeHtml(latest?.title || title)}">
     <link rel="stylesheet" href="assets/site.css">
   </head>
   <body>
@@ -74,7 +84,7 @@ function buildArchivePage(articles) {
       <nav aria-label="Primary">
         <a href="index.html">Latest</a>
         <a href="#archive">Archive</a>
-        <a href="#policy">Policy</a>
+        <a href="about.html">About</a>
       </nav>
     </header>
 
@@ -117,7 +127,10 @@ function buildArchivePage(articles) {
 
     <footer>
       <p>${escapeHtml(SITE_NAME)}</p>
-      <a href="sitemap.xml">sitemap.xml</a>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
     </footer>
   </body>
 </html>

@@ -20,6 +20,10 @@ export async function generateSitemap() {
       loc: siteUrl("archive.html"),
       lastmod: articles[0]?.date || ""
     },
+    {
+      loc: siteUrl("about.html"),
+      lastmod: articles[0]?.date || ""
+    },
     ...articles.map((article) => ({
       loc: article.absoluteUrl,
       lastmod: article.date

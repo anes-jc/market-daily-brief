@@ -131,8 +131,8 @@ function metricCard(metric) {
           <div class="metric">
             <b>${escapeHtml(metric.label)}</b>
             <span>${escapeHtml(value)}</span>
-            <small>${escapeHtml(change)}</small>
-            <small>${escapeHtml(metric.note)}</small>
+            <small class="metric-change">${escapeHtml(change)}</small>
+            <small class="metric-note">${escapeHtml(metric.note)}</small>
           </div>`;
 }
 
@@ -181,6 +181,10 @@ function formatPublishedAt(value) {
   }).format(parsed);
 }
 
+function jsonScript(data) {
+  return JSON.stringify(data).replaceAll("<", "\\u003c");
+}
+
 function renderArticle(snapshot) {
   const title = `${SITE_NAME} ${snapshot.dateLabel}版`;
   const description = `${snapshot.dateLabel}の株式・為替・金利・イベントを整理した朝の市場メモです。`;
@@ -190,6 +194,31 @@ function renderArticle(snapshot) {
     snapshot.sourceMode === "dummy-mvp"
       ? "数値は初期MVP用のダミーで、外部APIは使用していません。"
       : "市場データは公開チャートデータから自動取得した終値ベースの参考値です。";
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    image: [ogUrl],
+    datePublished: `${snapshot.date}T06:15:00+09:00`,
+    dateModified: snapshot.generatedAt || `${snapshot.date}T06:15:00+09:00`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl
+    },
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_BASE_URL
+    },
+    isAccessibleForFree: true,
+    about: ["株式", "為替", "金利", "経済イベント"],
+    genre: "Market memo"
+  };
 
   return `<!doctype html>
 <html lang="ja">
@@ -198,12 +227,24 @@ function renderArticle(snapshot) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}">
+    <link rel="canonical" href="${escapeHtml(articleUrl)}">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:type" content="article">
+    <meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">
+    <meta property="og:locale" content="ja_JP">
     <meta property="og:url" content="${escapeHtml(articleUrl)}">
     <meta property="og:image" content="${escapeHtml(ogUrl)}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${escapeHtml(title)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${escapeHtml(ogUrl)}">
+    <meta name="twitter:image:alt" content="${escapeHtml(title)}">
     <link rel="stylesheet" href="../../assets/site.css">
+    <script type="application/ld+json">${jsonScript(articleJsonLd)}</script>
   </head>
   <body>
     <header class="site-header">
@@ -214,7 +255,7 @@ function renderArticle(snapshot) {
       <nav aria-label="Primary">
         <a href="../../index.html">Latest</a>
         <a href="../../archive.html">Archive</a>
-        <a href="#policy">Policy</a>
+        <a href="../../about.html">About</a>
       </nav>
     </header>
 
@@ -278,8 +319,11 @@ function renderArticle(snapshot) {
 
     <footer>
       <p>${escapeHtml(SITE_NAME)}</p>
-      <a href="${escapeHtml(SITE_BASE_URL)}">Top</a>
-      <a href="../../archive.html">Archive</a>
+      <div class="footer-links">
+        <a href="${escapeHtml(SITE_BASE_URL)}">Top</a>
+        <a href="../../archive.html">Archive</a>
+        <a href="../../about.html">About</a>
+      </div>
     </footer>
   </body>
 </html>

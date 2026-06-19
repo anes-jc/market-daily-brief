@@ -17,6 +17,17 @@ async function readLatestRun() {
   }
 }
 
+function isIsoDate(value) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(String(value || "").trim());
+}
+
+function resolveTargetDate(latest, workflowConclusion) {
+  const requestedDate = String(process.env.BRIEF_TARGET_DATE || "").trim();
+  if (isIsoDate(requestedDate)) return requestedDate;
+  if (workflowConclusion && workflowConclusion !== "success") return todayInTokyo();
+  return latest?.date || todayInTokyo();
+}
+
 function buildIssueBody({ date, latest, workflowConclusion, runUrl }) {
   const status = latest?.status || "ERROR";
   const reasonCode = workflowConclusion && workflowConclusion !== "success" ? "WORKFLOW_ERROR" : latest?.reasonCode || status;
@@ -89,15 +100,16 @@ async function githubRequest(path, { method = "GET", token, body } = {}) {
 export async function createFailureIssue() {
   const latest = await readLatestRun();
   const workflowConclusion = process.env.WORKFLOW_CONCLUSION || "";
+  const date = resolveTargetDate(latest, workflowConclusion);
+  const latestForTarget = latest?.date === date ? latest : null;
   const shouldCreate =
-    (workflowConclusion && workflowConclusion !== "success") || (latest?.status && latest.status !== "PASS");
+    (workflowConclusion && workflowConclusion !== "success") || (latestForTarget?.status && latestForTarget.status !== "PASS");
 
   if (!shouldCreate) {
     console.log("No failure issue needed.");
     return;
   }
 
-  const date = latest?.date || todayInTokyo();
   const title = `【要確認】${date} の Market Daily Brief は公開されませんでした`;
   const repo = process.env.GITHUB_REPOSITORY || "";
   const token = process.env.GITHUB_TOKEN || "";
@@ -105,7 +117,7 @@ export async function createFailureIssue() {
     process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
       ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
       : "";
-  const body = buildIssueBody({ date, latest, workflowConclusion, runUrl });
+  const body = buildIssueBody({ date, latest: latestForTarget, workflowConclusion, runUrl });
 
   if (!repo || !token) {
     console.log("GitHub token or repository is not available. Issue body follows:");

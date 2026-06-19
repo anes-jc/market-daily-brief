@@ -53,7 +53,9 @@ node scripts/validate-article.mjs --latest
 - `data/daily-articles.js`: 記事一覧データ
 - `index.html`: 最新記事へ移動するトップページ
 - `archive.html`: 過去記事一覧ページ
+- `about.html`: 編集方針、データ方針、収益化方針ページ
 - `sitemap.xml`: GitHub Pages 用 sitemap
+- `robots.txt`: crawler 用 sitemap 参照
 
 ## Data Sources
 

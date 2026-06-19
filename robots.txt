@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anes-jc.github.io/market-daily-brief/sitemap.xml

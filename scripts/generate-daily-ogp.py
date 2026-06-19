@@ -45,6 +45,30 @@ def draw_text(draw: ImageDraw.ImageDraw, xy: tuple[int, int], text: str, font, f
     draw.text(xy, text, font=font, fill=fill)
 
 
+def text_width(draw: ImageDraw.ImageDraw, text: str, font) -> int:
+    bbox = draw.textbbox((0, 0), text, font=font)
+    return bbox[2] - bbox[0]
+
+
+def draw_fit_text(
+    draw: ImageDraw.ImageDraw,
+    xy: tuple[int, int],
+    text: str,
+    max_width: int,
+    size: int,
+    *,
+    bold: bool = False,
+    fill: str,
+    min_size: int = 18,
+) -> None:
+    current = size
+    font = make_font(current, bold=bold)
+    while current > min_size and text_width(draw, text, font) > max_width:
+        current -= 2
+        font = make_font(current, bold=bold)
+    draw_text(draw, xy, text, font, fill)
+
+
 def main() -> int:
     if not LATEST_RUN.exists():
         print("Skip OGP: data/latest-run.json does not exist.")
@@ -60,53 +84,66 @@ def main() -> int:
     snapshot = load_json(snapshot_path)
 
     width, height = 1200, 630
-    image = Image.new("RGB", (width, height), "#f7f5ef")
+    image = Image.new("RGB", (width, height), "#f4f1ea")
     draw = ImageDraw.Draw(image)
 
-    accent = "#006b5f"
-    accent_2 = "#8a4f11"
+    panel = "#12332f"
+    panel_2 = "#1f4540"
+    accent = "#007466"
+    accent_2 = "#a25a12"
+    gold = "#f3c96b"
     ink = "#202427"
     muted = "#5e656b"
-    line = "#d9d4c8"
+    line = "#d8d1c3"
     surface = "#ffffff"
-    soft = "#eaf3ef"
+    card = "#fbfaf6"
 
-    title_font = make_font(68, bold=True)
+    title_font = make_font(62, bold=True)
     label_font = make_font(26, bold=True)
-    body_font = make_font(30)
-    value_font = make_font(32, bold=True)
-    small_font = make_font(21)
+    body_font = make_font(29)
+    value_font = make_font(38, bold=True)
+    small_font = make_font(20)
+    micro_font = make_font(18)
 
-    draw.rounded_rectangle((44, 38, width - 44, height - 38), radius=28, fill=surface, outline=line, width=2)
-    draw.rectangle((44, 38, 120, height - 38), fill=accent)
-    draw.rounded_rectangle((86, 76, 1110, 164), radius=16, fill=soft)
+    draw.rounded_rectangle((38, 34, width - 38, height - 34), radius=30, fill=surface, outline=line, width=2)
+    draw.rounded_rectangle((66, 64, 468, height - 64), radius=24, fill=panel)
+    draw.rectangle((444, 64, 468, height - 64), fill=panel)
+    draw.rounded_rectangle((92, 92, 244, 136), radius=22, fill=gold)
+    draw_text(draw, (116, 102), "MARKET", small_font, panel)
+    draw_text(draw, (96, 176), "Morning", body_font, "#d8ece7")
+    draw_text(draw, (96, 214), "Market Memo", body_font, "#d8ece7")
+    draw_text(draw, (96, 286), "Market", title_font, surface)
+    draw_text(draw, (96, 356), "Daily Brief", title_font, surface)
+    draw_text(draw, (98, 452), snapshot.get("dateLabel", date), make_font(34), "#d8ece7")
+    draw.rounded_rectangle((96, 510, 424, 556), radius=12, fill=panel_2)
+    draw_text(draw, (116, 520), "推奨しない / 予想しない / 煽らない", small_font, surface)
 
-    draw_text(draw, (116, 86), "Morning Market Memo", label_font, accent)
-    draw_text(draw, (116, 126), snapshot.get("dateLabel", date), body_font, muted)
-    draw_text(draw, (92, 206), "Market Daily Brief", title_font, ink)
-    draw_text(draw, (96, 296), "株式・為替・金利・イベントの朝刊市場メモ", body_font, accent_2)
+    draw_text(draw, (520, 86), "Public Market Snapshot", label_font, accent)
+    draw_text(draw, (520, 126), "株式・為替・金利・イベントを朝の確認用に整理", body_font, ink)
 
     metrics = snapshot.get("metrics", [])[:6]
-    card_w = 324
-    card_h = 90
-    start_x = 92
-    start_y = 354
-    gap_x = 26
-    gap_y = 12
+    card_w = 292
+    card_h = 112
+    start_x = 520
+    start_y = 184
+    gap_x = 24
+    gap_y = 18
 
     for idx, metric in enumerate(metrics):
-        col = idx % 3
-        row = idx // 3
+        col = idx % 2
+        row = idx // 2
         x = start_x + col * (card_w + gap_x)
         y = start_y + row * (card_h + gap_y)
-        draw.rounded_rectangle((x, y, x + card_w, y + card_h), radius=12, fill="#fbfaf6", outline=line, width=1)
-        draw_text(draw, (x + 18, y + 12), metric.get("label", ""), small_font, muted)
+        draw.rounded_rectangle((x, y, x + card_w, y + card_h), radius=16, fill=card, outline=line, width=1)
+        draw_fit_text(draw, (x + 18, y + 14), metric.get("label", ""), card_w - 36, 22, bold=True, fill=muted)
         value = metric.get("value") or "データなし"
         change = " / ".join(part for part in [metric.get("change", ""), metric.get("pct", "")] if part) or "変化率なし"
-        draw_text(draw, (x + 18, y + 34), value, value_font, ink)
-        draw_text(draw, (x + 18, y + 66), change, small_font, accent if "-" not in change else accent_2)
+        draw_fit_text(draw, (x + 18, y + 44), value, card_w - 36, 38, bold=True, fill=ink, min_size=24)
+        change_color = accent_2 if change.strip().startswith("-") else accent
+        draw_fit_text(draw, (x + 18, y + 84), change, card_w - 36, 21, fill=change_color, min_size=16)
 
-    draw_text(draw, (140, 566), "推奨しない。予想しない。煽らない。公開情報を整理する。", small_font, muted)
+    draw.line((520, 584, 1104, 584), fill=line, width=2)
+    draw_text(draw, (520, 594), "投資助言ではありません。公開情報を整理する市場メモです。", micro_font, muted)
 
     OG_DIR.mkdir(parents=True, exist_ok=True)
     output = OG_DIR / f"{date}.png"

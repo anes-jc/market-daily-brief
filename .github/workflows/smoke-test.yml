@@ -29,6 +29,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install OGP smoke dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install --upgrade pip
+          python -m pip install pillow
+
       - name: Syntax checks
         run: |
           node --check scripts/create-failure-issue.mjs
@@ -53,9 +60,11 @@ jobs:
         run: |
           node scripts/generate-daily-brief.mjs
           node scripts/validate-article.mjs --latest
+          python scripts/generate-daily-ogp.py
           node scripts/generate-archive-page.mjs
           node scripts/generate-home-page.mjs
           node -e "const r=require('./data/latest-run.json'); if (r.status !== 'PASS' || !r.published) throw new Error(JSON.stringify(r));"
+          test -f assets/og/2026-06-19.png
 
       - name: Unsafe dummy publication is stopped
         env:

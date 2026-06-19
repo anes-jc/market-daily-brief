@@ -23,7 +23,12 @@ function buildHomePage(articles) {
     <meta property="og:title" content="${escapeHtml(SITE_NAME)}">
     <meta property="og:description" content="${escapeHtml(SITE_DESCRIPTION)}">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">
+    <meta property="og:locale" content="ja_JP">
     <meta property="og:url" content="${escapeHtml(siteUrl())}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="${escapeHtml(SITE_NAME)}">
+    <meta name="twitter:description" content="${escapeHtml(SITE_DESCRIPTION)}">
     <link rel="stylesheet" href="assets/site.css">
   </head>
   <body>
@@ -49,7 +54,10 @@ function buildHomePage(articles) {
 
     <footer>
       <p>${escapeHtml(SITE_NAME)}</p>
-      <a href="sitemap.xml">sitemap.xml</a>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
     </footer>
   </body>
 </html>
@@ -69,8 +77,18 @@ function buildHomePage(articles) {
     <meta property="og:title" content="${escapeHtml(latest.title)}">
     <meta property="og:description" content="${escapeHtml(latest.summary)}">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">
+    <meta property="og:locale" content="ja_JP">
     <meta property="og:url" content="${escapeHtml(siteUrl())}">
     <meta property="og:image" content="${escapeHtml(latest.absoluteOgImage)}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${escapeHtml(latest.title)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(latest.title)}">
+    <meta name="twitter:description" content="${escapeHtml(latest.summary)}">
+    <meta name="twitter:image" content="${escapeHtml(latest.absoluteOgImage)}">
+    <meta name="twitter:image:alt" content="${escapeHtml(latest.title)}">
     <link rel="canonical" href="${escapeHtml(latest.absoluteUrl)}">
     <meta http-equiv="refresh" content="0; url=${escapeHtml(redirectTarget)}">
     <link rel="stylesheet" href="assets/site.css">
@@ -103,7 +121,10 @@ function buildHomePage(articles) {
 
     <footer>
       <p>${escapeHtml(SITE_NAME)}</p>
-      <a href="sitemap.xml">sitemap.xml</a>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
     </footer>
   </body>
 </html>
