@@ -1,10 +1,10 @@
 {
   "date": "2026-06-19",
-  "snapshotSource": "live-yahoo-finance",
+  "snapshotSource": "live-public-market-data",
   "articlePath": "articles/daily/2026-06-19.html",
   "status": "PASS",
   "reasonCode": "OK",
-  "checkedAt": "2026-06-19T06:28:43.019Z",
+  "checkedAt": "2026-06-19T07:51:59.400Z",
   "source": "dummy-proofread-mvp",
   "summary": "禁止表現、主要データ欠損、投資助言リスクは検出されませんでした。",
   "checks": {

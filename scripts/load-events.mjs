@@ -37,7 +37,7 @@ function eventSortKey(event) {
   return `${regionRank}-${event.time}-${event.title}`;
 }
 
-export async function loadMarketEvents(date = getRunDate()) {
+export async function loadManualMarketEvents(date = getRunDate()) {
   const config = await readJsonFile(EVENT_CONFIG_PATH);
   const tags = dayTags(date);
   const sourceMode = config.sourceMode || "manual-config";
@@ -56,6 +56,10 @@ export async function loadMarketEvents(date = getRunDate()) {
     : (config.fallbackEvents || []).map((event) => normalizeEvent(event, sourceMode, date));
 
   return events.sort((a, b) => eventSortKey(a).localeCompare(eventSortKey(b), "ja"));
+}
+
+export async function loadMarketEvents(date = getRunDate()) {
+  return loadManualMarketEvents(date);
 }
 
 if (isMain(import.meta.url)) {

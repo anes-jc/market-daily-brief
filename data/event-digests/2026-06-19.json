@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-19",
+  "generatedAt": "2026-06-19T07:51:26.026Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": false,
+  "items": [
+    {
+      "date": "2026-06-19",
+      "time": "08:50",
+      "region": "日本",
+      "title": "日銀 金融政策決定会合 議事要旨公表予定",
+      "category": "policy",
+      "importance": "high",
+      "note": "Bank of Japan公式MPM scheduleから取得。公表時刻は原則8:50です。",
+      "source": "Bank of Japan",
+      "sourceKey": "boj-mpm",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260428.pdf",
+      "official": true
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 2
+}

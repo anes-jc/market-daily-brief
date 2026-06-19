@@ -149,9 +149,11 @@ async function publishOrHold({ date, paths, candidate, html, snapshot, report })
     published: report.status === "PASS",
     candidatePath: report.status === "PASS" ? "" : relativeFromRoot(paths.draftHtml),
     snapshotPath: relativeFromRoot(paths.snapshot),
+    eventDigestPath: snapshot.eventDigest ? relativeFromRoot(paths.eventDigest) : "",
     articlePath: report.status === "PASS" ? relativeFromRoot(paths.publicHtml) : "",
     draftPath: report.status === "PASS" ? "" : relativeFromRoot(paths.draftHtml),
     proofreadReportPath: relativeFromRoot(paths.proofread),
+    newsDigestPath: snapshot.newsDigest ? relativeFromRoot(paths.newsDigest) : "",
     articleCount: articles.length,
     findings: report.findings
   });

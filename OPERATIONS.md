@@ -12,7 +12,7 @@
 ## 日次フロー
 
 1. GitHub Actions が平日 06:15 JST に `Publish Daily Brief` を実行する。
-2. `scripts/generate-daily-brief.mjs` が市場データ、イベント、ニュース見出しを集めて候補記事を作る。
+2. `scripts/generate-daily-brief.mjs` が市場データ、公式イベント、ニュース見出しを集めて候補記事を作る。
 3. `scripts/validate-article.mjs` が必須データ、データ鮮度、禁止表現を確認する。
 4. PASS の場合だけ `articles/daily/YYYY-MM-DD.html` に公開する。
 5. OGP、sitemap、SNS投稿文案、運用JSONを生成する。
@@ -42,11 +42,13 @@
 
 ### イベント
 
-`config/market-events.json` で手動管理する。
+`config/event-sources.json` で公式ソースを管理し、`config/market-events.json` を手動fallbackとして使う。
 
-- 日付指定の `datedEvents` があればそれを優先する。
-- 未登録日は平日・週末の固定確認枠を表示する。
-- 公式カレンダー自動連携は次フェーズで検討する。
+- BLS、BEA、Federal Reserve、Bank of Japanの公式カレンダーを取得する。
+- BLSとBEAは米東部時間を日本時間に換算する。
+- Fed FOMCは公式ページの日付を米国時間ベースの会合日として扱う。
+- 日銀MPMは日本時間の日付として扱う。
+- 対象日の公式イベントが見つからない場合は手動確認枠へフォールバックする。
 
 ### ニュース
 
@@ -62,6 +64,7 @@
 - `articles/daily/YYYY-MM-DD.html`: 公開記事
 - `drafts/YYYY-MM-DD.html`: 停止時の候補記事
 - `data/market-snapshots/YYYY-MM-DD.json`: 市場データと取得品質
+- `data/event-digests/YYYY-MM-DD.json`: 公式イベント取得結果
 - `data/news-digests/YYYY-MM-DD.json`: RSS見出しリンク
 - `data/proofread-reports/YYYY-MM-DD.json`: 自動校正レポート
 - `data/social-posts/YYYY-MM-DD.txt`: SNS投稿文案
@@ -122,7 +125,7 @@ node scripts/validate-article.mjs --latest
 ## 次フェーズの判断事項
 
 - TOPIX本指数の取得元をどうするか。
-- イベントカレンダーを公式ソースから自動取得するか。
+- 国内統計、財務省、内閣府など日本の経済イベントを追加するか。
 - ニュースソースを増やす場合、買い判断・格付け系見出しをどこまで許容しないか。
 - OpenAI APIを使う場合、要約ではなく文体整形・禁止表現検査に限定するか。
 - X投稿を自動投稿するか、当面は文案生成だけにするか。

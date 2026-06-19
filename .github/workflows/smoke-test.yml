@@ -32,6 +32,7 @@ jobs:
       - name: Syntax checks
         run: |
           node --check scripts/create-failure-issue.mjs
+          node --check scripts/fetch-events.mjs
           node --check scripts/fetch-market-data.mjs
           node --check scripts/fetch-news.mjs
           node --check scripts/generate-daily-brief.mjs

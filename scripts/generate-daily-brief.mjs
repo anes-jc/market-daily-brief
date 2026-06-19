@@ -142,7 +142,10 @@ function bulletList(items) {
 function eventList(events) {
   if (!events.length) return "<p>本日のイベントデータは取得できていません。</p>";
   return `<ul>${events
-    .map((event) => `<li>${escapeHtml(event.region)} ${escapeHtml(event.time)} ${escapeHtml(event.title)}: ${escapeHtml(event.note)}</li>`)
+    .map((event) => {
+      const source = event.source && event.source !== event.sourceKey ? ` <small>${escapeHtml(event.source)}</small>` : "";
+      return `<li>${escapeHtml(event.region)} ${escapeHtml(event.time)} ${escapeHtml(event.title)}: ${escapeHtml(event.note)}${source}</li>`;
+    })
     .join("")}</ul>`;
 }
 
@@ -285,6 +288,9 @@ export async function generateDailyBrief() {
   const html = renderArticle(snapshot);
 
   await writeJsonFile(paths.snapshot, snapshot);
+  if (snapshot.eventDigest) {
+    await writeJsonFile(paths.eventDigest, snapshot.eventDigest);
+  }
   if (snapshot.newsDigest) {
     await writeJsonFile(paths.newsDigest, snapshot.newsDigest);
   }
@@ -297,6 +303,7 @@ export async function generateDailyBrief() {
     generatedAt: snapshot.generatedAt,
     candidatePath: relativeFromRoot(paths.draftHtml),
     snapshotPath: relativeFromRoot(paths.snapshot),
+    eventDigestPath: snapshot.eventDigest ? relativeFromRoot(paths.eventDigest) : "",
     newsDigestPath: snapshot.newsDigest ? relativeFromRoot(paths.newsDigest) : "",
     articlePath: relativeFromRoot(paths.publicHtml),
     proofreadReportPath: relativeFromRoot(paths.proofread)

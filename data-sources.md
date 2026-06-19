@@ -39,15 +39,40 @@
 
 FRED APIを使って米国マクロ指標を増やす場合は、GitHub Secrets にキーを保存し、失敗時の公開停止条件を個別に決めます。
 
-### Manual event calendar
+### Official event calendar
 
 - 用途: 本日のイベント欄
+- 形式: ICS / HTML
+- APIキー: 不要
+- 実装: `scripts/fetch-events.mjs`
+- 設定: `config/event-sources.json`
+- 保存先: `data/event-digests/YYYY-MM-DD.json`
+
+現在の取得元:
+
+- BLS Economic News Release Schedule ICS: `https://www.bls.gov/schedule/news_release/bls.ics`
+- BEA Release Schedule: `https://www.bea.gov/news/schedule`
+- Federal Reserve FOMC calendars: `https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm`
+- Bank of Japan Monetary Policy Meetings: `https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm`
+
+注意点:
+
+- 日付、時刻、イベント名、出典URLだけを取得します。予想値、結果値、解説、投資判断は取得しません。
+- BLSとBEAは米東部時間の予定を日本時間に換算します。
+- Fed FOMC会合日程は公式ページの日付を米国時間ベースの会合日として表示します。
+- 日銀MPM関連は日本時間の日付として表示します。
+- 対象日の公式イベントが見つからない場合は `config/market-events.json` の手動確認枠へフォールバックします。
+- イベント取得に失敗しても、市場データが揃っていれば公開停止にはしません。失敗内容は `eventDigest.errors` に残します。
+
+### Manual event fallback
+
+- 用途: 公式イベントがない日または取得失敗時の確認枠
 - 形式: JSON
 - APIキー: 不要
 - 実装: `scripts/load-events.mjs`
 - 設定: `config/market-events.json`
 
-初期版では公式カレンダーを自動取得せず、手動管理の固定JSONから読み込みます。日付指定イベントがあればそれを優先し、未登録日は平日/週末の確認枠を表示します。
+日付指定イベントがあればそれを優先し、未登録日は平日/週末の確認枠を表示します。
 
 注意点:
 
@@ -84,7 +109,7 @@ Yahoo Finance RSS と MarketWatch top stories RSS は、個別銘柄の買い判
 
 ### 経済イベント
 
-初期は固定JSONの確認枠として扱います。将来、公式カレンダーまたは利用条件が明確な配信元を選びます。
+公式カレンダー連携済みです。日本の経済統計、財務省、内閣府などの国内イベントはまだ自動連携していません。
 
 ### ニュース本文・要約
 

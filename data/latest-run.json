@@ -2,14 +2,16 @@
   "date": "2026-06-19",
   "status": "PASS",
   "reasonCode": "OK",
-  "generatedAt": "2026-06-19T06:28:32.809Z",
-  "checkedAt": "2026-06-19T06:28:43.019Z",
+  "generatedAt": "2026-06-19T07:51:26.634Z",
+  "checkedAt": "2026-06-19T07:51:59.400Z",
   "published": true,
   "candidatePath": "",
   "snapshotPath": "data/market-snapshots/2026-06-19.json",
+  "eventDigestPath": "data/event-digests/2026-06-19.json",
   "articlePath": "articles/daily/2026-06-19.html",
   "draftPath": "",
   "proofreadReportPath": "data/proofread-reports/2026-06-19.json",
+  "newsDigestPath": "data/news-digests/2026-06-19.json",
   "articleCount": 1,
   "findings": []
 }

@@ -1,0 +1,51 @@
+{
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "requestTimeoutMs": 15000,
+  "sources": [
+    {
+      "key": "bls",
+      "source": "BLS",
+      "region": "米国",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "type": "ics",
+      "timeZone": "America/New_York",
+      "category": "macro",
+      "importance": "high",
+      "enabled": true
+    },
+    {
+      "key": "bea",
+      "source": "BEA",
+      "region": "米国",
+      "url": "https://www.bea.gov/news/schedule",
+      "type": "bea-html",
+      "timeZone": "America/New_York",
+      "category": "macro",
+      "importance": "high",
+      "enabled": true
+    },
+    {
+      "key": "federal-reserve-fomc",
+      "source": "Federal Reserve",
+      "region": "米国",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "type": "fed-fomc-html",
+      "timeZone": "America/New_York",
+      "category": "policy",
+      "importance": "high",
+      "enabled": true
+    },
+    {
+      "key": "boj-mpm",
+      "source": "Bank of Japan",
+      "region": "日本",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "type": "boj-mpm-html",
+      "timeZone": "Asia/Tokyo",
+      "category": "policy",
+      "importance": "high",
+      "enabled": true
+    }
+  ]
+}

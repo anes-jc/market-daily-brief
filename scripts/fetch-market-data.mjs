@@ -8,7 +8,7 @@ import {
   rootPath,
   writeJsonFile
 } from "./site-utils.mjs";
-import { loadMarketEvents } from "./load-events.mjs";
+import { fetchEventDigest } from "./fetch-events.mjs";
 import { fetchNewsDigest } from "./fetch-news.mjs";
 
 const SOURCE_CONFIG_PATH = rootPath("config", "market-data-sources.json");
@@ -241,6 +241,7 @@ async function buildTextSnapshot({ date, metrics, missingFields, staleFields, co
   const us10y = metricByKey(metrics, "us10y");
   const wti = metricByKey(metrics, "wti");
   const gold = metricByKey(metrics, "gold");
+  const eventDigest = await fetchEventDigest(date);
   const newsDigest = await fetchNewsDigest(date);
 
   const hasRequiredData = missingFields.length === 0 && staleFields.length === 0;
@@ -269,7 +270,7 @@ async function buildTextSnapshot({ date, metrics, missingFields, staleFields, co
     date,
     dateLabel: japaneseDateLabel(date),
     generatedAt: new Date().toISOString(),
-    sourceMode: "live-yahoo-finance",
+    sourceMode: "live-public-market-data",
     demoMode: "safe",
     dataQuality: {
       hasRequiredData,
@@ -306,7 +307,8 @@ async function buildTextSnapshot({ date, metrics, missingFields, staleFields, co
         `WTI原油は${wti.value || "データなし"}、金は${gold.value || "データなし"}です。`
       ]
     },
-    events: await loadMarketEvents(date),
+    events: eventDigest.items,
+    eventDigest,
     relatedNews,
     newsDigest,
     sources: metrics.map((metric) => ({

@@ -1,9 +1,19 @@
 {
   "date": "2026-06-19",
-  "generatedAt": "2026-06-19T06:28:32.809Z",
+  "generatedAt": "2026-06-19T07:51:26.634Z",
   "sourceMode": "rss-headlines",
   "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
   "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 終値として5日連続最高値更新",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html",
+      "publishedAt": "2026-06-19T07:16:57.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154081000.html"
+    },
     {
       "category": "日本・経済",
       "source": "NHK",
@@ -33,16 +43,6 @@
       "publishedAt": "2026-06-19T04:31:14.000Z",
       "language": "ja",
       "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154381000.html"
-    },
-    {
-      "category": "日本・経済",
-      "source": "NHK",
-      "sourceKey": "nhk-economy",
-      "title": "郵便ネットワーク維持のため日本郵便に年650億円交付へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html",
-      "publishedAt": "2026-06-19T04:21:56.000Z",
-      "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260619/k10015154371000.html"
     },
     {
       "category": "米金融政策",
