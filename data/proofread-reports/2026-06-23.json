@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-23",
+  "snapshotSource": "live-public-market-data",
+  "articlePath": "drafts/2026-06-23.html",
+  "status": "NO_DATA",
+  "reasonCode": "NO_DATA",
+  "checkedAt": "2026-06-22T16:00:43.740Z",
+  "source": "dummy-proofread-mvp",
+  "summary": "自動公開を停止する確認事項が検出されました。",
+  "checks": {
+    "requiredData": "fail",
+    "bannedPhrases": "pass",
+    "investmentAdviceRisk": "pass",
+    "pricePredictionRisk": "pass",
+    "hypeExpressionRisk": "pass",
+    "causalOverstatementRisk": "pass",
+    "adExpressionRisk": "pass",
+    "tone": "pass"
+  },
+  "findings": [
+    {
+      "type": "missing_data",
+      "severity": "NO_DATA",
+      "field": "metrics.us10y.stale",
+      "message": "主要データが欠損しています。"
+    }
+  ]
+}

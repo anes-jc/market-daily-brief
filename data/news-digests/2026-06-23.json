@@ -1,0 +1,80 @@
+{
+  "date": "2026-06-23",
+  "generatedAt": "2026-06-22T16:00:43.681Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html",
+      "publishedAt": "2026-06-22T14:39:21.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日本ハム ウインナーやハムなど約220品目 8月分から値上げへ",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html",
+      "publishedAt": "2026-06-22T14:34:27.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Welcoming Remarks on the International Role of the U.S. Dollar",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
+      "publishedAt": "2026-06-22T13:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "リニア 静岡県住民説明会が終了 知事が着工いつ認めるか焦点",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html",
+      "publishedAt": "2026-06-22T12:04:51.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 1ドル＝161円台後半に 米利上げ観測広がり",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html",
+      "publishedAt": "2026-06-22T09:24:19.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "publishedAt": "2026-06-17T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+      "publishedAt": "2026-06-17T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
