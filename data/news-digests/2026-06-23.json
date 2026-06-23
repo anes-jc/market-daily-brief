@@ -1,6 +1,6 @@
 {
   "date": "2026-06-23",
-  "generatedAt": "2026-06-22T16:00:43.681Z",
+  "generatedAt": "2026-06-23T08:51:07.143Z",
   "sourceMode": "rss-headlines",
   "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
   "items": [
@@ -8,21 +8,41 @@
       "category": "日本・経済",
       "source": "NHK",
       "sourceKey": "nhk-economy",
-      "title": "米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html",
-      "publishedAt": "2026-06-22T14:39:21.000Z",
+      "title": "日産株主総会 みずほFG出身の社外取締役の再任を否決",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157091000.html",
+      "publishedAt": "2026-06-23T08:37:10.000Z",
       "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html"
+      "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015157091000.html"
     },
     {
       "category": "日本・経済",
       "source": "NHK",
       "sourceKey": "nhk-economy",
-      "title": "日本ハム ウインナーやハムなど約220品目 8月分から値上げへ",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html",
-      "publishedAt": "2026-06-22T14:34:27.000Z",
+      "title": "1422万件のアドレスなど流出か KDDIシステムに不正アクセス",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157301000.html",
+      "publishedAt": "2026-06-23T08:13:22.000Z",
       "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html"
+      "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015157301000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 2500円超下落で7万円割れ 利益確保の売り膨らむ",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html",
+      "publishedAt": "2026-06-23T07:44:36.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156891000.html",
+      "publishedAt": "2026-06-23T05:37:30.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015156891000.html"
     },
     {
       "category": "米金融政策",
@@ -33,26 +53,6 @@
       "publishedAt": "2026-06-22T13:00:00.000Z",
       "language": "en",
       "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm"
-    },
-    {
-      "category": "日本・経済",
-      "source": "NHK",
-      "sourceKey": "nhk-economy",
-      "title": "リニア 静岡県住民説明会が終了 知事が着工いつ認めるか焦点",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html",
-      "publishedAt": "2026-06-22T12:04:51.000Z",
-      "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html"
-    },
-    {
-      "category": "日本・経済",
-      "source": "NHK",
-      "sourceKey": "nhk-economy",
-      "title": "円相場 1ドル＝161円台後半に 米利上げ観測広がり",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html",
-      "publishedAt": "2026-06-22T09:24:19.000Z",
-      "language": "ja",
-      "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html"
     },
     {
       "category": "米金融政策",

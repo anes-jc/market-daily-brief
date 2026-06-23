@@ -1,24 +1,17 @@
 {
   "date": "2026-06-23",
-  "status": "NO_DATA",
-  "reasonCode": "NO_DATA",
-  "generatedAt": "2026-06-22T16:00:43.681Z",
-  "checkedAt": "2026-06-22T16:00:43.740Z",
-  "published": false,
-  "candidatePath": "drafts/2026-06-23.html",
+  "status": "PASS",
+  "reasonCode": "OK",
+  "generatedAt": "2026-06-23T08:51:07.144Z",
+  "checkedAt": "2026-06-23T08:51:07.205Z",
+  "published": true,
+  "candidatePath": "",
   "snapshotPath": "data/market-snapshots/2026-06-23.json",
   "eventDigestPath": "data/event-digests/2026-06-23.json",
-  "articlePath": "",
-  "draftPath": "drafts/2026-06-23.html",
+  "articlePath": "articles/daily/2026-06-23.html",
+  "draftPath": "",
   "proofreadReportPath": "data/proofread-reports/2026-06-23.json",
   "newsDigestPath": "data/news-digests/2026-06-23.json",
-  "articleCount": 1,
-  "findings": [
-    {
-      "type": "missing_data",
-      "severity": "NO_DATA",
-      "field": "metrics.us10y.stale",
-      "message": "主要データが欠損しています。"
-    }
-  ]
+  "articleCount": 2,
+  "findings": []
 }

@@ -1,19 +1,15 @@
 {
   "date": "2026-06-23",
   "dateLabel": "2026年6月23日",
-  "generatedAt": "2026-06-22T16:00:43.681Z",
+  "generatedAt": "2026-06-23T08:51:07.144Z",
   "sourceMode": "live-public-market-data",
   "demoMode": "safe",
   "dataQuality": {
-    "hasRequiredData": false,
-    "missingFields": [
-      "metrics.us10y.stale"
-    ],
-    "staleFields": [
-      "metrics.us10y.stale"
-    ],
+    "hasRequiredData": true,
+    "missingFields": [],
+    "staleFields": [],
     "maxDataAgeDays": 5,
-    "note": "必須データの一部が古いため、公開停止対象です。",
+    "note": "公開チャートデータから終値を取得しました。ニュース本文や予想データは取得していません。",
     "provider": "Public market data endpoints",
     "errors": []
   },
@@ -21,22 +17,22 @@
     {
       "key": "nikkei",
       "label": "日経平均",
-      "value": "71,250.06",
-      "change": "+196.57",
-      "pct": "+0.28%",
-      "note": "2026-06-19終値 / Yahoo Finance",
+      "value": "69,788.38",
+      "change": "-2,565.58",
+      "pct": "-3.55%",
+      "note": "2026-06-23終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EN225",
       "referenceLinks": [],
       "symbol": "^N225",
-      "latestDate": "2026-06-19",
-      "previousDate": "2026-06-18",
-      "dataAgeDays": 4,
+      "latestDate": "2026-06-23",
+      "previousDate": "2026-06-22",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 71250.0625,
-        "previousClose": 71053.4921875,
-        "change": 196.5703125,
-        "pct": 0.27665116301571646,
+        "latestClose": 69788.3828125,
+        "previousClose": 72353.9609375,
+        "change": -2565.578125,
+        "pct": -3.545871009351056,
         "currency": "JPY",
         "exchangeName": "OSA",
         "instrumentType": "INDEX"
@@ -45,10 +41,10 @@
     {
       "key": "topix",
       "label": "TOPIX連動ETF(1306)",
-      "value": "434.50",
-      "change": "+4.80",
-      "pct": "+1.12%",
-      "note": "2026-06-22終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
+      "value": "422.80",
+      "change": "-11.70",
+      "pct": "-2.69%",
+      "note": "2026-06-23終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/1306.T",
       "referenceLinks": [
@@ -62,14 +58,14 @@
         }
       ],
       "symbol": "1306.T",
-      "latestDate": "2026-06-22",
-      "previousDate": "2026-06-19",
-      "dataAgeDays": 1,
+      "latestDate": "2026-06-23",
+      "previousDate": "2026-06-22",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 434.5,
-        "previousClose": 429.70001220703125,
-        "change": 4.79998779296875,
-        "pct": 1.117055540286114,
+        "latestClose": 422.79998779296875,
+        "previousClose": 434.5,
+        "change": -11.70001220703125,
+        "pct": -2.692753097130322,
         "currency": "JPY",
         "exchangeName": "JPX",
         "instrumentType": "ETF"
@@ -78,9 +74,9 @@
     {
       "key": "sp500",
       "label": "S&P 500",
-      "value": "7,474.12",
-      "change": "-26.46",
-      "pct": "-0.35%",
+      "value": "7,472.79",
+      "change": "-27.79",
+      "pct": "-0.37%",
       "note": "2026-06-22終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC",
@@ -90,10 +86,10 @@
       "previousDate": "2026-06-18",
       "dataAgeDays": 1,
       "raw": {
-        "latestClose": 7474.1201171875,
+        "latestClose": 7472.7900390625,
         "previousClose": 7500.580078125,
-        "change": -26.4599609375,
-        "pct": -0.3527721944422528,
+        "change": -27.7900390625,
+        "pct": -0.3705051979052662,
         "currency": "USD",
         "exchangeName": "SNP",
         "instrumentType": "INDEX"
@@ -102,9 +98,9 @@
     {
       "key": "nasdaq",
       "label": "NASDAQ",
-      "value": "26,209.69",
-      "change": "-308.24",
-      "pct": "-1.16%",
+      "value": "26,166.60",
+      "change": "-351.33",
+      "pct": "-1.32%",
       "note": "2026-06-22終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EIXIC",
@@ -114,10 +110,10 @@
       "previousDate": "2026-06-18",
       "dataAgeDays": 1,
       "raw": {
-        "latestClose": 26209.689453125,
+        "latestClose": 26166.599609375,
         "previousClose": 26517.9296875,
-        "change": -308.240234375,
-        "pct": -1.1623842359017116,
+        "change": -351.330078125,
+        "pct": -1.324877478239222,
         "currency": "USD",
         "exchangeName": "NIM",
         "instrumentType": "INDEX"
@@ -126,22 +122,22 @@
     {
       "key": "usdjpy",
       "label": "ドル円",
-      "value": "161.48",
-      "change": "+0.19",
-      "pct": "+0.12%",
-      "note": "2026-06-22終値 / Yahoo Finance",
+      "value": "161.42",
+      "change": "-0.01",
+      "pct": "-0.01%",
+      "note": "2026-06-23終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/USDJPY%3DX",
       "referenceLinks": [],
       "symbol": "USDJPY=X",
-      "latestDate": "2026-06-22",
-      "previousDate": "2026-06-18",
-      "dataAgeDays": 1,
+      "latestDate": "2026-06-23",
+      "previousDate": "2026-06-21",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 161.47799682617188,
-        "previousClose": 161.28900146484375,
-        "change": 0.188995361328125,
-        "pct": 0.11717808381950981,
+        "latestClose": 161.41799926757812,
+        "previousClose": 161.43299865722656,
+        "change": -0.0149993896484375,
+        "pct": -0.009291402484745984,
         "currency": "JPY",
         "exchangeName": "CCY",
         "instrumentType": "CURRENCY"
@@ -150,21 +146,21 @@
     {
       "key": "us10y",
       "label": "米10年金利",
-      "value": "4.49%",
-      "change": "+0.06pt",
+      "value": "4.46%",
+      "change": "-0.03pt",
       "pct": "",
-      "note": "2026-06-17終値 / FRED / FREDのMarket Yield on U.S. Treasury Securities at 10-Year Constant Maturityの参考値。 / 6日前のデータのため要確認",
+      "note": "2026-06-18終値 / FRED / FREDのMarket Yield on U.S. Treasury Securities at 10-Year Constant Maturityの参考値。",
       "source": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
       "referenceLinks": [],
       "symbol": "DGS10",
-      "latestDate": "2026-06-17",
-      "previousDate": "2026-06-16",
-      "dataAgeDays": 6,
+      "latestDate": "2026-06-18",
+      "previousDate": "2026-06-17",
+      "dataAgeDays": 5,
       "raw": {
-        "latestClose": 4.49,
-        "previousClose": 4.43,
-        "change": 0.0600000000000005,
+        "latestClose": 4.46,
+        "previousClose": 4.49,
+        "change": -0.03000000000000025,
         "pct": null,
         "seriesId": "DGS10"
       }
@@ -172,22 +168,22 @@
     {
       "key": "wti",
       "label": "WTI原油",
-      "value": "73.64",
-      "change": "-2.96",
-      "pct": "-3.86%",
-      "note": "2026-06-22終値 / Yahoo Finance",
+      "value": "73.66",
+      "change": "-1.16",
+      "pct": "-1.55%",
+      "note": "2026-06-23終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
       "referenceLinks": [],
       "symbol": "CL=F",
-      "latestDate": "2026-06-22",
-      "previousDate": "2026-06-18",
-      "dataAgeDays": 1,
+      "latestDate": "2026-06-23",
+      "previousDate": "2026-06-22",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 73.63999938964844,
-        "previousClose": 76.5999984741211,
-        "change": -2.9599990844726562,
-        "pct": -3.8642286467834284,
+        "latestClose": 73.66000366210938,
+        "previousClose": 74.81999969482422,
+        "change": -1.1599960327148438,
+        "pct": -1.5503823007835271,
         "currency": "USD",
         "exchangeName": "NYM",
         "instrumentType": "FUTURE"
@@ -196,22 +192,22 @@
     {
       "key": "gold",
       "label": "金",
-      "value": "4,191.90",
-      "change": "-32.20",
-      "pct": "-0.76%",
-      "note": "2026-06-22終値 / Yahoo Finance",
+      "value": "4,123.20",
+      "change": "-58.70",
+      "pct": "-1.40%",
+      "note": "2026-06-23終値 / Yahoo Finance",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
       "referenceLinks": [],
       "symbol": "GC=F",
-      "latestDate": "2026-06-22",
-      "previousDate": "2026-06-18",
-      "dataAgeDays": 1,
+      "latestDate": "2026-06-23",
+      "previousDate": "2026-06-22",
+      "dataAgeDays": 0,
       "raw": {
-        "latestClose": 4191.89990234375,
-        "previousClose": 4224.10009765625,
-        "change": -32.2001953125,
-        "pct": -0.7622971655043482,
+        "latestClose": 4123.2001953125,
+        "previousClose": 4181.89990234375,
+        "change": -58.69970703125,
+        "pct": -1.4036612162417301,
         "currency": "USD",
         "exchangeName": "CMX",
         "instrumentType": "FUTURE"
@@ -220,7 +216,7 @@
   ],
   "japan": {
     "indices": [
-      "日経平均は71,250.06（+196.57 / +0.28%）です。",
+      "日経平均は69,788.38（-2,565.58 / -3.55%）です。",
       "TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF(1306)を参考値として表示します。"
     ],
     "sectors": [
@@ -233,20 +229,20 @@
   },
   "us": {
     "indices": [
-      "S&P 500は7,474.12（-26.46 / -0.35%）です。",
-      "NASDAQは26,209.69（-308.24 / -1.16%）です。"
+      "S&P 500は7,472.79（-27.79 / -0.37%）です。",
+      "NASDAQは26,166.60（-351.33 / -1.32%）です。"
     ],
     "semiconductors": "半導体関連の個別銘柄データは未接続です。",
-    "rates": "米10年金利は4.49%（+0.06pt）です。",
+    "rates": "米10年金利は4.46%（-0.03pt）です。",
     "news": [
       "ニュース本文の自動取得は未接続です。見出し・URLのみを扱う設計で次フェーズに進めます。"
     ]
   },
   "fxRatesAndCommodities": {
     "items": [
-      "ドル円は161.48（+0.19 / +0.12%）です。",
-      "米10年金利は4.49%（+0.06pt）です。",
-      "WTI原油は73.64、金は4,191.90です。"
+      "ドル円は161.42（-0.01 / -0.01%）です。",
+      "米10年金利は4.46%（-0.03pt）です。",
+      "WTI原油は73.66、金は4,123.20です。"
     ]
   },
   "events": [
@@ -266,7 +262,7 @@
   ],
   "eventDigest": {
     "date": "2026-06-23",
-    "generatedAt": "2026-06-22T16:00:43.429Z",
+    "generatedAt": "2026-06-23T08:51:06.445Z",
     "sourceMode": "official-event-calendar",
     "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
     "fallbackUsed": false,
@@ -291,17 +287,31 @@
   "relatedNews": [
     {
       "category": "日本・経済",
-      "text": "米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html",
+      "text": "日産株主総会 みずほFG出身の社外取締役の再任を否決",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157091000.html",
       "source": "NHK",
-      "publishedAt": "2026-06-22T14:39:21.000Z"
+      "publishedAt": "2026-06-23T08:37:10.000Z"
     },
     {
       "category": "日本・経済",
-      "text": "日本ハム ウインナーやハムなど約220品目 8月分から値上げへ",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html",
+      "text": "1422万件のアドレスなど流出か KDDIシステムに不正アクセス",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157301000.html",
       "source": "NHK",
-      "publishedAt": "2026-06-22T14:34:27.000Z"
+      "publishedAt": "2026-06-23T08:13:22.000Z"
+    },
+    {
+      "category": "日本・経済",
+      "text": "株価 2500円超下落で7万円割れ 利益確保の売り膨らむ",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html",
+      "source": "NHK",
+      "publishedAt": "2026-06-23T07:44:36.000Z"
+    },
+    {
+      "category": "日本・経済",
+      "text": "東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156891000.html",
+      "source": "NHK",
+      "publishedAt": "2026-06-23T05:37:30.000Z"
     },
     {
       "category": "米金融政策",
@@ -309,20 +319,6 @@
       "url": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
       "source": "Federal Reserve",
       "publishedAt": "2026-06-22T13:00:00.000Z"
-    },
-    {
-      "category": "日本・経済",
-      "text": "リニア 静岡県住民説明会が終了 知事が着工いつ認めるか焦点",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html",
-      "source": "NHK",
-      "publishedAt": "2026-06-22T12:04:51.000Z"
-    },
-    {
-      "category": "日本・経済",
-      "text": "円相場 1ドル＝161円台後半に 米利上げ観測広がり",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html",
-      "source": "NHK",
-      "publishedAt": "2026-06-22T09:24:19.000Z"
     },
     {
       "category": "米金融政策",
@@ -341,7 +337,7 @@
   ],
   "newsDigest": {
     "date": "2026-06-23",
-    "generatedAt": "2026-06-22T16:00:43.681Z",
+    "generatedAt": "2026-06-23T08:51:07.143Z",
     "sourceMode": "rss-headlines",
     "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
     "items": [
@@ -349,21 +345,41 @@
         "category": "日本・経済",
         "source": "NHK",
         "sourceKey": "nhk-economy",
-        "title": "米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名",
-        "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html",
-        "publishedAt": "2026-06-22T14:39:21.000Z",
+        "title": "日産株主総会 みずほFG出身の社外取締役の再任を否決",
+        "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157091000.html",
+        "publishedAt": "2026-06-23T08:37:10.000Z",
         "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156551000.html"
+        "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015157091000.html"
       },
       {
         "category": "日本・経済",
         "source": "NHK",
         "sourceKey": "nhk-economy",
-        "title": "日本ハム ウインナーやハムなど約220品目 8月分から値上げへ",
-        "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html",
-        "publishedAt": "2026-06-22T14:34:27.000Z",
+        "title": "1422万件のアドレスなど流出か KDDIシステムに不正アクセス",
+        "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157301000.html",
+        "publishedAt": "2026-06-23T08:13:22.000Z",
         "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156741000.html"
+        "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015157301000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "株価 2500円超下落で7万円割れ 利益確保の売り膨らむ",
+        "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html",
+        "publishedAt": "2026-06-23T07:44:36.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇",
+        "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156891000.html",
+        "publishedAt": "2026-06-23T05:37:30.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260623/k10015156891000.html"
       },
       {
         "category": "米金融政策",
@@ -374,26 +390,6 @@
         "publishedAt": "2026-06-22T13:00:00.000Z",
         "language": "en",
         "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm"
-      },
-      {
-        "category": "日本・経済",
-        "source": "NHK",
-        "sourceKey": "nhk-economy",
-        "title": "リニア 静岡県住民説明会が終了 知事が着工いつ認めるか焦点",
-        "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html",
-        "publishedAt": "2026-06-22T12:04:51.000Z",
-        "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156521000.html"
-      },
-      {
-        "category": "日本・経済",
-        "source": "NHK",
-        "sourceKey": "nhk-economy",
-        "title": "円相場 1ドル＝161円台後半に 米利上げ観測広がり",
-        "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html",
-        "publishedAt": "2026-06-22T09:24:19.000Z",
-        "language": "ja",
-        "guid": "http://www3.nhk.or.jp/news/html/20260622/k10015156381000.html"
       },
       {
         "category": "米金融政策",
@@ -427,7 +423,7 @@
       "symbol": "^N225",
       "url": "https://finance.yahoo.com/quote/%5EN225",
       "referenceLinks": [],
-      "latestDate": "2026-06-19"
+      "latestDate": "2026-06-23"
     },
     {
       "key": "topix",
@@ -445,7 +441,7 @@
           "url": "https://nikkei225jp.com/"
         }
       ],
-      "latestDate": "2026-06-22"
+      "latestDate": "2026-06-23"
     },
     {
       "key": "sp500",
@@ -472,7 +468,7 @@
       "symbol": "USDJPY=X",
       "url": "https://finance.yahoo.com/quote/USDJPY%3DX",
       "referenceLinks": [],
-      "latestDate": "2026-06-22"
+      "latestDate": "2026-06-23"
     },
     {
       "key": "us10y",
@@ -481,7 +477,7 @@
       "symbol": "DGS10",
       "url": "https://fred.stlouisfed.org/series/DGS10",
       "referenceLinks": [],
-      "latestDate": "2026-06-17"
+      "latestDate": "2026-06-18"
     },
     {
       "key": "wti",
@@ -490,7 +486,7 @@
       "symbol": "CL=F",
       "url": "https://finance.yahoo.com/quote/CL%3DF",
       "referenceLinks": [],
-      "latestDate": "2026-06-22"
+      "latestDate": "2026-06-23"
     },
     {
       "key": "gold",
@@ -499,7 +495,7 @@
       "symbol": "GC=F",
       "url": "https://finance.yahoo.com/quote/GC%3DF",
       "referenceLinks": [],
-      "latestDate": "2026-06-22"
+      "latestDate": "2026-06-23"
     }
   ]
 }
