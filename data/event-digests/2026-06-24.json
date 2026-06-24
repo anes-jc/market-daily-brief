@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-24",
+  "generatedAt": "2026-06-24T08:45:03.762Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": false,
+  "items": [
+    {
+      "date": "2026-06-24",
+      "time": "08:50",
+      "region": "日本",
+      "title": "日銀 主な意見公表予定",
+      "category": "policy",
+      "importance": "high",
+      "note": "Bank of Japan公式MPM scheduleから取得。公表時刻は原則8:50です。",
+      "source": "Bank of Japan",
+      "sourceKey": "boj-mpm",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260616.pdf",
+      "official": true
+    },
+    {
+      "date": "2026-06-24",
+      "time": "21:30",
+      "region": "米国",
+      "title": "BEA U.S. International Transactions and Investment Position, 1st Quarter 2026 and Annual Update",
+      "category": "macro",
+      "importance": "high",
+      "note": "BEA公式Release Scheduleから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BEA",
+      "sourceKey": "bea",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "official": true
+    },
+    {
+      "date": "2026-06-24",
+      "time": "23:00",
+      "region": "米国",
+      "title": "BLS Productivity and Costs by Industry: Manufacturing and Mining Industries",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    },
+    {
+      "date": "2026-06-24",
+      "time": "23:00",
+      "region": "米国",
+      "title": "BLS Total Factor Productivity for Detailed Industries",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 2
+}
