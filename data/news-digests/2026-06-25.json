@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-25",
+  "generatedAt": "2026-06-25T08:38:28.324Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "東京電力の新会長に横尾敬介氏就任 他社との提携が焦点",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159761000.html",
+      "publishedAt": "2026-06-25T08:36:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260625/k10015159761000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "中部電力の株主総会 会長・社長の取締役選任案が可決",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159781000.html",
+      "publishedAt": "2026-06-25T08:21:28.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260625/k10015159781000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日銀 田村委員“利上げは物価動向次第でちゅうちょなく”",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159691000.html",
+      "publishedAt": "2026-06-25T08:13:11.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260625/k10015159691000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 3100円以上値上がり 終値で最高値を更新",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159251000.html",
+      "publishedAt": "2026-06-25T07:15:21.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260625/k10015159251000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Welcome Remarks",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+      "publishedAt": "2026-06-24T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Welcoming Remarks on the International Role of the U.S. Dollar",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
+      "publishedAt": "2026-06-22T13:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
