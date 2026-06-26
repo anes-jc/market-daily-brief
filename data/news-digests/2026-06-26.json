@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-26",
+  "generatedAt": "2026-06-26T08:41:10.598Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "スーパーのコメ平均価格 5キロ税込み3590円 5週ぶり値上がり",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015161511000.html",
+      "publishedAt": "2026-06-26T08:32:07.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260626/k10015161511000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 一時3700円超下落 終値は過去3番目の下落幅に",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160801000.html",
+      "publishedAt": "2026-06-26T08:18:02.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260626/k10015160801000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ホンダ株主総会 社長が巨額損失を陳謝 経営陣の選任案は可決",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015161331000.html",
+      "publishedAt": "2026-06-26T07:38:28.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260626/k10015161331000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "7月の電気・ガス料金は大手全社値下がり 政府の補助で",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015161471000.html",
+      "publishedAt": "2026-06-26T07:35:05.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260626/k10015161471000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Welcome Remarks",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+      "publishedAt": "2026-06-24T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Welcoming Remarks on the International Role of the U.S. Dollar",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
+      "publishedAt": "2026-06-22T13:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
