@@ -1,0 +1,22 @@
+{
+  "date": "2026-06-29",
+  "generatedAt": "2026-06-29T12:53:29.541Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": true,
+  "items": [
+    {
+      "region": "全体",
+      "time": "終日",
+      "title": "主要経済イベントの確認",
+      "category": "macro",
+      "importance": "low",
+      "note": "この日の個別イベントは未登録です。公式カレンダーを確認してください。",
+      "date": "2026-06-29",
+      "source": "manual-config",
+      "official": false
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 1
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-29",
+  "generatedAt": "2026-06-29T12:53:30.135Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日本版CFIUS「対日外国投資委員会」始動 審査体制強化へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015164161000.html",
+      "publishedAt": "2026-06-29T12:23:18.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260629/k10015164161000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 1ドル＝161円台後半 神経質な取り引き続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163971000.html",
+      "publishedAt": "2026-06-29T09:12:43.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260629/k10015163971000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "中国での5月新車販売数 多くのメーカーで減“中東情勢影響も”",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163851000.html",
+      "publishedAt": "2026-06-29T08:05:25.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260629/k10015163851000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価は小幅上昇 値下がりの銘柄を午後に買い戻す動き",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163491000.html",
+      "publishedAt": "2026-06-29T07:23:42.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260629/k10015163491000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Welcome Remarks",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+      "publishedAt": "2026-06-24T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Welcoming Remarks on the International Role of the U.S. Dollar",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
+      "publishedAt": "2026-06-22T13:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
