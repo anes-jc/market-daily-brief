@@ -1,0 +1,60 @@
+{
+  "date": "2026-06-30",
+  "generatedAt": "2026-06-30T08:48:17.342Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "6月の月例経済報告 「緩やかに回復」を維持",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015164941000.html",
+      "publishedAt": "2026-06-30T08:45:27.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260630/k10015164941000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日本航空 “空飛ぶクルマ”研究めぐり補助金を不正受給",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015164921000.html",
+      "publishedAt": "2026-06-30T08:23:25.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260630/k10015164921000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "“AIロボット 製造業などの分野で1000万台規模に” 政府新目標",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015164871000.html",
+      "publishedAt": "2026-06-30T07:44:34.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260630/k10015164871000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 一時1000円以上値上がり AIや半導体関連銘柄に買い注文",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015164421000.html",
+      "publishedAt": "2026-06-30T07:36:35.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260630/k10015164421000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Welcome Remarks",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+      "publishedAt": "2026-06-24T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
