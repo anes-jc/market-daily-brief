@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-01",
+  "generatedAt": "2026-07-01T10:51:33.656Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日銀短観発表 大企業の製造業の指数改善 ものづくりの現場は",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165321000.html",
+      "publishedAt": "2026-07-01T10:21:28.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260701/k10015165321000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "モバイルSuica トラブルから復旧 モバイルPASMOも復旧",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165501000.html",
+      "publishedAt": "2026-07-01T08:54:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260701/k10015165501000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "「路線価」全国平均 過去最大の上昇率 観光地で大幅上昇目立つ",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165461000.html",
+      "publishedAt": "2026-07-01T08:35:58.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260701/k10015165461000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "5月ガソリン補助 約2900億円支出 6月末の基金残高約3800億円に",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015166101000.html",
+      "publishedAt": "2026-07-01T08:19:23.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260701/k10015166101000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Welcome Remarks",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+      "publishedAt": "2026-06-24T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
