@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-02",
+  "generatedAt": "2026-07-02T08:31:08.415Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": false,
+  "items": [
+    {
+      "date": "2026-07-02",
+      "time": "21:30",
+      "region": "米国",
+      "title": "BLS Employment Situation",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 2
+}

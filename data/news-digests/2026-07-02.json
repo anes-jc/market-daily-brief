@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-02",
+  "generatedAt": "2026-07-02T08:31:08.904Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "夏休み旅行者は去年より4.6％減少見通し",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167201000.html",
+      "publishedAt": "2026-07-02T07:32:56.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015167201000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 1700円超値下がり AIや半導体関連銘柄への売り注文広がる",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166831000.html",
+      "publishedAt": "2026-07-02T07:14:26.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015166831000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "【きょうのおはBiz 7月2日(木)】“サプライズ”だった短観",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166861000.html",
+      "publishedAt": "2026-07-02T04:14:09.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015166861000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "2025年度の税収 84兆円台 6年連続で過去最高の見通し",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166901000.html",
+      "publishedAt": "2026-07-02T02:42:17.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015166901000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}

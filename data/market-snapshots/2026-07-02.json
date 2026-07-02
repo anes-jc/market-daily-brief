@@ -1,0 +1,450 @@
+{
+  "date": "2026-07-02",
+  "dateLabel": "2026年7月2日",
+  "generatedAt": "2026-07-02T08:31:08.904Z",
+  "sourceMode": "live-public-market-data",
+  "demoMode": "safe",
+  "dataQuality": {
+    "hasRequiredData": true,
+    "missingFields": [],
+    "staleFields": [],
+    "maxDataAgeDays": 5,
+    "note": "公開チャートデータから終値を取得しました。ニュース本文や予想データは取得していません。",
+    "provider": "Public market data endpoints",
+    "errors": []
+  },
+  "metrics": [
+    {
+      "key": "nikkei",
+      "label": "日経平均",
+      "value": "68,733.15",
+      "change": "-1,741.81",
+      "pct": "-2.47%",
+      "note": "2026-07-02終値 / Yahoo Finance",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/%5EN225",
+      "referenceLinks": [],
+      "symbol": "^N225",
+      "latestDate": "2026-07-02",
+      "previousDate": "2026-07-01",
+      "dataAgeDays": 0,
+      "raw": {
+        "latestClose": 68733.1484375,
+        "previousClose": 70474.9609375,
+        "change": -1741.8125,
+        "pct": -2.4715338282268915,
+        "currency": "JPY",
+        "exchangeName": "OSA",
+        "instrumentType": "INDEX"
+      }
+    },
+    {
+      "key": "topix",
+      "label": "TOPIX連動ETF(1306)",
+      "value": "426.40",
+      "change": "+0.60",
+      "pct": "+0.14%",
+      "note": "2026-07-02終値 / Yahoo Finance / TOPIX本指数の直取得が安定しないため、当面はTOPIX連動ETFを参考値として表示する。 / TOPIXの参考値",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/1306.T",
+      "referenceLinks": [
+        {
+          "label": "世界の株価 TOPIX",
+          "url": "https://nikkei225jp.com/_ssi/if/?c=112"
+        },
+        {
+          "label": "世界の株価",
+          "url": "https://nikkei225jp.com/"
+        }
+      ],
+      "symbol": "1306.T",
+      "latestDate": "2026-07-02",
+      "previousDate": "2026-07-01",
+      "dataAgeDays": 0,
+      "raw": {
+        "latestClose": 426.3999938964844,
+        "previousClose": 425.79998779296875,
+        "change": 0.600006103515625,
+        "pct": 0.14091266339053027,
+        "currency": "JPY",
+        "exchangeName": "JPX",
+        "instrumentType": "ETF"
+      }
+    },
+    {
+      "key": "sp500",
+      "label": "S&P 500",
+      "value": "7,483.23",
+      "change": "-16.13",
+      "pct": "-0.22%",
+      "note": "2026-07-01終値 / Yahoo Finance",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC",
+      "referenceLinks": [],
+      "symbol": "^GSPC",
+      "latestDate": "2026-07-01",
+      "previousDate": "2026-06-30",
+      "dataAgeDays": 1,
+      "raw": {
+        "latestClose": 7483.22998046875,
+        "previousClose": 7499.35986328125,
+        "change": -16.1298828125,
+        "pct": -0.21508346187620572,
+        "currency": "USD",
+        "exchangeName": "SNP",
+        "instrumentType": "INDEX"
+      }
+    },
+    {
+      "key": "nasdaq",
+      "label": "NASDAQ",
+      "value": "26,040.03",
+      "change": "-173.69",
+      "pct": "-0.66%",
+      "note": "2026-07-01終値 / Yahoo Finance",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/%5EIXIC",
+      "referenceLinks": [],
+      "symbol": "^IXIC",
+      "latestDate": "2026-07-01",
+      "previousDate": "2026-06-30",
+      "dataAgeDays": 1,
+      "raw": {
+        "latestClose": 26040.029296875,
+        "previousClose": 26213.720703125,
+        "change": -173.69140625,
+        "pct": -0.6625973024473929,
+        "currency": "USD",
+        "exchangeName": "NIM",
+        "instrumentType": "INDEX"
+      }
+    },
+    {
+      "key": "usdjpy",
+      "label": "ドル円",
+      "value": "161.22",
+      "change": "-1.41",
+      "pct": "-0.87%",
+      "note": "2026-07-02終値 / Yahoo Finance",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/USDJPY%3DX",
+      "referenceLinks": [],
+      "symbol": "USDJPY=X",
+      "latestDate": "2026-07-02",
+      "previousDate": "2026-06-30",
+      "dataAgeDays": 0,
+      "raw": {
+        "latestClose": 161.218994140625,
+        "previousClose": 162.6280059814453,
+        "change": -1.4090118408203125,
+        "pct": -0.8664017198741714,
+        "currency": "JPY",
+        "exchangeName": "CCY",
+        "instrumentType": "CURRENCY"
+      }
+    },
+    {
+      "key": "us10y",
+      "label": "米10年金利",
+      "value": "4.44%",
+      "change": "+0.06pt",
+      "pct": "",
+      "note": "2026-06-30終値 / FRED / FREDのMarket Yield on U.S. Treasury Securities at 10-Year Constant Maturityの参考値。",
+      "source": "FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+      "referenceLinks": [],
+      "symbol": "DGS10",
+      "latestDate": "2026-06-30",
+      "previousDate": "2026-06-29",
+      "dataAgeDays": 2,
+      "raw": {
+        "latestClose": 4.44,
+        "previousClose": 4.38,
+        "change": 0.0600000000000005,
+        "pct": null,
+        "seriesId": "DGS10"
+      }
+    },
+    {
+      "key": "wti",
+      "label": "WTI原油",
+      "value": "68.04",
+      "change": "-0.54",
+      "pct": "-0.79%",
+      "note": "2026-07-02終値 / Yahoo Finance",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF",
+      "referenceLinks": [],
+      "symbol": "CL=F",
+      "latestDate": "2026-07-02",
+      "previousDate": "2026-07-01",
+      "dataAgeDays": 0,
+      "raw": {
+        "latestClose": 68.04000091552734,
+        "previousClose": 68.58000183105469,
+        "change": -0.5400009155273438,
+        "pct": -0.7874028887570227,
+        "currency": "USD",
+        "exchangeName": "NYM",
+        "instrumentType": "FUTURE"
+      }
+    },
+    {
+      "key": "gold",
+      "label": "金",
+      "value": "4,086.30",
+      "change": "+18.00",
+      "pct": "+0.44%",
+      "note": "2026-07-02終値 / Yahoo Finance",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF",
+      "referenceLinks": [],
+      "symbol": "GC=F",
+      "latestDate": "2026-07-02",
+      "previousDate": "2026-07-01",
+      "dataAgeDays": 0,
+      "raw": {
+        "latestClose": 4086.300048828125,
+        "previousClose": 4068.300048828125,
+        "change": 18,
+        "pct": 0.4424452420903642,
+        "currency": "USD",
+        "exchangeName": "CMX",
+        "instrumentType": "FUTURE"
+      }
+    }
+  ],
+  "japan": {
+    "indices": [
+      "日経平均は68,733.15（-1,741.81 / -2.47%）です。",
+      "TOPIXは本指数の直取得が安定しないため、当面はTOPIX連動ETF(1306)を参考値として表示します。"
+    ],
+    "sectors": [
+      "業種別データと売買代金は未接続です。次フェーズで利用条件が明確なデータ元を確認します。"
+    ],
+    "turnover": "プライム市場売買代金は未接続です。",
+    "drivers": [
+      "指数、為替、米金利の水準を朝の確認材料として整理します。"
+    ]
+  },
+  "us": {
+    "indices": [
+      "S&P 500は7,483.23（-16.13 / -0.22%）です。",
+      "NASDAQは26,040.03（-173.69 / -0.66%）です。"
+    ],
+    "semiconductors": "半導体関連の個別銘柄データは未接続です。",
+    "rates": "米10年金利は4.44%（+0.06pt）です。",
+    "news": [
+      "ニュース本文の自動取得は未接続です。見出し・URLのみを扱う設計で次フェーズに進めます。"
+    ]
+  },
+  "fxRatesAndCommodities": {
+    "items": [
+      "ドル円は161.22（-1.41 / -0.87%）です。",
+      "米10年金利は4.44%（+0.06pt）です。",
+      "WTI原油は68.04、金は4,086.30です。"
+    ]
+  },
+  "events": [
+    {
+      "date": "2026-07-02",
+      "time": "21:30",
+      "region": "米国",
+      "title": "BLS Employment Situation",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    }
+  ],
+  "eventDigest": {
+    "date": "2026-07-02",
+    "generatedAt": "2026-07-02T08:31:08.415Z",
+    "sourceMode": "official-event-calendar",
+    "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+    "fallbackUsed": false,
+    "items": [
+      {
+        "date": "2026-07-02",
+        "time": "21:30",
+        "region": "米国",
+        "title": "BLS Employment Situation",
+        "category": "macro",
+        "importance": "high",
+        "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+        "source": "BLS",
+        "sourceKey": "bls",
+        "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+        "official": true
+      }
+    ],
+    "errors": [],
+    "manualFallbackCount": 2
+  },
+  "relatedNews": [
+    {
+      "category": "日本・経済",
+      "text": "夏休み旅行者は去年より4.6％減少見通し",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167201000.html",
+      "source": "NHK",
+      "publishedAt": "2026-07-02T07:32:56.000Z"
+    },
+    {
+      "category": "日本・経済",
+      "text": "株価 1700円超値下がり AIや半導体関連銘柄への売り注文広がる",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166831000.html",
+      "source": "NHK",
+      "publishedAt": "2026-07-02T07:14:26.000Z"
+    },
+    {
+      "category": "日本・経済",
+      "text": "【きょうのおはBiz 7月2日(木)】“サプライズ”だった短観",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166861000.html",
+      "source": "NHK",
+      "publishedAt": "2026-07-02T04:14:09.000Z"
+    },
+    {
+      "category": "日本・経済",
+      "text": "2025年度の税収 84兆円台 6年連続で過去最高の見通し",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166901000.html",
+      "source": "NHK",
+      "publishedAt": "2026-07-02T02:42:17.000Z"
+    }
+  ],
+  "newsDigest": {
+    "date": "2026-07-02",
+    "generatedAt": "2026-07-02T08:31:08.904Z",
+    "sourceMode": "rss-headlines",
+    "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+    "items": [
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "夏休み旅行者は去年より4.6％減少見通し",
+        "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167201000.html",
+        "publishedAt": "2026-07-02T07:32:56.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015167201000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "株価 1700円超値下がり AIや半導体関連銘柄への売り注文広がる",
+        "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166831000.html",
+        "publishedAt": "2026-07-02T07:14:26.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015166831000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "【きょうのおはBiz 7月2日(木)】“サプライズ”だった短観",
+        "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166861000.html",
+        "publishedAt": "2026-07-02T04:14:09.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015166861000.html"
+      },
+      {
+        "category": "日本・経済",
+        "source": "NHK",
+        "sourceKey": "nhk-economy",
+        "title": "2025年度の税収 84兆円台 6年連続で過去最高の見通し",
+        "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166901000.html",
+        "publishedAt": "2026-07-02T02:42:17.000Z",
+        "language": "ja",
+        "guid": "http://www3.nhk.or.jp/news/html/20260702/k10015166901000.html"
+      }
+    ],
+    "errors": [],
+    "skipped": []
+  },
+  "sources": [
+    {
+      "key": "nikkei",
+      "label": "日経平均",
+      "source": "Yahoo Finance",
+      "symbol": "^N225",
+      "url": "https://finance.yahoo.com/quote/%5EN225",
+      "referenceLinks": [],
+      "latestDate": "2026-07-02"
+    },
+    {
+      "key": "topix",
+      "label": "TOPIX連動ETF(1306)",
+      "source": "Yahoo Finance",
+      "symbol": "1306.T",
+      "url": "https://finance.yahoo.com/quote/1306.T",
+      "referenceLinks": [
+        {
+          "label": "世界の株価 TOPIX",
+          "url": "https://nikkei225jp.com/_ssi/if/?c=112"
+        },
+        {
+          "label": "世界の株価",
+          "url": "https://nikkei225jp.com/"
+        }
+      ],
+      "latestDate": "2026-07-02"
+    },
+    {
+      "key": "sp500",
+      "label": "S&P 500",
+      "source": "Yahoo Finance",
+      "symbol": "^GSPC",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC",
+      "referenceLinks": [],
+      "latestDate": "2026-07-01"
+    },
+    {
+      "key": "nasdaq",
+      "label": "NASDAQ",
+      "source": "Yahoo Finance",
+      "symbol": "^IXIC",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC",
+      "referenceLinks": [],
+      "latestDate": "2026-07-01"
+    },
+    {
+      "key": "usdjpy",
+      "label": "ドル円",
+      "source": "Yahoo Finance",
+      "symbol": "USDJPY=X",
+      "url": "https://finance.yahoo.com/quote/USDJPY%3DX",
+      "referenceLinks": [],
+      "latestDate": "2026-07-02"
+    },
+    {
+      "key": "us10y",
+      "label": "米10年金利",
+      "source": "FRED",
+      "symbol": "DGS10",
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "referenceLinks": [],
+      "latestDate": "2026-06-30"
+    },
+    {
+      "key": "wti",
+      "label": "WTI原油",
+      "source": "Yahoo Finance",
+      "symbol": "CL=F",
+      "url": "https://finance.yahoo.com/quote/CL%3DF",
+      "referenceLinks": [],
+      "latestDate": "2026-07-02"
+    },
+    {
+      "key": "gold",
+      "label": "金",
+      "source": "Yahoo Finance",
+      "symbol": "GC=F",
+      "url": "https://finance.yahoo.com/quote/GC%3DF",
+      "referenceLinks": [],
+      "latestDate": "2026-07-02"
+    }
+  ]
+}
