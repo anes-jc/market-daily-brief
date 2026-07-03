@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-03",
+  "generatedAt": "2026-07-03T08:40:00.726Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 一時1000円以上値下がりも午後には上昇",
+      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015167961000.html",
+      "publishedAt": "2026-07-03T07:32:35.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260703/k10015167961000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで",
+      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015167801000.html",
+      "publishedAt": "2026-07-03T07:00:58.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260703/k10015167801000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ブルボン 菓子2万袋余を自主回収 アレルギー物質「えび」混入",
+      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015168041000.html",
+      "publishedAt": "2026-07-03T05:31:49.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260703/k10015168041000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ペルシャ湾内の日本関係船舶 新たに1隻がホルムズ海峡通過",
+      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015168021000.html",
+      "publishedAt": "2026-07-03T04:05:30.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260703/k10015168021000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}

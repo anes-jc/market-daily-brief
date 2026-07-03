@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-03",
+  "generatedAt": "2026-07-03T08:40:00.573Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": true,
+  "items": [
+    {
+      "region": "日本",
+      "time": "午前",
+      "title": "国内統計・政策関連発表の確認",
+      "category": "macro",
+      "importance": "medium",
+      "note": "固定確認枠です。個別イベントは日付指定の datedEvents に追加します。",
+      "date": "2026-07-03",
+      "source": "manual-config",
+      "official": false
+    },
+    {
+      "region": "米国",
+      "time": "夜",
+      "title": "米国経済指標・金融政策関連発言の確認",
+      "category": "macro",
+      "importance": "medium",
+      "note": "固定確認枠です。個別イベントは日付指定の datedEvents に追加します。",
+      "date": "2026-07-03",
+      "source": "manual-config",
+      "official": false
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 2
+}
