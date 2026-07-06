@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-06",
+  "generatedAt": "2026-07-06T12:25:58.884Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 162円台前半に値下がり 日米金利差意識され円安進む",
+      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015170091000.html",
+      "publishedAt": "2026-07-06T09:28:38.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260706/k10015170091000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "長期金利2.83％に上昇 およそ29年ぶりの高水準",
+      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015169951000.html",
+      "publishedAt": "2026-07-06T07:48:47.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260706/k10015169951000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 小幅に値下がり AI・半導体関連に売り注文",
+      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015169791000.html",
+      "publishedAt": "2026-07-06T07:17:53.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260706/k10015169791000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "コメ価格の見通し示す指数 過去最低に並ぶ水準に",
+      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015169771000.html",
+      "publishedAt": "2026-07-06T03:22:36.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260706/k10015169771000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
