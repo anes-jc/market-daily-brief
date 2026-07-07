@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-07",
+  "generatedAt": "2026-07-07T10:30:51.664Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 円高ドル安進む 日米金利差縮小の見方から",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015171061000.html",
+      "publishedAt": "2026-07-07T09:50:40.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260707/k10015171061000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "リニア中央新幹線 静岡県知事 県内の着工容認を表明",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170621000.html",
+      "publishedAt": "2026-07-07T08:54:53.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260707/k10015170621000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "景気動向指数が上昇 景気の基調判断「改善」を維持",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170981000.html",
+      "publishedAt": "2026-07-07T07:58:38.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260707/k10015170981000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "長期金利 2.85％まで上昇 約29年ぶりの高い水準",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170941000.html",
+      "publishedAt": "2026-07-07T07:40:56.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260707/k10015170941000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
