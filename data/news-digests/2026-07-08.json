@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-08",
+  "generatedAt": "2026-07-08T06:37:43.092Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "長期金利 2.87％まで上昇 1997年5月以来の高水準",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171531000.html",
+      "publishedAt": "2026-07-08T06:33:35.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260708/k10015171531000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "コメめぐり「需要に応じた生産」明記の改正食糧法が成立",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171601000.html",
+      "publishedAt": "2026-07-08T06:03:31.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260708/k10015171601000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "議論呼ぶ「需要に応じた生産」って？ コメ価格 今後どうなる",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171611000.html",
+      "publishedAt": "2026-07-08T05:53:18.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260708/k10015171611000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "【きょうのおはBiz 7月8日(水)】障害者雇用 どう向き合う",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171591000.html",
+      "publishedAt": "2026-07-08T04:09:54.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260708/k10015171591000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Opening Remarks on Sound Practices for Artificial Intelligence",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm",
+      "publishedAt": "2026-07-07T11:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
