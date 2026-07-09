@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-09",
+  "generatedAt": "2026-07-09T10:29:55.596Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "「全東信」破産手続き 飲食店や地方銀行などに影響広がる",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172661000.html",
+      "publishedAt": "2026-07-09T10:12:50.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260709/k10015172661000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 小幅に値下がり イラン情勢 先行き不透明との見方から",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172931000.html",
+      "publishedAt": "2026-07-09T09:48:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260709/k10015172931000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "NTTドコモが銀行業に参入 店舗とデジタルサービス強化【QAも】",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172841000.html",
+      "publishedAt": "2026-07-09T09:46:25.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260709/k10015172841000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日銀 地域経済報告 全地域 判断据え置き 食料品など値上げ検討",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172871000.html",
+      "publishedAt": "2026-07-09T09:19:48.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260709/k10015172871000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+      "publishedAt": "2026-07-08T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Opening Remarks on Sound Practices for Artificial Intelligence",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm",
+      "publishedAt": "2026-07-07T11:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
