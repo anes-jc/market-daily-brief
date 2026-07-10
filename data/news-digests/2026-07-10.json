@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-10",
+  "generatedAt": "2026-07-10T08:53:42.096Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "「日本茶」国のブランド保護制度に登録 海外産と差別化ねらう",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173661000.html",
+      "publishedAt": "2026-07-10T08:01:13.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260710/k10015173661000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "モバイルSuicaの障害 アクセス急増が原因",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173731000.html",
+      "publishedAt": "2026-07-10T07:56:23.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260710/k10015173731000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 一時1600円超値上がり AI・半導体中心に買い注文広がる",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173461000.html",
+      "publishedAt": "2026-07-10T07:54:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260710/k10015173461000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "地方税収 初の50兆円超 5年連続過去最高更新 総務省",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173551000.html",
+      "publishedAt": "2026-07-10T05:00:29.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260710/k10015173551000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "publishedAt": "2026-07-09T19:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+      "publishedAt": "2026-07-08T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Opening Remarks on Sound Practices for Artificial Intelligence",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm",
+      "publishedAt": "2026-07-07T11:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
