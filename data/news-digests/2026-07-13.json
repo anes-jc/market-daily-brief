@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-13",
+  "generatedAt": "2026-07-13T00:15:10.094Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ホルムズ海峡封鎖表明で週明けの金融市場 影響に注目",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175161000.html",
+      "publishedAt": "2026-07-12T21:48:46.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260713/k10015175161000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日本ではホルムズ海峡を通らない代替ルートでの原油調達が進む",
+      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015175001000.html",
+      "publishedAt": "2026-07-12T07:21:28.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260712/k10015175001000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "韓国半導体 SKハイニックス ナスダック上場 約4兆3000億円調達",
+      "url": "http://www3.nhk.or.jp/news/html/20260711/k10015174281000.html",
+      "publishedAt": "2026-07-10T23:48:40.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260711/k10015174281000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ソフトバンクやPayPayなど セブン＆アイHDに出資を検討",
+      "url": "http://www3.nhk.or.jp/news/html/20260711/k10015174161000.html",
+      "publishedAt": "2026-07-10T15:14:29.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260711/k10015174161000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "publishedAt": "2026-07-09T19:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+      "publishedAt": "2026-07-08T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Opening Remarks on Sound Practices for Artificial Intelligence",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm",
+      "publishedAt": "2026-07-07T11:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
