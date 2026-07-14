@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-15",
+  "generatedAt": "2026-07-14T22:12:08.871Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "租税特別措置 廃止の方向性は1件にとどまる 各省庁の自己点検",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015176961000.html",
+      "publishedAt": "2026-07-14T22:09:44.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260715/k10015176961000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "国内のEV乗用車の販売台数 前年同期比2倍余増 1月～6月",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015176951000.html",
+      "publishedAt": "2026-07-14T21:44:23.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260715/k10015176951000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "政府 ナフサの供給対策検討 イラン情勢による流通影響受け",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015176971000.html",
+      "publishedAt": "2026-07-14T21:42:52.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260715/k10015176971000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米物価上昇率3.5％ 伸び率縮小で早期利上げ観測 やや後退",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015177041000.html",
+      "publishedAt": "2026-07-14T20:45:26.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260714/k10015177041000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Responsible Innovation and Financial Inclusion",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
+      "publishedAt": "2026-07-14T18:55:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "publishedAt": "2026-07-14T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Barr, Will Artificial Intelligence Broadly Raise Living Standards or Drive Income and Wealth Inequality?",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260714a.htm",
+      "publishedAt": "2026-07-14T16:40:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/barr20260714a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "publishedAt": "2026-07-09T19:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
