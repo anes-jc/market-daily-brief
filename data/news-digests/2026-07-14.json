@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T00:11:40.844Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "国内市場縮小の中 ビール各社で海外事業強化の動き",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176051000.html",
+      "publishedAt": "2026-07-13T22:06:02.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260714/k10015176051000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ナスダック株価指数1.5％超の下落 日韓ハイテク株安や原油高で",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176201000.html",
+      "publishedAt": "2026-07-13T22:02:35.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260714/k10015176201000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "歴史的な円安「経済に悪い影響」61％ NHK世論調査",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015175471000.html",
+      "publishedAt": "2026-07-13T20:02:25.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260714/k10015175471000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Waller, Monetary Policy at a Crossroads",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260713a.htm",
+      "publishedAt": "2026-07-13T16:30:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/waller20260713a.htm"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "韓国株価8％超の大幅な下落 売買を一時的に中断する措置も",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175941000.html",
+      "publishedAt": "2026-07-13T12:58:04.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260713/k10015175941000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Modernizing Financial Regulation",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260713a.htm",
+      "publishedAt": "2026-07-13T09:25:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260713a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "publishedAt": "2026-07-09T19:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+      "publishedAt": "2026-07-08T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
