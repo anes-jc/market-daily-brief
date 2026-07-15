@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-16",
+  "generatedAt": "2026-07-15T22:12:09.624Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米FRB経済報告 イラン情勢影響で物価は全体として緩やかに上昇",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177941000.html",
+      "publishedAt": "2026-07-15T21:18:39.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260716/k10015177941000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ニチレイ サイバー攻撃 影響の広がりや原因究明など焦点",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177911000.html",
+      "publishedAt": "2026-07-15T20:32:07.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260716/k10015177911000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Economic Outlook",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "エヌビディアCEOが来日 日本の大手ゲーム会社と交流",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015178011000.html",
+      "publishedAt": "2026-07-15T14:55:08.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260715/k10015178011000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "石油連盟会長 “中東産油国のパイプライン増強へ支援検討”",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177871000.html",
+      "publishedAt": "2026-07-15T13:05:37.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260715/k10015177871000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Responsible Innovation and Financial Inclusion",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
+      "publishedAt": "2026-07-14T18:55:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "publishedAt": "2026-07-14T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "publishedAt": "2026-07-09T19:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
