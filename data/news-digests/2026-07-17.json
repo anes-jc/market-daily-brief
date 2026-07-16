@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-17",
+  "generatedAt": "2026-07-16T22:14:23.988Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ニチレイ きょう業務再開予定 物流網正常化できるかが焦点",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178791000.html",
+      "publishedAt": "2026-07-16T21:04:24.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260717/k10015178791000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米 6月の小売業売上高 前月比0.2％増 消費堅調続くか焦点",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178831000.html",
+      "publishedAt": "2026-07-16T14:57:12.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260716/k10015178831000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "国産AI開発「ノエトラ」 エヌビディアから新システム導入へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178411000.html",
+      "publishedAt": "2026-07-16T14:47:08.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260716/k10015178411000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "台湾 TSMC 4-6月期決算 売り上げ 最終利益 ともに過去最高更新",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178681000.html",
+      "publishedAt": "2026-07-16T12:15:21.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260716/k10015178681000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Economic Outlook",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Responsible Innovation and Financial Inclusion",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
+      "publishedAt": "2026-07-14T18:55:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "publishedAt": "2026-07-14T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
