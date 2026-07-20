@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-21",
+  "snapshotSource": "live-public-market-data",
+  "articlePath": "articles/daily/2026-07-21.html",
+  "status": "PASS",
+  "reasonCode": "OK",
+  "checkedAt": "2026-07-20T22:12:34.978Z",
+  "source": "dummy-proofread-mvp",
+  "summary": "禁止表現、主要データ欠損、投資助言リスクは検出されませんでした。",
+  "checks": {
+    "requiredData": "pass",
+    "bannedPhrases": "pass",
+    "investmentAdviceRisk": "pass",
+    "pricePredictionRisk": "pass",
+    "hypeExpressionRisk": "pass",
+    "causalOverstatementRisk": "pass",
+    "adExpressionRisk": "pass",
+    "tone": "pass"
+  },
+  "findings": []
+}

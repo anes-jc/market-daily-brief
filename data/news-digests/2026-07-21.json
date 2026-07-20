@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-21",
+  "generatedAt": "2026-07-20T22:12:34.904Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "生産地 備蓄米の早期買い戻し求める声強まる 政府は慎重に検討",
+      "url": "http://www3.nhk.or.jp/news/html/20260721/k10015181311000.html",
+      "publishedAt": "2026-07-20T21:59:44.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260721/k10015181311000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "トヨタ 近健太社長 “開発や生産の効率化進め 稼ぐ力強化を”",
+      "url": "http://www3.nhk.or.jp/news/html/20260721/k10015181321000.html",
+      "publishedAt": "2026-07-20T21:45:42.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260721/k10015181321000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "NY原油市場 1バレル＝85ドル台に上昇 1か月ぶりの高値水準",
+      "url": "http://www3.nhk.or.jp/news/html/20260720/k10015181071000.html",
+      "publishedAt": "2026-07-19T23:02:43.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260720/k10015181071000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "リニア中央新幹線 静岡県内着工へ 静岡県とJR東海協定締結",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180281000.html",
+      "publishedAt": "2026-07-18T10:44:09.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260718/k10015180281000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Jefferson, Navigating Economic Shocks: A Monetary Policymaker’s Perspective",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm",
+      "publishedAt": "2026-07-16T23:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Economic Outlook",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "publishedAt": "2026-07-14T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
