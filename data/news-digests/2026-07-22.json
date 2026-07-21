@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-22",
+  "generatedAt": "2026-07-21T22:12:22.410Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "プラ容器高値で容器の変更相次ぐ 小売各社で",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182121000.html",
+      "publishedAt": "2026-07-21T21:57:07.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260722/k10015182121000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "自動車メーカー 完成車の共同輸送を検討 2028年までに実施へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182111000.html",
+      "publishedAt": "2026-07-21T21:53:02.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260722/k10015182111000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ケンタッキー きょうから全店舗で通常営業を再開",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182251000.html",
+      "publishedAt": "2026-07-21T20:03:32.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260722/k10015182251000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ニチレイ ハッカー集団が犯行声明 「ランサムウエア」攻撃か",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182261000.html",
+      "publishedAt": "2026-07-21T20:01:00.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260722/k10015182261000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Jefferson, Navigating Economic Shocks: A Monetary Policymaker’s Perspective",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm",
+      "publishedAt": "2026-07-16T23:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Economic Outlook",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
