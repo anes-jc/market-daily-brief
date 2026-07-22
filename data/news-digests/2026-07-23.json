@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-23",
+  "generatedAt": "2026-07-22T22:15:45.679Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "グーグル親会社 4～6月期決算 営業利益は6兆6400億円余",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183101000.html",
+      "publishedAt": "2026-07-22T21:43:46.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260723/k10015183101000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "関税措置めぐる日米合意から1年 なお不透明な状況続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183011000.html",
+      "publishedAt": "2026-07-22T20:50:57.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260723/k10015183011000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "折りたたみ式スマホ薄型の新モデル発表 競争激化か",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183071000.html",
+      "publishedAt": "2026-07-22T20:04:58.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260723/k10015183071000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "輸入牛肉と豚肉の小売価格が過去最高 農林水産省の7月調査",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182891000.html",
+      "publishedAt": "2026-07-22T10:28:33.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260722/k10015182891000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Jefferson, Navigating Economic Shocks: A Monetary Policymaker’s Perspective",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm",
+      "publishedAt": "2026-07-16T23:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
