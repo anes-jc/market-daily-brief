@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-27",
+  "generatedAt": "2026-07-26T22:12:10.613Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米国産生鮮ジャガイモ 輸入解禁手続き進む一方で懸念の声も",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015186811000.html",
+      "publishedAt": "2026-07-26T22:06:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260727/k10015186811000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日銀 今週決定会合 政策金利据え置きか 経済・物価見通し焦点",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015186771000.html",
+      "publishedAt": "2026-07-26T21:24:20.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260727/k10015186771000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015186781000.html",
+      "publishedAt": "2026-07-26T20:02:21.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260727/k10015186781000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "トランプ大統領 グーグルに制裁金科したEUに関税課すと主張",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186361000.html",
+      "publishedAt": "2026-07-25T23:49:14.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260726/k10015186361000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
