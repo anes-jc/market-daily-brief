@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-28",
+  "generatedAt": "2026-07-27T22:17:21.112Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "エディオン会長 ヤマダHDとの統合「対等の精神は譲れない」",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187521000.html",
+      "publishedAt": "2026-07-27T21:59:30.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260728/k10015187521000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "スマホ法に基づきグーグルとアップルが公取委提出の報告書公表",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187531000.html",
+      "publishedAt": "2026-07-27T21:54:14.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260728/k10015187531000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "東京23区 単身向けマンションの平均家賃11.4万円余 上昇続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187221000.html",
+      "publishedAt": "2026-07-27T10:06:42.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260727/k10015187221000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 いくぶん値上がり 原油の先物価格下落に伴い",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187331000.html",
+      "publishedAt": "2026-07-27T09:33:58.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260727/k10015187331000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
