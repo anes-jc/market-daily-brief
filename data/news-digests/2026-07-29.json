@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-29",
+  "generatedAt": "2026-07-28T22:16:38.708Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "トヨタ 福岡の3工場で稼働停止 ホンダも熊本の工場で稼働停止",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188891000.html",
+      "publishedAt": "2026-07-28T13:56:39.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260728/k10015188891000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "円相場 小幅な値動き 日米の金融政策見極めか",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188981000.html",
+      "publishedAt": "2026-07-28T12:46:37.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260728/k10015188981000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ことしのサンマ 近海への来遊量は減少の見通し",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188881000.html",
+      "publishedAt": "2026-07-28T12:30:21.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260728/k10015188881000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "株価 一時3000円超値下がり 半導体関連銘柄中心に売り",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187711000.html",
+      "publishedAt": "2026-07-28T11:55:14.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260728/k10015187711000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}

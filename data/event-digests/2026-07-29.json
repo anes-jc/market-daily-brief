@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-29",
+  "generatedAt": "2026-07-28T22:16:38.195Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": false,
+  "items": [
+    {
+      "date": "2026-07-29",
+      "time": "23:00",
+      "region": "米国",
+      "title": "BLS Metropolitan Area Employment and Unemployment (Monthly)",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    },
+    {
+      "date": "2026-07-29",
+      "time": "23:00",
+      "region": "米国",
+      "title": "BLS Quarterly Data Series on Business Employment Dynamics",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    },
+    {
+      "date": "2026-07-29",
+      "time": "米国時間",
+      "region": "米国",
+      "title": "FOMC会合日程",
+      "category": "policy",
+      "importance": "high",
+      "note": "Federal Reserve公式FOMC calendarから取得。日付は米国時間の会合日です。",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-fomc",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "official": true
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 2
+}
