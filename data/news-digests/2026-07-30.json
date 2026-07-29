@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-30",
+  "generatedAt": "2026-07-29T22:12:37.165Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "FRB政策金利 5会合連続で据え置き 委員3人利上げ主張",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190151000.html",
+      "publishedAt": "2026-07-29T21:35:51.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260730/k10015190151000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publishedAt": "2026-07-29T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "政府 ナミビアでのレアアース鉱山開発会社に最大50億円出資へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190131000.html",
+      "publishedAt": "2026-07-29T15:00:20.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260730/k10015190131000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "九州にある大手メーカーの工場 操業に影響",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189681000.html",
+      "publishedAt": "2026-07-29T14:56:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260729/k10015189681000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "全日空 国内一部路線の運航 アイベックスエアラインズに委託へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015190101000.html",
+      "publishedAt": "2026-07-29T12:24:47.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260729/k10015190101000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
