@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-31",
+  "generatedAt": "2026-07-30T22:19:14.600Z",
+  "sourceMode": "official-event-calendar",
+  "note": "初期版は公式カレンダーから日付、時刻、イベント名、出典URLだけを取得する。予想値、結果値、解説、投資判断は取得しない。",
+  "fallbackUsed": false,
+  "items": [
+    {
+      "date": "2026-07-31",
+      "time": "日程",
+      "region": "日本",
+      "title": "日銀 金融政策決定会合",
+      "category": "policy",
+      "importance": "high",
+      "note": "Bank of Japan公式MPM scheduleから取得。日付は日本時間です。",
+      "source": "Bank of Japan",
+      "sourceKey": "boj-mpm",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "official": true
+    },
+    {
+      "date": "2026-07-31",
+      "time": "会合後",
+      "region": "日本",
+      "title": "日銀 展望レポート公表予定",
+      "category": "policy",
+      "importance": "high",
+      "note": "Bank of Japan公式MPM scheduleから取得。公表時刻は公式発表で確認してください。",
+      "source": "Bank of Japan",
+      "sourceKey": "boj-mpm",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "official": true
+    },
+    {
+      "date": "2026-07-31",
+      "time": "21:30",
+      "region": "米国",
+      "title": "BLS Employment Cost Index",
+      "category": "macro",
+      "importance": "high",
+      "note": "BLS公式ICSから取得。米東部時間の予定を日本時間に換算しています。",
+      "source": "BLS",
+      "sourceKey": "bls",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "official": true
+    }
+  ],
+  "errors": [],
+  "manualFallbackCount": 2
+}

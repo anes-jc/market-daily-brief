@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-31",
+  "generatedAt": "2026-07-30T22:19:15.247Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "NY市場 ダウ平均株価613ドル上昇 AIへの巨額投資の懸念後退",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191521000.html",
+      "publishedAt": "2026-07-30T21:11:00.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260731/k10015191521000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "消費税率引き下げ 小売業界システム改修終えられるか課題",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191221000.html",
+      "publishedAt": "2026-07-30T20:08:29.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260731/k10015191221000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "NY市場 1ドル＝157円台後半まで値上がり 市場介入の観測も",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191381000.html",
+      "publishedAt": "2026-07-30T15:54:59.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260730/k10015191381000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "【熊本地震 企業影響 30日】半導体関連 稼働再開の動きも",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190621000.html",
+      "publishedAt": "2026-07-30T11:55:01.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260730/k10015190621000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publishedAt": "2026-07-29T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
