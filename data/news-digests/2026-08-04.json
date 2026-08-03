@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-04",
+  "generatedAt": "2026-08-03T22:17:18.696Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "日米 追加協調介入も辞さず 米当局のドル調達の仕組み活用で",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195341000.html",
+      "publishedAt": "2026-08-03T21:45:11.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260804/k10015195341000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "【熊本地震 企業影響 3日】工場で操業停止続く 生産一部再開も",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194851000.html",
+      "publishedAt": "2026-08-03T15:22:43.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260803/k10015194851000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "7月31日介入は4兆円超える規模か 民間仲介会社の分析",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195391000.html",
+      "publishedAt": "2026-08-03T13:42:20.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260803/k10015195391000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "大手企業が3か月決算発表 熊本の地震や中東情勢の影響も",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195061000.html",
+      "publishedAt": "2026-08-03T12:14:57.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260803/k10015195061000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publishedAt": "2026-07-29T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
