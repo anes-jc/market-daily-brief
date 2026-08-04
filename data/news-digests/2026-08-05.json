@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-05",
+  "generatedAt": "2026-08-04T22:22:28.564Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "公取委30年ぶり組織再編へ 中小企業の価格転嫁へ監視強化",
+      "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196441000.html",
+      "publishedAt": "2026-08-04T21:49:02.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260805/k10015196441000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "NYダウ 2日連続で最高値更新 中東情勢 緊張緩和への期待感で",
+      "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196761000.html",
+      "publishedAt": "2026-08-04T21:37:02.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260805/k10015196761000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "三菱重工業 次世代型原子炉「SMR」国内実用化に向け本格開発へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196481000.html",
+      "publishedAt": "2026-08-04T21:24:01.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260805/k10015196481000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米 ベッセント財務長官 “協調介入は象徴的な意味合い”",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196511000.html",
+      "publishedAt": "2026-08-04T18:15:30.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260804/k10015196511000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publishedAt": "2026-07-29T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
