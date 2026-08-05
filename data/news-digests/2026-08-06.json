@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-05T22:20:24.506Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ホンダ 4月-6月決算 営業利益が四半期として過去最高に",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197521000.html",
+      "publishedAt": "2026-08-05T21:48:29.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260806/k10015197521000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "NYダウ 3日連続最高値 ホルムズ海峡開放への期待感から",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197701000.html",
+      "publishedAt": "2026-08-05T21:32:07.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260806/k10015197701000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "ホンダ 地震で生産に影響 部品メーカーの復旧状況見て再開判断",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197541000.html",
+      "publishedAt": "2026-08-05T20:17:29.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260806/k10015197541000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Outlook for the U.S. and Alaskan Economies",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260805a.htm",
+      "publishedAt": "2026-08-05T20:05:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260805a.htm"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "米 ベッセント財務長官 “協調介入は象徴的な意味合い”",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196511000.html",
+      "publishedAt": "2026-08-05T13:05:21.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260804/k10015196511000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
