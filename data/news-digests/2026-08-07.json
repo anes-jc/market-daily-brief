@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-07T01:02:33.705Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "4月30日の市場介入 6.2兆円 円買いとして1日あたりで過去最大",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198801000.html",
+      "publishedAt": "2026-08-07T00:07:48.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260807/k10015198801000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "6月 実質消費支出 7か月連続減少 家計調査",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198791000.html",
+      "publishedAt": "2026-08-06T23:50:10.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260807/k10015198791000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "アメリカの原油輸出減少 代替調達進める日本にも影響可能性も",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198761000.html",
+      "publishedAt": "2026-08-06T22:53:16.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260807/k10015198761000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "大手企業の夏のボーナス初の100万円超 経団連最終集計",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198751000.html",
+      "publishedAt": "2026-08-06T22:48:18.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260807/k10015198751000.html"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Cook, Outlook for the U.S. and Alaskan Economies",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260805a.htm",
+      "publishedAt": "2026-08-05T20:05:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/cook20260805a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
