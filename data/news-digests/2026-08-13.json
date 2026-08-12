@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-13",
+  "generatedAt": "2026-08-12T22:01:47.339Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "オープンAI 開発一時中断 AIみずからサイバー攻撃実行のおそれ",
+      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015200151000.html",
+      "publishedAt": "2026-08-08T06:10:11.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260808/k10015200151000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "「なりすまし広告」詐欺対策強化を 政府がSNS事業者に要請",
+      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199771000.html",
+      "publishedAt": "2026-08-08T01:04:37.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260808/k10015199771000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に",
+      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199891000.html",
+      "publishedAt": "2026-08-07T22:28:58.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260808/k10015199891000.html"
+    },
+    {
+      "category": "日本・経済",
+      "source": "NHK",
+      "sourceKey": "nhk-economy",
+      "title": "KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続",
+      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199811000.html",
+      "publishedAt": "2026-08-07T15:04:09.000Z",
+      "language": "ja",
+      "guid": "http://www3.nhk.or.jp/news/html/20260808/k10015199811000.html"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
