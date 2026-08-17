@@ -1,5 +1,15 @@
 window.MARKET_DAILY_ARTICLES = [
   {
+    "date": "2026-08-18",
+    "dateLabel": "2026年8月18日",
+    "title": "Market Daily Brief 2026年8月18日版",
+    "summary": "2026年8月18日の株式・為替・金利・イベントを整理した朝の市場メモです。",
+    "url": "articles/daily/2026-08-18.html",
+    "absoluteUrl": "https://anes-jc.github.io/market-daily-brief/articles/daily/2026-08-18.html",
+    "ogImage": "assets/og/2026-08-18.png",
+    "absoluteOgImage": "https://anes-jc.github.io/market-daily-brief/assets/og/2026-08-18.png"
+  },
+  {
     "date": "2026-08-17",
     "dateLabel": "2026年8月17日",
     "title": "Market Daily Brief 2026年8月17日版",
