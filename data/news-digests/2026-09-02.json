@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-01T23:17:50.575Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Barr, Unlocking Opportunities for Workers and Entrepreneurs with a Criminal Record",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm",
+      "publishedAt": "2026-09-01T13:05:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Warsh, In Our Time",
+      "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+      "publishedAt": "2026-08-28T14:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
