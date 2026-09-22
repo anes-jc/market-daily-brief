@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T00:06:19.190Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Initial Findings from Independent Review of Silicon Valley Bank",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm",
+      "publishedAt": "2026-09-18T13:30:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, The Final Chapter on Modernizing Bank Regulatory Stress Testing",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm",
+      "publishedAt": "2026-09-18T13:30:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publishedAt": "2026-09-16T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+    },
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-monetary",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "publishedAt": "2026-09-16T18:00:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
