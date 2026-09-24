@@ -1,29 +1,23 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "status": "NO_DATA",
   "reasonCode": "NO_DATA",
-  "generatedAt": "2026-09-23T23:41:25.132Z",
-  "checkedAt": "2026-09-23T23:41:25.197Z",
+  "generatedAt": "2026-09-24T23:52:57.580Z",
+  "checkedAt": "2026-09-24T23:52:57.647Z",
   "published": false,
-  "candidatePath": "drafts/2026-09-24.html",
-  "snapshotPath": "data/market-snapshots/2026-09-24.json",
-  "eventDigestPath": "data/event-digests/2026-09-24.json",
+  "candidatePath": "drafts/2026-09-25.html",
+  "snapshotPath": "data/market-snapshots/2026-09-25.json",
+  "eventDigestPath": "data/event-digests/2026-09-25.json",
   "articlePath": "",
-  "draftPath": "drafts/2026-09-24.html",
-  "proofreadReportPath": "data/proofread-reports/2026-09-24.json",
-  "newsDigestPath": "data/news-digests/2026-09-24.json",
+  "draftPath": "drafts/2026-09-25.html",
+  "proofreadReportPath": "data/proofread-reports/2026-09-25.json",
+  "newsDigestPath": "data/news-digests/2026-09-25.json",
   "articleCount": 68,
   "findings": [
     {
       "type": "missing_data",
       "severity": "NO_DATA",
       "field": "metrics.nikkei.stale",
-      "message": "主要データが欠損しています。"
-    },
-    {
-      "type": "missing_data",
-      "severity": "NO_DATA",
-      "field": "metrics.topix.stale",
       "message": "主要データが欠損しています。"
     }
   ]
