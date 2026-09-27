@@ -1,24 +1,17 @@
 {
-  "date": "2026-09-25",
-  "status": "NO_DATA",
-  "reasonCode": "NO_DATA",
-  "generatedAt": "2026-09-24T23:52:57.580Z",
-  "checkedAt": "2026-09-24T23:52:57.647Z",
-  "published": false,
-  "candidatePath": "drafts/2026-09-25.html",
-  "snapshotPath": "data/market-snapshots/2026-09-25.json",
-  "eventDigestPath": "data/event-digests/2026-09-25.json",
-  "articlePath": "",
-  "draftPath": "drafts/2026-09-25.html",
-  "proofreadReportPath": "data/proofread-reports/2026-09-25.json",
-  "newsDigestPath": "data/news-digests/2026-09-25.json",
-  "articleCount": 68,
-  "findings": [
-    {
-      "type": "missing_data",
-      "severity": "NO_DATA",
-      "field": "metrics.nikkei.stale",
-      "message": "主要データが欠損しています。"
-    }
-  ]
+  "date": "2026-09-28",
+  "status": "PASS",
+  "reasonCode": "OK",
+  "generatedAt": "2026-09-27T23:47:43.020Z",
+  "checkedAt": "2026-09-27T23:47:43.086Z",
+  "published": true,
+  "candidatePath": "",
+  "snapshotPath": "data/market-snapshots/2026-09-28.json",
+  "eventDigestPath": "data/event-digests/2026-09-28.json",
+  "articlePath": "articles/daily/2026-09-28.html",
+  "draftPath": "",
+  "proofreadReportPath": "data/proofread-reports/2026-09-28.json",
+  "newsDigestPath": "data/news-digests/2026-09-28.json",
+  "articleCount": 69,
+  "findings": []
 }
