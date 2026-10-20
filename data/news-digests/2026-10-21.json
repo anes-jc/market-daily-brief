@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-20T23:52:04.351Z",
+  "sourceMode": "rss-headlines",
+  "note": "初期版はRSS/Atomの見出し、URL、出典、公開時刻だけを取得する。本文取得、本文転載、AI要約は行わない。",
+  "items": [
+    {
+      "category": "米金融政策",
+      "source": "Federal Reserve",
+      "sourceKey": "federal-reserve-speeches",
+      "title": "Bowman, Supervisory Modernization After Silicon Valley Bank",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm",
+      "publishedAt": "2026-10-15T02:55:00.000Z",
+      "language": "en",
+      "guid": "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}
